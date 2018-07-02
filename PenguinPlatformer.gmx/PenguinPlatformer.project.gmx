@@ -18,6 +18,18 @@
         <sprite>sprites\spr_player_64_right</sprite>
       </sprites>
     </sprites>
+    <sprites name="Blocks">
+      <sprites name="Ice Blocks">
+        <sprite>sprites\spr_block_ice_small</sprite>
+        <sprite>sprites\spr_block_ice_medium</sprite>
+        <sprite>sprites\spr_block_ice_large</sprite>
+      </sprites>
+      <sprites name="Wood Blocks">
+        <sprite>sprites\spr_block_wood_small</sprite>
+        <sprite>sprites\spr_block_wood_medium</sprite>
+        <sprite>sprites\spr_block_wood_large</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,9 +38,13 @@
     <object>objects\obj_score</object>
     <objects name="Blocks">
       <object>objects\obj_block</object>
-      <objects name="Blocks_Ice">
+      <objects name="Ice Blocks">
         <object>objects\obj_block_ice</object>
         <object>objects\obj_block_ice_small</object>
+      </objects>
+      <objects name="Wood Blocks">
+        <object>objects\obj_block_wood</object>
+        <object>objects\obj_block_wood_small</object>
       </objects>
     </objects>
   </objects>

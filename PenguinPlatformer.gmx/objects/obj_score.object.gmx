@@ -29,9 +29,16 @@
 global.puffyImageSpeedIdle = 0.11;
 global.puffyImageSpeedWalk = 0.2;
 
+//Set default player sprite size
+global.playerSize = 64
+
 //Set default player speed
-global.playerSpeedDefault = 5;
-global.playerSpeed = global.playerSpeedDefault;
+global.playerDefaultSpeed = 5;
+global.playerBaseSpeed = global.playerDefaultSpeed;
+global.playerSpeed = global.playerBaseSpeed;
+
+//Speed constants for different block types
+global.blockSpeedIce = 3;
 
 //Constants for different block sizes
 global.blockSizeSmall = 16;

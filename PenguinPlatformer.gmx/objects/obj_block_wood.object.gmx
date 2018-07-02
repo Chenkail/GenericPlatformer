@@ -39,7 +39,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player slides on ice
+            <string>///Player walks at default speed when walking on wood
+
 </string>
           </argument>
         </arguments>
