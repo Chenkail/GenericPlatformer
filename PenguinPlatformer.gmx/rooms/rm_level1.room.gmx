@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_score" x="1888" y="32" name="inst_E27D5CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="128" y="416" name="inst_F5256016" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="128" y="384" name="inst_F5256016" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_large" x="96" y="448" name="inst_A73EB027" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_large" x="160" y="448" name="inst_EE14D330" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_large" x="224" y="448" name="inst_FF9448C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

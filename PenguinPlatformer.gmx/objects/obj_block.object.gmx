@@ -25,9 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.y &lt;= y - blockSize/2 - global.playerSize/2) {
+            <string>//Change player's speed based on block type if player is standing on top of block
+if (other.y &lt;= y - blockSize/2 - global.playerSize/2) {
     global.blockSpeedModifier = blockSpeedModifier;
+} else {
+    //Stop moving if running into a wall
+    
+    //Player is left of block
+    if ((other.x &lt; x) &amp;&amp; (other.x &gt; x - blockSize/2 - global.playerSize/2)) {
+        other.x = x - blockSize/2 - global.playerSize/2
+    }
+    //Player is right of block
+    if ((other.x &gt; x) &amp;&amp; (other.x &lt; x + blockSize/2 + global.playerSize/2)) {
+        other.x = x + blockSize/2 + global.playerSize/2
+    }
 }
+
 </string>
           </argument>
         </arguments>
