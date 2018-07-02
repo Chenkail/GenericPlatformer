@@ -5,10 +5,10 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_block</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,19 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Set animation speeds for various animations
-global.puffyImageSpeedIdle = 0.11;
-global.puffyImageSpeedWalk = 0.2;
-
-//Set default player speed
-global.playerSpeedDefault = 5;
-global.playerSpeed = global.playerSpeedDefault;
-
-//Constants for different block sizes
-global.blockSizeSmall = 16;
-global.blockSizeMedium = 32;
-global.blockSizeLarge = 64;
-
+            <string>///Player slides on ice
 </string>
           </argument>
         </arguments>
