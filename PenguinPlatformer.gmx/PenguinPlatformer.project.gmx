@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprites name="Player Sprites">
       <sprites name="32x32">
+        <sprite>sprites\spr_player_32_idle</sprite>
+        <sprite>sprites\spr_player_32_left</sprite>
         <sprite>sprites\spr_player_32_right</sprite>
       </sprites>
       <sprites name="64x64">
