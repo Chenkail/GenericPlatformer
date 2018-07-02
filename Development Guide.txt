@@ -1,0 +1,16 @@
+Naming Conventions
+    Assets
+        All assets should follow the following guidelines:
+        1. Asset names should start with a prefix indicating the asset type and an underscore, e.g. spr_player
+            - Background: bg
+            - Font: fnt
+            - Object: obj
+            - Room: rm
+            - Script: scr
+            - Sprite: spr
+        2. Asset names should be descriptive and short
+    Variables
+        All variable names should be written in camelcase, e.g. playerJumpHeight
+
+Code
+    All code blocks should have comments describing their purpose, e.g. //Set player walk speed

@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Set animation speeds for various animations
+            <string>//Define steps per second
+global.stepsPerSecond = 60;
+
+//Set animation speeds for various animations
 global.puffyImageSpeedIdle = 0.11;
 global.puffyImageSpeedWalk = 0.2;
 
@@ -38,9 +41,14 @@ global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
 
-//Set default jump height
-global.playerDefaultJumpHeight = global.playerSize + 5;
+//Set default jump height and time for jump
+global.playerDefaultJumpHeight = global.playerSize + 10;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
+global.playerJumpTime = 1;
+
+//Set gravity and max fall speed
+global.gravity = 0.1;
+global.maxFallSpeed = 2;
 
 //Speed constants for different block types
 global.blockSpeedWood = 0;
