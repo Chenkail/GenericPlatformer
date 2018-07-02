@@ -51,8 +51,8 @@
             <string>///Fall
 if ((vspeed &lt; 0)) {
     vspeed += global.gravity;
-} else {
-    vspeed = max(vspeed + global.gravity, global.maxFallSpeed);
+} else if (place_free(x, y + global.playerSize/2 + 1)) {
+    vspeed = min(vspeed + global.gravity, global.maxFallSpeed);
 }
 </string>
           </argument>
