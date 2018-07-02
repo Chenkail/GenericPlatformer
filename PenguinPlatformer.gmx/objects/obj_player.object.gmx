@@ -31,6 +31,30 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Fall
+y += global.fallSpeed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="1">
       <action>
         <libid>1</libid>
@@ -48,28 +72,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Sideways movement
+            <string>///Movement
 
 //Set player speed
 global.playerSpeed = global.playerBaseSpeed + global.blockSpeedModifier;
 
 switch (keyboard_key)
     {
+    //Go left
     case vk_left:
     case ord("A"):
         sprite_index = spr_player_64_left;
         image_speed = global.puffyImageSpeedWalk;
         x -= global.playerSpeed;
         break;
+    //Go right
     case vk_right:
     case ord("D"):
         sprite_index = spr_player_64_right;
         image_speed = global.puffyImageSpeedWalk;
         x += global.playerSpeed;
         break;
-    case vk_up:
-    case ord("W"):
-       break;
+    //Jump
+    
     }
 </string>
           </argument>

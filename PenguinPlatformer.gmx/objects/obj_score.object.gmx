@@ -38,13 +38,21 @@ global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
 
+//Set default jump height
+global.playerDefaultJumpHeight = global.playerSize + 5;
+global.playerJumpHeight = global.playerDefaultJumpHeight;
+
 //Speed constants for different block types
+global.blockSpeedWood = 0;
 global.blockSpeedIce = 3;
 
 //Constants for different block sizes
 global.blockSizeSmall = 16;
 global.blockSizeMedium = 32;
 global.blockSizeLarge = 64;
+
+//Set fall speed constant
+global.fallSpeed = 5;
 
 </string>
           </argument>

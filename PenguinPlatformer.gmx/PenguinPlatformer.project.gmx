@@ -34,17 +34,21 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Set Block Size">
-      <script>scripts\scr_block_size_small.gml</script>
-      <script>scripts\scr_block_size_medium.gml</script>
-      <script>scripts\scr_block_size_large.gml</script>
+    <scripts name="Blocks">
+      <script>scripts\scr_player_block_collisions.gml</script>
+      <script>scripts\scr_block_speed_change.gml</script>
+      <scripts name="Set Block Size">
+        <script>scripts\scr_block_size_small.gml</script>
+        <script>scripts\scr_block_size_medium.gml</script>
+        <script>scripts\scr_block_size_large.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_score</object>
     <objects name="Blocks">
-      <object>objects\obj_block</object>
+      <object>objects\obj_block_parent</object>
       <objects name="Ice Blocks">
         <object>objects\obj_block_ice_parent</object>
         <object>objects\obj_block_ice_small</object>
