@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Define steps per second
+            <string>///Set constants for game
+
+//Define steps per second
 global.stepsPerSecond = 60;
 
 //Set animation speeds for various animations
@@ -47,8 +49,8 @@ global.playerJumpHeight = global.playerDefaultJumpHeight;
 global.playerJumpTime = 1;
 
 //Set gravity and max fall speed
-global.gravity = 0.1;
-global.maxFallSpeed = 2;
+global.gravity = 0.3/global.stepsPerSecond;
+global.maxFallSpeed = 5;
 
 //Speed constants for different block types
 global.blockSpeedWood = 0;

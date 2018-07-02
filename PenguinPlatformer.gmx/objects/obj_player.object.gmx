@@ -158,8 +158,8 @@ if (y &gt; room_height - 32) {
           <argument>
             <kind>1</kind>
             <string>///Jump
-global.playerJumpSpeed = sqrt(2 * global.playerJumpHeight * global.gravity) + (global.gravity * global.stepsPerSecond * global.playerJumpTime);
-vspeed -= global.playerJumpSpeed;
+global.playerJumpSpeed = sqrt(2 * global.playerJumpHeight * global.gravity)
+vspeed = -global.playerJumpSpeed;
 </string>
           </argument>
         </arguments>
