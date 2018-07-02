@@ -49,6 +49,10 @@
           <argument>
             <kind>1</kind>
             <string>///Sideways movement
+
+//Set player speed
+global.playerSpeed = global.playerBaseSpeed + global.blockSpeedModifier;
+
 switch (keyboard_key)
     {
     case vk_left:

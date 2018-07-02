@@ -36,6 +36,7 @@ global.playerSize = 64
 global.playerDefaultSpeed = 5;
 global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
+global.blockSpeedModifier = 0;
 
 //Speed constants for different block types
 global.blockSpeedIce = 3;

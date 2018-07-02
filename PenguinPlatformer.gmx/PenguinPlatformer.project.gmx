@@ -33,18 +33,27 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Set Block Size">
+      <script>scripts\scr_block_size_small.gml</script>
+      <script>scripts\scr_block_size_medium.gml</script>
+      <script>scripts\scr_block_size_large.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_score</object>
     <objects name="Blocks">
       <object>objects\obj_block</object>
       <objects name="Ice Blocks">
-        <object>objects\obj_block_ice</object>
+        <object>objects\obj_block_ice_parent</object>
         <object>objects\obj_block_ice_small</object>
       </objects>
       <objects name="Wood Blocks">
-        <object>objects\obj_block_wood</object>
+        <object>objects\obj_block_wood_parent</object>
         <object>objects\obj_block_wood_small</object>
+        <object>objects\obj_block_wood_medium</object>
+        <object>objects\obj_block_wood_large</object>
       </objects>
     </objects>
   </objects>

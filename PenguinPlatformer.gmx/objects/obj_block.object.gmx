@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,37 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>blockY = y;
-
-//Set blockSize variable for the block
-switch (sprite_index) {
-    case spr_block_wood_small:
-    case spr_block_ice_small:
-        blockSize = global.blockSizeSmall;
-        break;
-    case spr_block_wood_medium:
-    case spr_block_ice_medium:
-        blockSize = global.blockSizeMedium;
-        break;
-    case spr_block_wood_large:
-    case spr_block_ice_large:
-        blockSize = global.blockSizeMedium;
-        break;
+            <string>if(other.y &lt;= y - blockSize/2 - global.playerSize/2) {
+    global.blockSpeedModifier = blockSpeedModifier;
 }
-
-//Set player speed modifier depending on block
-switch (object_get_name(object_index)) {
-    case obj_block_wood:
-        //Wood -&gt; Default speed
-        blockSpeedModifier = 0;
-        break;
-    case obj_block_ice:
-        //Ice -&gt; Faster
-        blockSpeedModifier = global.blockSpeedIce;
-        break;
-}
-
-
 </string>
           </argument>
         </arguments>
