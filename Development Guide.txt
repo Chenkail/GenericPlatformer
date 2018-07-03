@@ -16,14 +16,17 @@ Code
     All code blocks should have comments describing their purpose, e.g. //Set player walk speed
 
 Objects
+
     Objects should be organized into folders based on type
     Objects should use parents when possible to avoid duplicate code
 
 Rooms
-    Room Speed
-        All rooms should be set to a speed of 60 for consistency.
+    Room Setup
+        - All rooms should be set to a speed of 60 for consistency of animations and code.
+        - All rooms should include the master object, which creates all the constants
+        - Objects without sprites which are used in the room should be placed together in the top right corner without overlapping
     Instances
         Because GameMaker Studio adds objects to the room in the same order they are placed when designing the room by default,
-        the score object should be added first, as it creates all of the constant variables used in the game. If other objects
+        the master object should be added first, as it creates all of the constant variables used in the game. If other objects
         were added first, the order can be changed by opening the room's properties and clicking on "Instance Order". The
         instance for the score object should then be moved to the top.

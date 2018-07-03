@@ -53,9 +53,10 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <objects name="Control Objects">
-      <object>objects\obj_score</object>
+      <object>objects\obj_master</object>
       <objects name="Menus">
-        <object>objects\obj_main_menu</object>
+        <object>objects\obj_title</object>
+        <object>objects\obj_level_select</object>
       </objects>
     </objects>
     <objects name="Blocks">
