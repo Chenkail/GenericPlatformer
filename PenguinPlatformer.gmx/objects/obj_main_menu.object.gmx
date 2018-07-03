@@ -32,7 +32,7 @@ mouseOver = false;
 buttonLeft = room_width/2 - global.mainMenuButtonWidth/2;
 buttonRight = room_width/2 + global.mainMenuButtonWidth/2;
 buttonTop = room_height/2 - global.mainMenuButtonHeight/2;
-buttonBottom = room_height - global.mainMenuButtonHeight/2;
+buttonBottom = room_height/2 + global.mainMenuButtonHeight/2;
 
 </string>
           </argument>

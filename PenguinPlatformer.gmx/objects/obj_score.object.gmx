@@ -36,8 +36,10 @@ global.mainMenuButtonHeight = 50;
 global.stepsPerSecond = 60;
 
 //Set animation speeds for various animations
-global.playerImageSpeedIdle = 0.11;
-global.playerImageSpeedWalk = 0.2;
+global.playerDefaultImageSpeedIdle = 0.06;
+global.playerDefaultImageSpeedWalk = 0.12;
+global.playerImageSpeedIdle = global.playerDefaultImageSpeedIdle;
+global.playerImageSpeedWalk = global.playerDefaultImageSpeedWalk;
 
 //Set default player sprite size
 global.playerSize = 64;
