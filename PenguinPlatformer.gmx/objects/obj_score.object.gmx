@@ -48,9 +48,10 @@ global.playerDefaultJumpHeight = global.playerSize + 10;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
 global.playerJumpTime = 1;
 
-//Set gravity and max fall speed
+//Set gravity and max fall speed, along with fall speed constant
 global.gravity = 3;
 global.maxFallSpeed = 5;
+global.fallSpeed = 5;
 
 //Speed constants for different block types
 global.blockSpeedWood = 0;
@@ -60,9 +61,6 @@ global.blockSpeedIce = 3;
 global.blockSizeSmall = 32;
 global.blockSizeMedium = 64;
 global.blockSizeLarge = 128;
-
-//Set fall speed constant
-global.fallSpeed = 5;
 
 </string>
           </argument>

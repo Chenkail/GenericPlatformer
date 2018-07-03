@@ -1,8 +1,9 @@
 ///Prevent player from colliding with blocks
 
-//Prevent falling through block if on top
+//Prevent falling through block if on top and set fall speed to 0
 if ((other.y < y - blockSize/2) && (other.y > y - blockSize/2 - global.playerSize/2)) {
     other.y = y - blockSize/2 - global.playerSize/2;
+    global.fallSpeed = 0;
 } else {
     //Stop moving if running into a wall
     
