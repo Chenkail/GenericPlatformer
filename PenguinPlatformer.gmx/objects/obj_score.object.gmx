@@ -43,6 +43,9 @@ global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
 
+//Enable first jump
+global.canJump = true;
+
 //Set default jump height and time for jump
 global.playerDefaultJumpHeight = global.playerSize + 10;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
