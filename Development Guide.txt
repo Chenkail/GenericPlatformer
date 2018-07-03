@@ -14,3 +14,6 @@ Naming Conventions
 
 Code
     All code blocks should have comments describing their purpose, e.g. //Set player walk speed
+
+Objects
+    Objects used as platforms should be marked as solid.
