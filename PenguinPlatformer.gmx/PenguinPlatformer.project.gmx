@@ -22,12 +22,10 @@
       <sprites name="Ice Blocks">
         <sprite>sprites\spr_block_ice_small</sprite>
         <sprite>sprites\spr_block_ice_medium</sprite>
-        <sprite>sprites\spr_block_ice_large</sprite>
       </sprites>
       <sprites name="Wood Blocks">
         <sprite>sprites\spr_block_wood_small</sprite>
         <sprite>sprites\spr_block_wood_medium</sprite>
-        <sprite>sprites\spr_block_wood_large</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -52,6 +50,7 @@
       <objects name="Ice Blocks">
         <object>objects\obj_block_ice_parent</object>
         <object>objects\obj_block_ice_small</object>
+        <object>objects\obj_block_ice_medium</object>
       </objects>
       <objects name="Wood Blocks">
         <object>objects\obj_block_wood_parent</object>
