@@ -18,3 +18,12 @@ Code
 Objects
     Objects should be organized into folders based on type
     Objects should use parents when possible to avoid duplicate code
+
+Rooms
+    Room Speed
+        All rooms should be set to a speed of 60 for consistency.
+    Instances
+        Because GameMaker Studio adds objects to the room in the same order they are placed when designing the room by default,
+        the score object should be added first, as it creates all of the constant variables used in the game. If other objects
+        were added first, the order can be changed by opening the room's properties and clicking on "Instance Order". The
+        instance for the score object should then be moved to the top.
