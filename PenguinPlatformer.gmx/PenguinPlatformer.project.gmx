@@ -60,6 +60,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_slide_test</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
