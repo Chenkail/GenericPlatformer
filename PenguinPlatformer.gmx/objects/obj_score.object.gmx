@@ -57,9 +57,9 @@ global.blockSpeedWood = 0;
 global.blockSpeedIce = 3;
 
 //Constants for different block sizes
-global.blockSizeSmall = 16;
-global.blockSizeMedium = 32;
-global.blockSizeLarge = 64;
+global.blockSizeSmall = 32;
+global.blockSizeMedium = 64;
+global.blockSizeLarge = 128;
 
 //Set fall speed constant
 global.fallSpeed = 5;
