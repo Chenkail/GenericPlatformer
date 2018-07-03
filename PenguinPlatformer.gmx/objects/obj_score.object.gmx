@@ -37,7 +37,7 @@ global.stepsPerSecond = 60;
 
 //Set animation speeds for various animations
 global.playerDefaultImageSpeedIdle = 0.06;
-global.playerDefaultImageSpeedWalk = 0.12;
+global.playerDefaultImageSpeedWalk = 0.10;
 global.playerBaseImageSpeedIdle = global.playerDefaultImageSpeedIdle;
 global.playerBaseImageSpeedWalk = global.playerDefaultImageSpeedWalk;
 global.playerImageSpeedIdle = global.playerBaseImageSpeedIdle;
@@ -47,7 +47,7 @@ global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk;
 global.playerSize = 64;
 
 //Set default player speed
-global.playerDefaultSpeed = 5;
+global.playerDefaultSpeed = 4;
 global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
@@ -72,7 +72,7 @@ global.canJump = true;
 global.playerDefaultJumpHeight = global.playerSize + 10;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
 global.playerJumpTime = 0.3;
-global.jumpCheckConstant = 10;
+global.jumpCheckConstant = 1;
 
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 3;
