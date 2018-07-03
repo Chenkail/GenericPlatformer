@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>///Set constants for game
 
+//Main Menu
+//Button size
+global.mainMenuButtonWidth = 100;
+global.mainMenuButtonHeight = 50;
+
 //Define steps per second
 global.stepsPerSecond = 60;
 
