@@ -49,7 +49,7 @@ global.canJump = true;
 //Set default jump height and time for jump
 global.playerDefaultJumpHeight = global.playerSize + 10;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
-global.playerJumpTime = 1;
+global.playerJumpTime = 0.3;
 
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 3;
