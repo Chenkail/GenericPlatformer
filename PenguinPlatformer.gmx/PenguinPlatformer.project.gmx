@@ -48,6 +48,7 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_score</object>
+    <object>objects\obj_main_menu</object>
     <objects name="Blocks">
       <object>objects\obj_block_parent</object>
       <objects name="Ice Blocks">
@@ -61,7 +62,6 @@
         <object>objects\obj_block_wood_medium</object>
       </objects>
     </objects>
-    <object>objects\obj_main_menu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
