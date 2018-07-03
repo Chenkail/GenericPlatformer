@@ -71,7 +71,7 @@ else
     else if (mouse_check_button_released(mb_left) and buttonPressed)
     {
         //Go to level 1
-        room_goto(rm_test);
+        room_goto(rm_demo);
     }
 }
 </string>

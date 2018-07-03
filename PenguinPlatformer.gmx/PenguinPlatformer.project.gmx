@@ -75,6 +75,7 @@
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
     <rooms name="Test Rooms">
+      <room>rooms\rm_demo</room>
       <room>rooms\rm_test</room>
       <room>rooms\rm_slide_test</room>
     </rooms>
