@@ -28,6 +28,7 @@
         <sprite>sprites\spr_block_wood_medium</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_play_button</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,6 +45,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
+    <font>fonts\fnt_menu_buttons</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -51,6 +53,7 @@
       <object>objects\obj_score</object>
       <objects name="Menus">
         <object>objects\obj_main_menu</object>
+        <object>objects\obj_play_button</object>
       </objects>
     </objects>
     <objects name="Blocks">
@@ -69,8 +72,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
-    <room>rooms\rm_test</room>
-    <room>rooms\rm_slide_test</room>
+    <rooms name="Test Rooms">
+      <room>rooms\rm_test</room>
+      <room>rooms\rm_slide_test</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
