@@ -31,7 +31,7 @@ mouseOver = false;
 buttonLeft = x - global.mainMenuButtonWidth/2;
 buttonRight = x + global.mainMenuButtonWidth/2;
 buttonTop = y - global.mainMenuButtonHeight/2;
-buttonBottom = y - global.mainMenuButtonHeight/2;
+buttonBottom = y + global.mainMenuButtonHeight/2;
 
 </string>
           </argument>
@@ -57,6 +57,21 @@ buttonBottom = y - global.mainMenuButtonHeight/2;
             <kind>1</kind>
             <string>//Test if mouse is inside button rectangle
 mouseOver = point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), buttonLeft, buttonTop, buttonRight, buttonBottom);
+
+if (!mouseOver)
+    buttonPressed = false;
+else
+{
+    if mouse_check_button_pressed(mb_left)
+    {
+        buttonPressed = true;
+    }
+    else if (mouse_check_button_released(mb_left) and buttonPressed)
+    {
+        //Open level 1
+        room_goto(rm_test);
+    }
+}
 </string>
           </argument>
         </arguments>
