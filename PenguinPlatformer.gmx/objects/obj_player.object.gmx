@@ -26,6 +26,30 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = global.playerImageSpeedIdle;
+global.canJump = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.canJump = true;
 </string>
           </argument>
         </arguments>
@@ -158,9 +182,14 @@ if (y &gt; room_height - 32) {
           <argument>
             <kind>1</kind>
             <string>///Jump
-if (!place_empty(x, y + global.playerSize/2 + 1)) {
+if (global.canJump) {
     global.playerJumpSpeed = sqrt(2 * global.playerJumpHeight * global.gravity)
     vspeed = -global.playerJumpSpeed;
+    /* Disable jump for time it takes to fall back
+     * down to the level the jump started at
+     */
+    global.canJump = false;
+    alarm_set(0, global.stepsPerSecond * global.playerJumpTime);
 }
 </string>
           </argument>
