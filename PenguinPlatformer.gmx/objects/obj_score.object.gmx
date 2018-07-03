@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>obj_score</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -31,8 +31,8 @@
 global.stepsPerSecond = 60;
 
 //Set animation speeds for various animations
-global.puffyImageSpeedIdle = 0.11;
-global.puffyImageSpeedWalk = 0.2;
+global.playerImageSpeedIdle = 0.11;
+global.playerImageSpeedWalk = 0.2;
 
 //Set default player sprite size
 global.playerSize = 64;

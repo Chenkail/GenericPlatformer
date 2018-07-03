@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = global.puffyImageSpeedIdle;
+            <string>image_speed = global.playerImageSpeedIdle;
 </string>
           </argument>
         </arguments>
@@ -87,14 +87,14 @@ switch (keyboard_key)
     case vk_left:
     case ord("A"):
         sprite_index = spr_player_64_left;
-        image_speed = global.puffyImageSpeedWalk;
+        image_speed = global.playerImageSpeedWalk;
         x -= global.playerSpeed;
         break;
     //Go right
     case vk_right:
     case ord("D"):
         sprite_index = spr_player_64_right;
-        image_speed = global.puffyImageSpeedWalk;
+        image_speed = global.playerImageSpeedWalk;
         x += global.playerSpeed;
         break;
     //Jump
@@ -158,8 +158,10 @@ if (y &gt; room_height - 32) {
           <argument>
             <kind>1</kind>
             <string>///Jump
-global.playerJumpSpeed = sqrt(2 * global.playerJumpHeight * global.gravity)
-vspeed = -global.playerJumpSpeed;
+if (!place_empty(x, y + global.playerSize/2 + 1)) {
+    global.playerJumpSpeed = sqrt(2 * global.playerJumpHeight * global.gravity)
+    vspeed = -global.playerJumpSpeed;
+}
 </string>
           </argument>
         </arguments>
@@ -184,7 +186,7 @@ vspeed = -global.playerJumpSpeed;
             <kind>1</kind>
             <string>///Set sprite back to idle animation
 sprite_index = spr_player_64_idle;
-image_speed = global.puffyImageSpeedIdle;
+image_speed = global.playerImageSpeedIdle;
 </string>
           </argument>
         </arguments>
@@ -209,7 +211,7 @@ image_speed = global.puffyImageSpeedIdle;
             <kind>1</kind>
             <string>///Set sprite back to idle animation
 sprite_index = spr_player_64_idle;
-image_speed = global.puffyImageSpeedIdle;
+image_speed = global.playerImageSpeedIdle;
 </string>
           </argument>
         </arguments>
@@ -234,7 +236,7 @@ image_speed = global.puffyImageSpeedIdle;
             <kind>1</kind>
             <string>///Set sprite back to idle animation
 sprite_index = spr_player_64_idle;
-image_speed = global.puffyImageSpeedIdle;
+image_speed = global.playerImageSpeedIdle;
 </string>
           </argument>
         </arguments>
@@ -259,7 +261,7 @@ image_speed = global.puffyImageSpeedIdle;
             <kind>1</kind>
             <string>///Set sprite back to idle animation
 sprite_index = spr_player_64_idle;
-image_speed = global.puffyImageSpeedIdle;
+image_speed = global.playerImageSpeedIdle;
 </string>
           </argument>
         </arguments>
