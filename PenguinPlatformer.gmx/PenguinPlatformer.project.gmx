@@ -44,6 +44,7 @@
         <script>scripts\scr_block_size_large.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_draw_play_button.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
@@ -55,7 +56,6 @@
       <object>objects\obj_score</object>
       <objects name="Menus">
         <object>objects\obj_main_menu</object>
-        <object>objects\obj_play_button</object>
       </objects>
     </objects>
     <objects name="Blocks">
