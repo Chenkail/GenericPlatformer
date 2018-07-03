@@ -37,7 +37,7 @@ global.stepsPerSecond = 60;
 
 //Set animation speeds for various animations
 global.playerDefaultImageSpeedIdle = 0.06;
-global.playerDefaultImageSpeedWalk = 0.10;
+global.playerDefaultImageSpeedWalk = 0.14;
 global.playerBaseImageSpeedIdle = global.playerDefaultImageSpeedIdle;
 global.playerBaseImageSpeedWalk = global.playerDefaultImageSpeedWalk;
 global.playerImageSpeedIdle = global.playerBaseImageSpeedIdle;
