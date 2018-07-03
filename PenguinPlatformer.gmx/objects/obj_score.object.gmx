@@ -68,10 +68,11 @@ global.blockSizeLarge = 128;
 //Enable first jump
 global.canJump = true;
 
-//Set default jump height and time for jump
+//Set jump constants
 global.playerDefaultJumpHeight = global.playerSize + 10;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
 global.playerJumpTime = 0.3;
+global.jumpCheckConstant = 10;
 
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 3;

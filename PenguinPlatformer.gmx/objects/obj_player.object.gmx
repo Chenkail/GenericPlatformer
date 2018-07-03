@@ -184,6 +184,13 @@ if (y &gt; room_height - 32) {
           <argument>
             <kind>1</kind>
             <string>///Jump
+global.canJump = true;
+
+//Test if player is midair
+if (place_empty(x, y + global.jumpCheckConstant)) {
+    global.canJump = false;
+}
+
 if (global.canJump) {
     global.playerJumpSpeed = sqrt(2 * global.gravity * global.playerJumpHeight);
     vspeed = -global.playerJumpSpeed;
