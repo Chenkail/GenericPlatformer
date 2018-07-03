@@ -73,7 +73,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_main_menu</room>
+    <rooms name="Menus">
+      <room>rooms\rm_title</room>
+      <room>rooms\rm_level_select</room>
+    </rooms>
     <rooms name="Test Rooms">
       <room>rooms\rm_demo</room>
       <room>rooms\rm_test</room>
