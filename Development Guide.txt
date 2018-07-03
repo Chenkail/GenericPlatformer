@@ -16,4 +16,5 @@ Code
     All code blocks should have comments describing their purpose, e.g. //Set player walk speed
 
 Objects
-    Objects used as platforms should be marked as solid.
+    Objects should be organized into folders based on type
+    Objects should use parents when possible to avoid duplicate code

@@ -8,7 +8,7 @@
   <parentName>obj_block_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_player">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>604</id>

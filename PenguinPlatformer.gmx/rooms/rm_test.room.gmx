@@ -54,11 +54,7 @@
     <instance objName="obj_score" x="1888" y="32" name="inst_E27D5CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="576" y="384" name="inst_F5256016" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="576" y="448" name="inst_0ED2B86A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_wood_medium" x="512" y="448" name="inst_6F69896F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="640" y="448" name="inst_6D865CC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_wood_medium" x="448" y="384" name="inst_073E53E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_wood_medium" x="384" y="384" name="inst_9D306660" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_wood_medium" x="320" y="288" name="inst_63A9261D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="768" y="384" name="inst_21152BA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="704" y="384" name="inst_335584FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="768" y="320" name="inst_CD0F03E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,6 +74,13 @@
     <instance objName="obj_block_wood_medium" x="960" y="384" name="inst_D04C376C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="960" y="320" name="inst_95E6222E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_medium" x="1024" y="224" name="inst_9C816DF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_wood_medium" x="256" y="384" name="inst_BDAA5E8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_wood_medium" x="192" y="384" name="inst_E3D94263" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_wood_medium" x="128" y="288" name="inst_066570D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_ice_medium" x="512" y="448" name="inst_52939B13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_ice_medium" x="448" y="448" name="inst_DE5B05C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_ice_medium" x="384" y="448" name="inst_A9E88425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block_ice_medium" x="320" y="448" name="inst_F91D1948" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
