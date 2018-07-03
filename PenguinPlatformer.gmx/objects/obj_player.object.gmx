@@ -102,7 +102,10 @@ if ((vspeed &lt; 0)) {
             <string>///Movement
 
 //Set player speed
-global.playerSpeed = global.playerBaseSpeed + global.blockSpeedModifier;
+global.playerSpeed = global.playerBaseSpeed * global.blockSpeedModifier;
+
+//Set player image speed
+global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk * global.blockImageSpeedModifier;
 
 switch (keyboard_key)
     {

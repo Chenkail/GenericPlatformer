@@ -41,6 +41,7 @@
             <kind>1</kind>
             <string>///Set blockSpeedModifier to wood
 blockSpeedModifier = global.blockSpeedWood;
+blockImageSpeedModifier = global.blockImageSpeedWood;
 </string>
           </argument>
         </arguments>

@@ -41,6 +41,7 @@
             <kind>1</kind>
             <string>///Set blockSpeedModifier to ice
 blockSpeedModifier = global.blockSpeedIce;
+blockImageSpeedModifier = global.blockImageSpeedIce;
 </string>
           </argument>
         </arguments>
