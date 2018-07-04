@@ -27,17 +27,39 @@
             <kind>1</kind>
             <string>///Set constants for game
 
-//Main Menu
+///Main Menu
 //Game name in title screen
 global.gameTitle = "Penguin Platformer";
+
+//Game name font
+global.gameTitleFont = fnt_title;
 
 //Button size
 global.mainMenuButtonWidth = 100;
 global.mainMenuButtonHeight = 50;
 
-//Define steps per second
+///Level select
+//Arranging the choices
+global.levelSelectRows = 2;
+global.levelSelectColumns = 4;
+global.levelSelectChoiceSize = 100;
+global.levelSelectSpacing = 20;
+global.levelSelectBoxBuffer = 20;
+global.levelSelectBoxWidth =
+    global.levelSelectColumns * global.levelSelectChoiceSize //Total width of option boxes
+    + (global.levelSelectColumns - 1) * global.levelSelectSpacing //Total width of spacing between boxes
+    + 2 *  global.levelSelectBoxBuffer //Buffer spacing on both sides
+global.levelSelectBoxHeight =
+global.levelSelectRows * global.levelSelectChoiceSize //Total height of option boxes
+    + (global.levelSelectRows - 1) * global.levelSelectSpacing //Total height of spacing between boxes
+    + 2 *  global.levelSelectBoxBuffer //Buffer spacing on top/bottom
+global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.levelSelectBoxHeight)/4;
+
+///Other Control Constants
+//Define game steps per second
 global.stepsPerSecond = 60;
 
+///Player
 //Set animation speeds for various animations
 global.playerDefaultImageSpeedIdle = 0.06;
 global.playerDefaultImageSpeedWalk = 0.14;
@@ -55,6 +77,7 @@ global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
 
+///Blocks
 //Speed constants for different block types
 global.blockSpeedWood = 1;
 global.blockSpeedIce = 1.6;
@@ -68,6 +91,7 @@ global.blockSizeSmall = 32;
 global.blockSizeMedium = 64;
 global.blockSizeLarge = 128;
 
+///Jumping and falling
 //Enable first jump
 global.canJump = true;
 

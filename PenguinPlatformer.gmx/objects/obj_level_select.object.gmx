@@ -53,7 +53,16 @@ mouseOver = false;
           <argument>
             <kind>1</kind>
             <string>///Draw box around levels
-
+draw_roundrect_colour_ext(
+    room_width/2 - global.levelSelectBoxWidth/2, //x1
+    room_height/2 - global.levelSelectBoxHeight/2, //y1
+    room_width/2 + global.levelSelectBoxWidth/2, //x2
+    room_height/2 + global.levelSelectBoxHeight/2, //y2
+    global.levelSelectBoxCornerRadius, //Radius
+    global.levelSelectBoxCornerRadius, //Radius
+    c_black, //Color of center
+    c_white, //Color of border
+    false); //Filled in
 </string>
           </argument>
         </arguments>
