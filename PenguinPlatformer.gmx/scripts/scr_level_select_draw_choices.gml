@@ -16,10 +16,10 @@ cornerRadius = global.levelSelectChoiceSize/4;
 boxX = firstBoxX;
 boxY = firstBoxY;
             
-var i;
-var j;
-for (i = 0; i < global.levelSelectRows; i++) {
-    for (j = 0; j < global.levelSelectColumns; j++) {
+var row;
+var column;
+for (row = 0; row < global.levelSelectRows; row++) {
+    for (column = 0; column < global.levelSelectColumns; column++) {
         //Draw choice box
         scr_level_select_draw_choice_box(boxX, boxY, currentLevelLabel);
         

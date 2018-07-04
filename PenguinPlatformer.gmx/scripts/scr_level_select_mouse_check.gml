@@ -1,38 +1,13 @@
-//Level numbers
-firstLevelNumber = (global.levelSelectPage - 1) * global.levelSelectRows * global.levelSelectColumns + 1;
-currentLevelLabel = firstLevelNumber;
+xOffset = room_width/2 - global.levelSelectBoxWidth/2 + global.levelSelectBoxBuffer;
+yOffset = room_height/2 - global.levelSelectBoxHeight/2 + global.levelSelectBoxBuffer;
 
-//Define starting x and y
-firstBoxX = global.levelSelectBoxX1
-            + global.levelSelectBoxBuffer
-            + global.levelSelectChoiceSize/2;
-            
-firstBoxY = global.levelSelectBoxY1
-            + global.levelSelectBoxBuffer
-            + global.levelSelectChoiceSize/2;
-            
-boxX = firstBoxX;
-boxY = firstBoxY;
-            
-var i;
-var j;
-for (i = 0; i < global.levelSelectRows; i++) {
-    for (j = 0; j < global.levelSelectColumns; j++) {
-        //Test box for click
-        global.buttonPushed = scr_is_button_pushed(boxX, boxY, global.levelSelectChoiceSize, global.levelSelectChoiceSize);
-        global.buttonPushed = true;
-        if (global.buttonPushed) {
-            scr_open_level(currentLevelLabel);
-            break;
-        } else {
-            //Move to next box
-            boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
-            currentLevelLabel++;
-        }
-    }
-    
-    //Move to next row
-    boxY = boxY + global.levelSelectChoiceSize + global.levelSelectSpacing;
-    //Reset x coordinates
-    boxX = firstBoxX;
+column = int64((mouse_x - xOffset)/(global.levelSelectChoiceSize + global.levelSelectSpacing));
+row = int64((mouse_y - yOffset)/(global.levelSelectChoiceSize + global.levelSelectSpacing));
+
+levelChoice = (global.levelSelectColumns * row) + (column + 1);
+
+if(mouse_check_button_released(mb_left)) {
+    scr_open_level(levelChoice);
 }
+
+
