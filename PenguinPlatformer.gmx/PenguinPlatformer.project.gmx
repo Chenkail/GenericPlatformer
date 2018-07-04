@@ -58,7 +58,7 @@
     <objects name="Control Objects">
       <object>objects\obj_master</object>
       <objects name="Menus">
-        <object>objects\obj_title</object>
+        <object>objects\obj_main_menu</object>
         <object>objects\obj_level_select</object>
       </objects>
     </objects>
@@ -78,7 +78,7 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
-      <room>rooms\rm_title</room>
+      <room>rooms\rm_main_menu</room>
       <room>rooms\rm_level_select</room>
     </rooms>
     <rooms name="Test Rooms">
