@@ -92,6 +92,11 @@ global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.level
 global.stepsPerSecond = 60;
 
 ///Player
+//Define default player sprite size
+//Do not touch!
+global.playerWidth = 64;
+global.playerHeight = 64;
+
 //Set animation speeds for various animations
 global.playerDefaultImageSpeedIdle = 0.06;
 global.playerDefaultImageSpeedWalk = 0.14;
@@ -102,9 +107,6 @@ global.playerBaseImageSpeedIdle = global.playerDefaultImageSpeedIdle;
 global.playerBaseImageSpeedWalk = global.playerDefaultImageSpeedWalk;
 global.playerImageSpeedIdle = global.playerBaseImageSpeedIdle;
 global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk;
-
-//Set default player sprite size
-global.playerSize = 64;
 
 //Set default player speed
 global.playerDefaultSpeed = 5;
@@ -124,11 +126,6 @@ global.blockSpeedIce = 1.6;
 global.blockImageSpeedWood = global.blockSpeedWood;
 global.blockImageSpeedIce = global.blockSpeedIce;
 
-//Constants for different block sizes
-global.blockSizeSmall = 32;
-global.blockSizeMedium = 64;
-global.blockSizeLarge = 128;
-
 ///Jumping and falling
 //Should jump be enabled at start of game?
 global.canJump = true;
@@ -140,7 +137,7 @@ global.playerJumpHeightConstant = 10;
 
 //Defining global variables for player jump
 //Do not touch!
-global.playerDefaultJumpHeight = global.playerSize + global.playerJumpHeightConstant;
+global.playerDefaultJumpHeight = global.playerHeight + global.playerJumpHeightConstant;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
 
 

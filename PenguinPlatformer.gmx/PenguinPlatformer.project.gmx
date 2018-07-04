@@ -44,9 +44,9 @@
       <script>scripts\scr_player_block_collisions.gml</script>
       <script>scripts\scr_block_speed_change.gml</script>
       <scripts name="Set Block Size">
-        <script>scripts\scr_block_size_small.gml</script>
-        <script>scripts\scr_block_size_medium.gml</script>
-        <script>scripts\scr_block_size_large.gml</script>
+        <script>scripts\scr_block_size_32x32.gml</script>
+        <script>scripts\scr_block_size_64x64.gml</script>
+        <script>scripts\scr_block_size_128x128.gml</script>
       </scripts>
     </scripts>
     <scripts name="Menus">

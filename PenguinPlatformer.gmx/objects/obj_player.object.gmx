@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = global.playerImageSpeedIdle;
+
 </string>
           </argument>
         </arguments>
@@ -74,7 +75,7 @@
             <string>///Fall
 if ((vspeed &lt; 0)) {
     vspeed += global.gravity;
-} else if (place_free(x, y + global.playerSize/2 + 1)) {
+} else if (place_free(x, y + global.playerHeight/2 + 1)) {
     vspeed = min(vspeed + global.gravity, global.maxFallSpeed);
 }
 </string>

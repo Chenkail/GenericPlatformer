@@ -39,7 +39,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_block_size_medium</script>
+            <script>scr_block_size_64x64</script>
           </argument>
           <argument>
             <kind>0</kind>
