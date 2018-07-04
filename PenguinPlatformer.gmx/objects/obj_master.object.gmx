@@ -58,7 +58,8 @@ global.levelSelectTitle = "Level Select";
 global.levelSelectBoxColor = c_white;
 global.levelSelectChoiceColor = c_black;
 global.levelSelectChoiceFont = fnt_title;
-global.levelSelectChoiceFontColor = c_white;
+global.levelSelectChoiceOutline = true;
+global.levelSelectChoiceFontColor = c_black;
 
 //Constants calculation for drawing
 //Do not touch!

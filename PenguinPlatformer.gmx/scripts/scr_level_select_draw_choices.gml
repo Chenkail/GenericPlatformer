@@ -41,7 +41,7 @@ for (i = 0; i < global.levelSelectRows; i++) {
                                     cornerRadius,
                                     global.levelSelectChoiceColor,
                                     global.levelSelectChoiceColor,
-                                    false);
+                                    global.levelSelectChoiceOutline);
         
         //Draw level label                            
         draw_text(boxX, boxY, string(currentLevelLabel));

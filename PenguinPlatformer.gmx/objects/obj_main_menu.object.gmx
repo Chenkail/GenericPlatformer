@@ -74,6 +74,7 @@ else
         scr_open_level_select();
     }
 }
+
 </string>
           </argument>
         </arguments>
