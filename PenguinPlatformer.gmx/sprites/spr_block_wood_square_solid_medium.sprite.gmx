@@ -20,6 +20,6 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\spr_block_wood_medium_0.png</frame>
+    <frame index="0">images\spr_block_wood_square_solid_medium_0.png</frame>
   </frames>
 </sprite>

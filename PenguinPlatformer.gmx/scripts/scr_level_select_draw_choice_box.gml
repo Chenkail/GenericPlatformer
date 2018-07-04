@@ -4,10 +4,10 @@
  */
 
 //Define variables
-boxX1 = argument0 - global.levelSelectChoiceSize/2;
-boxY1 = argument1 - global.levelSelectChoiceSize/2;
-boxX2 = boxX1 + global.levelSelectChoiceSize;
-boxY2 = boxY1 + global.levelSelectChoiceSize;
+boxX1 = argument0 - global.levelSelectChoiceWidth/2;
+boxY1 = argument1 - global.levelSelectChoiceHeight/2;
+boxX2 = boxX1 + global.levelSelectChoiceWidth;
+boxY2 = boxY1 + global.levelSelectChoiceHeight;
 currentLevelLabel = argument2;
 
 //Set up text for level labels
