@@ -75,10 +75,11 @@
     <object>objects\obj_player</object>
     <objects name="Control Objects">
       <object>objects\obj_master</object>
-      <objects name="Menus">
-        <object>objects\obj_menu_main</object>
-        <object>objects\obj_menu_level_select</object>
-      </objects>
+      <object>objects\obj_score</object>
+    </objects>
+    <objects name="Menus">
+      <object>objects\obj_menu_main</object>
+      <object>objects\obj_menu_level_select</object>
     </objects>
     <objects name="Blocks">
       <object>objects\obj_block_parent</object>
@@ -93,7 +94,9 @@
         <object>objects\obj_block_wood_medium</object>
       </objects>
     </objects>
-    <object>objects\obj_collectible_fish</object>
+    <objects name="Collectibles">
+      <object>objects\obj_collectible_fish</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
@@ -101,6 +104,7 @@
       <room>rooms\rm_level_select</room>
     </rooms>
     <rooms name="Levels">
+      <room>rooms\rm_level_blank</room>
       <room>rooms\rm_level_1</room>
       <room>rooms\rm_level_2</room>
       <room>rooms\rm_level_3</room>

@@ -67,6 +67,7 @@
     <instance objName="obj_block_ice_medium" x="624" y="432" name="inst_831068E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ice_medium" x="688" y="432" name="inst_8D9EB21D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ice_medium" x="752" y="432" name="inst_377A6628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_score" x="976" y="16" name="inst_F0ED1A4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
