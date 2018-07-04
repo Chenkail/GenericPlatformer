@@ -39,14 +39,25 @@ global.mainMenuButtonWidth = 100;
 global.mainMenuButtonHeight = 50;
 
 ///Level select menu
+//Number of levels to display
 global.levelSelectRows = 2;
 global.levelSelectColumns = 4;
+
+//Size constants
 global.levelSelectChoiceSize = 200;
 global.levelSelectSpacing = 25;
 global.levelSelectBoxBuffer = 25;
+
+//Title
 global.levelSelectTitleY = 100;
+global.levelSelectTitleFont = fnt_title;
+global.levelSelectTitle = "Level Select";
+
+//Colors
 global.levelSelectBoxColor = c_white;
 global.levelSelectChoiceColor = c_black;
+global.levelSelectChoiceFont = fnt_title;
+global.levelSelectChoiceFontColor = c_white;
 
 //Constants calculation for drawing
 //Do not touch!
@@ -54,11 +65,11 @@ global.levelSelectBoxHeightOffset = global.levelSelectTitleY;
 global.levelSelectBoxWidth =
     global.levelSelectColumns * global.levelSelectChoiceSize //Total width of option boxes
     + (global.levelSelectColumns - 1) * global.levelSelectSpacing //Total width of spacing between boxes
-    + 2 *  global.levelSelectBoxBuffer //Buffer spacing on both sides
+    + 2 *  global.levelSelectBoxBuffer; //Buffer spacing on both sides
 global.levelSelectBoxHeight =
 global.levelSelectRows * global.levelSelectChoiceSize //Total height of option boxes
     + (global.levelSelectRows - 1) * global.levelSelectSpacing //Total height of spacing between boxes
-    + 2 *  global.levelSelectBoxBuffer //Buffer spacing on top/bottom
+    + 2 *  global.levelSelectBoxBuffer; //Buffer spacing on top/bottom
 global.levelSelectBoxX1 = room_width/2 - global.levelSelectBoxWidth/2; //Left edge
 global.levelSelectBoxY1 = room_height/2 - global.levelSelectBoxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
 global.levelSelectBoxX2 = global.levelSelectBoxX1 + global.levelSelectBoxWidth; //Right edge

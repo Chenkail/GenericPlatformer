@@ -1,3 +1,7 @@
+//Set font for level labels
+draw_set_font(global.levelSelectChoiceFont);
+draw_set_color(global.levelSelectChoiceFontColor);
+
 //Define starting x and y
 firstBoxX = global.levelSelectBoxX1
             + global.levelSelectBoxBuffer
