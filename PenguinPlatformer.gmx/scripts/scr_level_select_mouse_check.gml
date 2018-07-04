@@ -1,4 +1,4 @@
-xOffset = room_width/2 - global.levelSelectBoxWidth/2 + global.levelSelectBoxBuffer;
+xOffset = global.levelSelectBoxX1 + global.levelSelectBoxBuffer;
 yOffset = global.levelSelectBoxY1 + global.levelSelectBoxBuffer;
 
 column = int64((mouse_x - xOffset)/(global.levelSelectChoiceWidth + global.levelSelectSpacing));
