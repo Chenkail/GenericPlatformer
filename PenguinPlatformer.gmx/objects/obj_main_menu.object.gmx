@@ -60,7 +60,7 @@ buttonBottom = room_height/2 + global.mainMenuButtonHeight/2;
 mouseOver = point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), buttonLeft, buttonTop, buttonRight, buttonBottom);
 
 //Button moused over vs pressed
-if !mouseOver
+if (!mouseOver)
     buttonPressed = false;
 else
 {
