@@ -40,3 +40,10 @@ Rooms
         the master object should be added first, as it creates all of the constant variables used in the game. If other objects
         were added first, the order can be changed by opening the room's properties and clicking on "Instance Order". The
         instance for the score object should then be moved to the top.
+
+Scripts
+    All scripts should start with a comment which defines the arguments that it takes e.g.
+    /* argument0: x coordinate
+     * argument1: y coordinate
+     * argument2: Color
+     */
