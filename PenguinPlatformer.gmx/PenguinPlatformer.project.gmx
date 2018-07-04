@@ -48,9 +48,13 @@
       </scripts>
     </scripts>
     <scripts name="Menus">
-      <script>scripts\scr_level_select_draw_choices.gml</script>
+      <scripts name="Main Menu">
+        <script>scripts\scr_draw_play_button.gml</script>
+      </scripts>
+      <scripts name="Level Select">
+        <script>scripts\scr_level_select_draw_choices.gml</script>
+      </scripts>
     </scripts>
-    <script>scripts\scr_draw_play_button.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
