@@ -51,6 +51,7 @@ global.levelSelectColumns = 4;
 global.levelSelectChoiceSize = 200;
 global.levelSelectSpacing = 25;
 global.levelSelectBoxBuffer = 25;
+global.levelSelectChoiceCornerRadius = global.levelSelectChoiceSize/4;
 
 //Title
 global.levelSelectTitle = "Level Select";

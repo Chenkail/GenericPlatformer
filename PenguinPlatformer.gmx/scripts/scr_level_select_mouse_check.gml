@@ -20,8 +20,8 @@ var i;
 var j;
 for (i = 0; i < global.levelSelectRows; i++) {
     for (j = 0; j < global.levelSelectColumns; j++) {
-        //Draw choice box
-        scr_level_select_draw_choice_box(boxX, boxY, currentLevelLabel);
+        //Test box for click
+        
         
         //Move to next box
         boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
