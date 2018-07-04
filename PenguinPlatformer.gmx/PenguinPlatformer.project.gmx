@@ -57,6 +57,7 @@
         <script>scripts\scr_level_select_draw_background_box.gml</script>
         <script>scripts\scr_level_select_draw_choices.gml</script>
       </scripts>
+      <script>scripts\scr_button_push_test.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
