@@ -15,7 +15,7 @@ switch (argument0) {
         level = rm_level_4;
         break;
     default:
-        level = rm_main_menu;
+        level = rm_level_select;
 }
 
 room_goto(level);
