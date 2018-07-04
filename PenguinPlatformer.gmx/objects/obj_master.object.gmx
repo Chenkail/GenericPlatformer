@@ -30,13 +30,17 @@
 ///Main Menu
 //Game name in title screen
 global.gameTitle = "Penguin Platformer";
-
-//Game name font
+global.gameTitleY = room_height/5;
 global.gameTitleFont = fnt_title;
+global.gameTitleFontColor = c_white;
 
 //Button size
 global.mainMenuButtonWidth = 100;
 global.mainMenuButtonHeight = 50;
+
+//Play button
+global.playButtonX = room_width/2;
+global.playButtonY = room_height/2;
 
 ///Level select menu
 //Number of levels to display
@@ -49,10 +53,10 @@ global.levelSelectSpacing = 25;
 global.levelSelectBoxBuffer = 25;
 
 //Title
+global.levelSelectTitle = "Level Select";
 global.levelSelectTitleY = 100;
 global.levelSelectTitleFont = fnt_title;
 global.levelSelectTitleFontColor = c_white;
-global.levelSelectTitle = "Level Select";
 
 //Box colors
 global.levelSelectBoxColor = c_white;
@@ -86,7 +90,8 @@ global.stepsPerSecond = 60;
 //Set animation speeds for various animations
 global.playerDefaultImageSpeedIdle = 0.06;
 global.playerDefaultImageSpeedWalk = 0.14;
-//Defining global variables
+
+//Defining global variables for image speed
 //Do not touch!
 global.playerBaseImageSpeedIdle = global.playerDefaultImageSpeedIdle;
 global.playerBaseImageSpeedWalk = global.playerDefaultImageSpeedWalk;
@@ -98,7 +103,8 @@ global.playerSize = 64;
 
 //Set default player speed
 global.playerDefaultSpeed = 5;
-//Defining global variables
+
+//Defining global variables for player speed
 //Do not touch!
 global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
@@ -110,7 +116,6 @@ global.blockSpeedWood = 1;
 global.blockSpeedIce = 1.6;
 
 //Image speed constants for different block types
-//Do not touch!
 global.blockImageSpeedWood = global.blockSpeedWood;
 global.blockImageSpeedIce = global.blockSpeedIce;
 
@@ -120,14 +125,15 @@ global.blockSizeMedium = 64;
 global.blockSizeLarge = 128;
 
 ///Jumping and falling
-//Enable first jump
+//Should jump be enabled at start of game?
 global.canJump = true;
 
 //Set jump constants
 global.playerJumpTime = 0.4;
 global.jumpCheckConstant = 1;
 global.playerJumpHeightConstant = 10;
-//Defining global variables
+
+//Defining global variables for player jump
 //Do not touch!
 global.playerDefaultJumpHeight = global.playerSize + global.playerJumpHeightConstant;
 global.playerJumpHeight = global.playerDefaultJumpHeight;

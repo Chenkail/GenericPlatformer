@@ -1,1 +1,1 @@
-draw_sprite(spr_play_button, 0, room_width/2 - global.mainMenuButtonWidth/2, room_height/2 - global.mainMenuButtonHeight/2);
+draw_sprite(spr_play_button, 0, global.playButtonX - global.mainMenuButtonWidth/2, global.playButtonY - global.mainMenuButtonHeight/2);

@@ -29,11 +29,6 @@
 buttonPressed = false;
 mouseOver = false;
 
-buttonLeft = room_width/2 - global.mainMenuButtonWidth/2;
-buttonRight = room_width/2 + global.mainMenuButtonWidth/2;
-buttonTop = room_height/2 - global.mainMenuButtonHeight/2;
-buttonBottom = room_height/2 + global.mainMenuButtonHeight/2;
-
 </string>
           </argument>
         </arguments>
@@ -56,25 +51,8 @@ buttonBottom = room_height/2 + global.mainMenuButtonHeight/2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Test if mouse is inside button rectangle
-mouseOver = point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), buttonLeft, buttonTop, buttonRight, buttonBottom);
-
-//Button moused over vs pressed
-if (!mouseOver)
-    buttonPressed = false;
-else
-{
-    if mouse_check_button_pressed(mb_left)
-    {
-        buttonPressed = true;
-    }
-    else if (mouse_check_button_released(mb_left) and buttonPressed)
-    {
-        //Go to level select
-        scr_open_level_select();
-    }
-}
-
+            <string>//Run button test script
+scr_button_push_test(global.playButtonX, global.playButtonY, global.mainMenuButtonWidth, global.mainMenuButtonHeight);
 </string>
           </argument>
         </arguments>
@@ -102,7 +80,7 @@ else
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_font(global.gameTitleFont);
-draw_set_color(c_white);
+draw_set_color(global.gameTitleFontColor);
 draw_text(room_width/2, room_height/5, global.gameTitle);
 
 </string>
