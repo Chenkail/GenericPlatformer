@@ -1,4 +1,4 @@
-//Set up text for level lables
+//Set up text for level labels
 draw_set_color(global.levelSelectChoiceFontColor);
 draw_set_font(global.levelSelectChoiceFont);
 draw_set_halign(fa_center);
