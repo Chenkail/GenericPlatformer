@@ -14,6 +14,19 @@ switch (argument0) {
     case 4:
         level = rm_level_4;
         break;
+    case 5:
+        level = rm_level_5;
+        break;
+    case 6:
+        level = rm_level_6;
+        break;
+    case 7:
+        level = rm_level_7;
+        break;
+    case 8:
+        level = rm_level_8;
+        break;
+
     default:
         level = rm_level_select;
 }

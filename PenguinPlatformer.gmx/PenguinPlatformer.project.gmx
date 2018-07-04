@@ -110,6 +110,9 @@
       <room>rooms\rm_level_3</room>
       <room>rooms\rm_level_4</room>
       <room>rooms\rm_level_5</room>
+      <room>rooms\rm_level_6</room>
+      <room>rooms\rm_level_7</room>
+      <room>rooms\rm_level_8</room>
     </rooms>
   </rooms>
   <help>
