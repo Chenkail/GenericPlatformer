@@ -74,8 +74,8 @@
     <objects name="Control Objects">
       <object>objects\obj_master</object>
       <objects name="Menus">
-        <object>objects\obj_main_menu</object>
-        <object>objects\obj_level_select</object>
+        <object>objects\obj_menu_main</object>
+        <object>objects\obj_menu_level_select</object>
       </objects>
     </objects>
     <objects name="Blocks">
