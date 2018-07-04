@@ -34,6 +34,9 @@
     <sprites name="Buttons">
       <sprite>sprites\spr_play_button</sprite>
     </sprites>
+    <sprites name="Collectibles">
+      <sprite>sprites\spr_collectible_fish</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -90,6 +93,7 @@
         <object>objects\obj_block_wood_medium</object>
       </objects>
     </objects>
+    <object>objects\obj_collectible_fish</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
@@ -101,11 +105,7 @@
       <room>rooms\rm_level_2</room>
       <room>rooms\rm_level_3</room>
       <room>rooms\rm_level_4</room>
-    </rooms>
-    <rooms name="Test Rooms">
-      <room>rooms\rm_demo</room>
-      <room>rooms\rm_test</room>
-      <room>rooms\rm_slide_test</room>
+      <room>rooms\rm_level_5</room>
     </rooms>
   </rooms>
   <help>
