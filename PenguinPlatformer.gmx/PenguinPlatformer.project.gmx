@@ -21,6 +21,8 @@
     <sprites name="Blocks">
       <sprites name="Ice Blocks">
         <sprite>sprites\spr_block_ice_small</sprite>
+        <sprite>sprites\spr_block_ice_small_old</sprite>
+        <sprite>sprites\spr_block_ice_medium_old</sprite>
         <sprite>sprites\spr_block_ice_medium</sprite>
       </sprites>
       <sprites name="Wood Blocks">
@@ -51,7 +53,7 @@
       <scripts name="Main Menu">
         <script>scripts\scr_draw_play_button.gml</script>
         <script>scripts\scr_open_level_select.gml</script>
-        <script>scripts\scr_main_menu_test_play_button.gml</script>
+        <script>scripts\scr_main_menu_check_play_button.gml</script>
       </scripts>
       <scripts name="Level Select">
         <script>scripts\scr_level_select_draw_title.gml</script>
@@ -95,6 +97,9 @@
     <rooms name="Menus">
       <room>rooms\rm_main_menu</room>
       <room>rooms\rm_level_select</room>
+    </rooms>
+    <rooms name="Levels">
+      <room>rooms\rm_level_1</room>
     </rooms>
     <rooms name="Test Rooms">
       <room>rooms\rm_demo</room>

@@ -51,7 +51,7 @@ mouseOver = false;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_main_menu_test_play_button</script>
+            <script>scr_main_menu_check_play_button</script>
           </argument>
           <argument>
             <kind>0</kind>
