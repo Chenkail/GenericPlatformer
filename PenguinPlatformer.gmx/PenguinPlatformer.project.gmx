@@ -50,6 +50,7 @@
     <scripts name="Menus">
       <scripts name="Main Menu">
         <script>scripts\scr_draw_play_button.gml</script>
+        <script>scripts\scr_open_level_select.gml</script>
       </scripts>
       <scripts name="Level Select">
         <script>scripts\scr_level_select_draw_choices.gml</script>

@@ -71,7 +71,7 @@ else
     else if (mouse_check_button_released(mb_left) and buttonPressed)
     {
         //Go to level select
-        room_goto(rm_level_select);
+        scr_open_level_select();
     }
 }
 </string>

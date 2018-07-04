@@ -1,6 +1,12 @@
-//Set font for level labels
-draw_set_font(global.levelSelectChoiceFont);
+//Set up text for level lables
 draw_set_color(global.levelSelectChoiceFontColor);
+draw_set_font(global.levelSelectChoiceFont);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+//Level numbers
+firstLevelNumber = (global.levelSelectPage - 1) * global.levelSelectRows * global.levelSelectColumns + 1;
+currentLevelNumber = firstLevelNumber;
 
 //Define starting x and y
 firstBoxX = global.levelSelectBoxX1
@@ -36,7 +42,13 @@ for (i = 0; i < global.levelSelectRows; i++) {
                                     global.levelSelectChoiceColor,
                                     global.levelSelectChoiceColor,
                                     false);
+        
+        //Draw level label                            
+        draw_text(boxX, boxY, string(currentLevelNumber));
+        
+        //Move to next box
         boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
+        currentLevelNumber++;
     }
     
     //Move to next row
