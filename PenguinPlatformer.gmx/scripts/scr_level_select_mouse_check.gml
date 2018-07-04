@@ -21,11 +21,14 @@ var j;
 for (i = 0; i < global.levelSelectRows; i++) {
     for (j = 0; j < global.levelSelectColumns; j++) {
         //Test box for click
-        buttonPushed = scr_is_button_pushed(boxX, boxY, global.levelSelectChoiceSize, global.levelSelectChoiceSize);
-        
-        //Move to next box
-        boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
-        currentLevelLabel++;
+        global.buttonPushed = scr_is_button_pushed(boxX, boxY, global.levelSelectChoiceSize, global.levelSelectChoiceSize);
+        if (global.buttonPushed) {
+            scr_open_level(currentLevelLabel);
+        } else {
+            //Move to next box
+            boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
+            currentLevelLabel++;
+        }
     }
     
     //Move to next row
