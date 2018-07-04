@@ -47,6 +47,9 @@
         <script>scripts\scr_block_size_large.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Menus">
+      <script>scripts\scr_level_select_draw_choices.gml</script>
+    </scripts>
     <script>scripts\scr_draw_play_button.gml</script>
   </scripts>
   <fonts name="fonts">

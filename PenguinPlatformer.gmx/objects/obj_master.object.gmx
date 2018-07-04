@@ -44,8 +44,9 @@ global.levelSelectColumns = 4;
 global.levelSelectChoiceSize = 200;
 global.levelSelectSpacing = 20;
 global.levelSelectBoxBuffer = 20;
-global.levelSelectTitleY = 40;
+global.levelSelectTitleY = 100;
 global.levelSelectBoxColor = c_white;
+global.levelSelectChoiceColor = c_black;
 
 //Constants calculation for drawing
 //Do not touch!
