@@ -38,13 +38,18 @@ global.gameTitleFont = fnt_title;
 global.mainMenuButtonWidth = 100;
 global.mainMenuButtonHeight = 50;
 
-///Level select
-//Arranging the choices
+///Level select menu
 global.levelSelectRows = 2;
 global.levelSelectColumns = 4;
-global.levelSelectChoiceSize = 100;
+global.levelSelectChoiceSize = 200;
 global.levelSelectSpacing = 20;
 global.levelSelectBoxBuffer = 20;
+global.levelSelectTitleY = 40;
+global.levelSelectBoxColor = c_white;
+
+//Constants calculation for drawing
+//Do not touch!
+global.levelSelectBoxHeightOffset = global.levelSelectTitleY;
 global.levelSelectBoxWidth =
     global.levelSelectColumns * global.levelSelectChoiceSize //Total width of option boxes
     + (global.levelSelectColumns - 1) * global.levelSelectSpacing //Total width of spacing between boxes
@@ -53,7 +58,11 @@ global.levelSelectBoxHeight =
 global.levelSelectRows * global.levelSelectChoiceSize //Total height of option boxes
     + (global.levelSelectRows - 1) * global.levelSelectSpacing //Total height of spacing between boxes
     + 2 *  global.levelSelectBoxBuffer //Buffer spacing on top/bottom
-global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.levelSelectBoxHeight)/4;
+global.levelSelectBoxX1 = room_width/2 - global.levelSelectBoxWidth/2; //Left edge
+global.levelSelectBoxY1 = room_height/2 - global.levelSelectBoxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
+global.levelSelectBoxX2 = global.levelSelectBoxX1 + global.levelSelectBoxWidth; //Right edge
+global.levelSelectBoxY2 = global.levelSelectBoxY1 + global.levelSelectBoxHeight; //Bottom edge
+global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.levelSelectBoxHeight)/4; //Corner radius dependant on larger dimension
 
 ///Other Control Constants
 //Define game steps per second
@@ -63,6 +72,8 @@ global.stepsPerSecond = 60;
 //Set animation speeds for various animations
 global.playerDefaultImageSpeedIdle = 0.06;
 global.playerDefaultImageSpeedWalk = 0.14;
+//Defining global variables
+//Do not touch!
 global.playerBaseImageSpeedIdle = global.playerDefaultImageSpeedIdle;
 global.playerBaseImageSpeedWalk = global.playerDefaultImageSpeedWalk;
 global.playerImageSpeedIdle = global.playerBaseImageSpeedIdle;
@@ -73,6 +84,8 @@ global.playerSize = 64;
 
 //Set default player speed
 global.playerDefaultSpeed = 5;
+//Defining global variables
+//Do not touch!
 global.playerBaseSpeed = global.playerDefaultSpeed;
 global.playerSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
@@ -83,6 +96,7 @@ global.blockSpeedWood = 1;
 global.blockSpeedIce = 1.6;
 
 //Image speed constants for different block types
+//Do not touch!
 global.blockImageSpeedWood = global.blockSpeedWood;
 global.blockImageSpeedIce = global.blockSpeedIce;
 
@@ -96,11 +110,14 @@ global.blockSizeLarge = 128;
 global.canJump = true;
 
 //Set jump constants
-global.playerJumpHeightConstant = 10;
-global.playerDefaultJumpHeight = global.playerSize + global.playerJumpHeightConstant;
-global.playerJumpHeight = global.playerDefaultJumpHeight;
 global.playerJumpTime = 0.4;
 global.jumpCheckConstant = 1;
+global.playerJumpHeightConstant = 10;
+//Defining global variables
+//Do not touch!
+global.playerDefaultJumpHeight = global.playerSize + global.playerJumpHeightConstant;
+global.playerJumpHeight = global.playerDefaultJumpHeight;
+
 
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 6;

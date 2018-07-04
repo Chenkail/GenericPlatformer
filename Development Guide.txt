@@ -13,16 +13,26 @@ Naming Conventions
         All variable names should be written in camelcase, e.g. playerJumpHeight
 
 Code
-    All code blocks should have comments describing their purpose, e.g. //Set player walk speed
+    - All code blocks should have comments describing their purpose, e.g. //Set player walk speed
+    - Code which extends far beyond the edge of the screen should be broken up with line breaks,
+        with tabs inserted to show that the code is a single block
 
 Objects
-
-    Objects should be organized into folders based on type
-    Objects should use parents when possible to avoid duplicate code
+    Master Object
+            - The master object should only be used for defining game constants, and all game constants should be defined in
+                the master object's create event code
+            - The variables can be broken into groups using comment lines and line breaks
+            - In general, global variables which are assigned an explicit numerical value can be modified, whereas variables
+                with expressions involving calculations and/or other global variables should not be modified
+            - Variables should not be modified should be labeled with a comment reading "//Do not touch!" minus the quotation marks
+            - The do not touch flag applies until the next blank line
+    Other
+        Objects should be organized into folders based on type
+        Objects should use parents when possible to avoid duplicate code
 
 Rooms
     Room Setup
-        - All rooms should be set to a speed of 60 for consistency of animations and code.
+        - All rooms should be set to a speed of 60 for consistency of animations and code
         - All rooms should include the master object, which creates all the constants
         - Objects without sprites which are used in the room should be placed together in the top right corner without overlapping
     Instances
