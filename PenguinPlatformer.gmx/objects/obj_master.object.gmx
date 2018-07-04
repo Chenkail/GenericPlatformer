@@ -51,9 +51,10 @@ global.levelSelectBoxBuffer = 25;
 //Title
 global.levelSelectTitleY = 100;
 global.levelSelectTitleFont = fnt_title;
+global.levelSelectTitleFontColor = c_white;
 global.levelSelectTitle = "Level Select";
 
-//Colors
+//Box colors
 global.levelSelectBoxColor = c_white;
 global.levelSelectChoiceColor = c_black;
 global.levelSelectChoiceFont = fnt_title;

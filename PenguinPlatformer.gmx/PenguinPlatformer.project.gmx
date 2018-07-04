@@ -53,6 +53,8 @@
         <script>scripts\scr_open_level_select.gml</script>
       </scripts>
       <scripts name="Level Select">
+        <script>scripts\scr_level_select_draw_title.gml</script>
+        <script>scripts\scr_level_select_draw_background_box.gml</script>
         <script>scripts\scr_level_select_draw_choices.gml</script>
       </scripts>
     </scripts>

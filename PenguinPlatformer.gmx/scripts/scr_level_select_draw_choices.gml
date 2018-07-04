@@ -6,7 +6,7 @@ draw_set_valign(fa_middle);
 
 //Level numbers
 firstLevelNumber = (global.levelSelectPage - 1) * global.levelSelectRows * global.levelSelectColumns + 1;
-currentLevelNumber = firstLevelNumber;
+currentLevelLabel = firstLevelNumber;
 
 //Define starting x and y
 firstBoxX = global.levelSelectBoxX1
@@ -44,11 +44,11 @@ for (i = 0; i < global.levelSelectRows; i++) {
                                     false);
         
         //Draw level label                            
-        draw_text(boxX, boxY, string(currentLevelNumber));
+        draw_text(boxX, boxY, string(currentLevelLabel));
         
         //Move to next box
         boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
-        currentLevelNumber++;
+        currentLevelLabel++;
     }
     
     //Move to next row
