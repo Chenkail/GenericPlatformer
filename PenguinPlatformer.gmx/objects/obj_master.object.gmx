@@ -28,6 +28,9 @@
             <string>///Set constants for game
 
 //Main Menu
+//Game name in title screen
+global.gameTitle = "Penguin Platformer";
+
 //Button size
 global.mainMenuButtonWidth = 100;
 global.mainMenuButtonHeight = 50;
