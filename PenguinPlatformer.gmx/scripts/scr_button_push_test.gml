@@ -13,19 +13,14 @@ buttonBottom = buttonTop + argument3;
 mouseOver = point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), buttonLeft, buttonTop, buttonRight, buttonBottom);
 
 //Button moused over vs pressed
-if (!mouseOver)
-    buttonPressed = false;
-else
-{
-    if mouse_check_button_pressed(mb_left)
-    {
-        buttonPressed = true;
-    }
-    else if (mouse_check_button_released(mb_left) and buttonPressed)
-    {
-        //Go to level select
-        scr_open_level_select();
-    }
+if (!mouseOver) {
+    global.buttonPressed = false;
+    return false;
+} else if (mouse_check_button_pressed(mb_left)) {
+        global.buttonPressed = true;
+        return false;
+} else if (mouse_check_button_released(mb_left) and global.buttonPressed){
+        return true;
 }
 
 

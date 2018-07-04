@@ -21,7 +21,7 @@ var j;
 for (i = 0; i < global.levelSelectRows; i++) {
     for (j = 0; j < global.levelSelectColumns; j++) {
         //Test box for click
-        
+        buttonPushed = scr_button_push_test(boxX, boxY, global.levelSelectChoiceSize, global.levelSelectChoiceSize);
         
         //Move to next box
         boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;

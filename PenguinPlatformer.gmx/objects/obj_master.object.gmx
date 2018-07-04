@@ -25,9 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set constants for game
+            <string>///Set global variables for game
 
 ///Main Menu
+//Initialize button pressed constant
+//Do not touch!
+global.buttonPressed = false;
+
 //Game name in title screen
 global.gameTitle = "Penguin Platformer";
 global.gameTitleY = room_height/5;
