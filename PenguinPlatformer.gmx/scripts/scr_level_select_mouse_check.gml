@@ -10,8 +10,6 @@ firstBoxX = global.levelSelectBoxX1
 firstBoxY = global.levelSelectBoxY1
             + global.levelSelectBoxBuffer
             + global.levelSelectChoiceSize/2;
-
-cornerRadius = global.levelSelectChoiceSize/4;
             
 boxX = firstBoxX;
 boxY = firstBoxY;
@@ -24,6 +22,7 @@ for (i = 0; i < global.levelSelectRows; i++) {
         global.buttonPushed = scr_is_button_pushed(boxX, boxY, global.levelSelectChoiceSize, global.levelSelectChoiceSize);
         if (global.buttonPushed) {
             scr_open_level(currentLevelLabel);
+            break;
         } else {
             //Move to next box
             boxX = boxX + global.levelSelectChoiceSize + global.levelSelectSpacing;
