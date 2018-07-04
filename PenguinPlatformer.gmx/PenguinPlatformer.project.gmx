@@ -59,7 +59,6 @@
         <script>scripts\scr_level_select_draw_choices.gml</script>
         <script>scripts\scr_level_select_draw_choice_box.gml</script>
         <script>scripts\scr_level_select_mouse_check.gml</script>
-        <script>scripts\scr_level_select_highlight.gml</script>
         <script>scripts\scr_open_level.gml</script>
       </scripts>
       <script>scripts\scr_is_button_pushed.gml</script>

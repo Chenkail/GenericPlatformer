@@ -6,8 +6,6 @@ row = int64((mouse_y - yOffset)/(global.levelSelectChoiceHeight + global.levelSe
 
 levelChoice = (global.levelSelectColumns * row) + (column + 1);
 
-scr_level_select_highlight(column, row);
-
 if(mouse_check_button_released(mb_left)) {
     scr_open_level(levelChoice);
 }
