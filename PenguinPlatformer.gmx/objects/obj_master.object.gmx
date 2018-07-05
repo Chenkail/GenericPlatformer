@@ -131,6 +131,10 @@ global.blockSpeedIce = 1.6;
 global.blockImageSpeedWood = global.blockSpeedWood;
 global.blockImageSpeedIce = global.blockSpeedIce;
 
+//Defining global variables for player image speed
+//Do not touch!
+global.blockImageSpeedModifier = global.blockImageSpeedWood;
+
 ///Jumping and falling
 //Should jump be enabled at start of game?
 global.canJump = true;
