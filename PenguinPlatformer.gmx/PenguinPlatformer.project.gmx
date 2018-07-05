@@ -56,6 +56,7 @@
     <sprites name="Collectibles">
       <sprite>sprites\spr_collectible_fish</sprite>
     </sprites>
+    <sprite>sprites\spr_door</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -92,6 +93,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_door</object>
     <objects name="Control Objects">
       <object>objects\obj_master</object>
       <object>objects\obj_score</object>
