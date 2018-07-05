@@ -50,9 +50,6 @@
         <sprite>sprites\spr_block_wood_square_solid_medium</sprite>
       </sprites>
     </sprites>
-    <sprites name="Buttons">
-      <sprite>sprites\spr_play_button</sprite>
-    </sprites>
     <sprites name="Collectibles">
       <sprite>sprites\spr_collectible_fish</sprite>
     </sprites>
