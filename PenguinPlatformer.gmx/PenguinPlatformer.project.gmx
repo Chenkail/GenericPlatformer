@@ -72,7 +72,7 @@
     </scripts>
     <scripts name="Menus">
       <scripts name="Main Menu">
-        <script>scripts\scr_draw_play_button.gml</script>
+        <script>scripts\scr_draw_main_menu.gml</script>
         <script>scripts\scr_open_level_select.gml</script>
         <script>scripts\scr_main_menu_check_play_button.gml</script>
       </scripts>
