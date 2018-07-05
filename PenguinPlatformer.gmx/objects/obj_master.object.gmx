@@ -71,7 +71,7 @@ global.levelSelectTitleFontColor = c_white; //Level select title font color
 global.levelSelectBoxColor = c_white; //Color of box around level select choices
 global.levelSelectChoiceColor = c_black; //Color of level select option boxes
 global.levelSelectChoiceOutline = true; //Should the level select option box be just an outline (true) or completely filled (false)
-global.levelSelectChoiceFont = fnt_title; //Font for options in level select menu
+global.levelSelectChoiceFont = fnt_level_select_buttons; //Font for options in level select menu
 global.levelSelectChoiceFontColor = c_black; //Font color for options in level select menu
 
 //Constants calculation for drawing

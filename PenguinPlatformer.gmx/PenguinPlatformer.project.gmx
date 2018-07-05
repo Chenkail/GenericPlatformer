@@ -88,6 +88,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
     <font>fonts\fnt_menu_buttons</font>
+    <font>fonts\fnt_level_select_buttons</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -130,6 +131,7 @@
       <room>rooms\rm_level_blank</room>
       <room>rooms\rm_level_1</room>
       <room>rooms\rm_level_2</room>
+      <room>rooms\rm_game_complete</room>
     </rooms>
   </rooms>
   <help>

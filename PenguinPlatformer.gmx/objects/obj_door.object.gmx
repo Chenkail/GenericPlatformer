@@ -36,13 +36,20 @@ playerInDoor = false;
 playerInDoor = collision_rectangle(doorX1, doorY1, doorX2, doorY2, obj_player, false, true);
 
 if (playerInDoor) {
-    if (keyboard_check_pressed(vk_down)) {
+    if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord('s'))) {
         //Mark level as complete in ini file
         ini_open("score.ini");
         ini_write_real("Levels", global.currentLevel, 1);
         ini_close();
         
-        scr_fade_to_room(room_next(room), global.doorFadeColor);
+        if (room != rm_game_complete) {
+            //Go to next level if not on game complete screen
+            nextRoom = room_next(room);
+        } else {
+            //If game complete return to level select
+            nextRoom = rm_level_select;
+        }
+        scr_fade_to_room(nextRoom, global.doorFadeColor);
     }
 }
 </string>
