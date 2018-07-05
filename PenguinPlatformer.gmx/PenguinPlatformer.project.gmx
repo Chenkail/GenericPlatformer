@@ -121,6 +121,7 @@
     <objects name="Effects">
       <object>objects\obj_fade_to_room</object>
     </objects>
+    <object>objects\obj_game_complete</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">

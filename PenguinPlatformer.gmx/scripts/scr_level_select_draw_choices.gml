@@ -1,3 +1,4 @@
+///Constants for drawing choices
 //Level numbers
 firstLevelNumber = (global.levelSelectPage - 1) * global.levelSelectRows * global.levelSelectColumns + 1;
 currentLevelLabel = firstLevelNumber;
@@ -15,7 +16,8 @@ cornerRadius = global.levelSelectChoiceCornerRadius;
             
 boxX = firstBoxX;
 boxY = firstBoxY;
-            
+
+//Draw using for loops
 var row;
 var column;
 for (row = 0; row < global.levelSelectRows; row++) {

@@ -25,11 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Set constants for play button
+            <string>///Set up level select menu
+//Set constants for play button
 buttonPressed = false;
 mouseOver = false;
-
-
 </string>
           </argument>
         </arguments>
