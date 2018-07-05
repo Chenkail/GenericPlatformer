@@ -169,6 +169,10 @@ global.doorFadeColor = c_black; //Color to fade to when transitioning through a 
 global.doorWidth = 64; //Width of door object in pixels
 global.doorHeight = 64; //Height of door object in pixels
 
+///Need more fish event (when player has not collected all the fish in the level)
+global.needMoreFishScaling = 1; //Scaling of fish sprite to put in chat bubble
+global.needMoreFishHeight = 64; //Do not touch unless sprites are changed
+
 ///Effect variables
 //Fade to next room
 global.fadeTime = 2; //Length of fade in seconds

@@ -123,6 +123,10 @@
     <instance objName="obj_block_wood_medium" x="1520" y="80" name="inst_72774089" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="1456" y="592" name="inst_5AB0C5CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ice_medium" x="560" y="592" name="inst_BDD6ACE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collectible_fish" x="496" y="528" name="inst_F5E00497" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collectible_fish" x="560" y="464" name="inst_86DE0A45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collectible_fish" x="624" y="528" name="inst_DDA22143" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collectible_fish" x="816" y="528" name="inst_218EF5DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

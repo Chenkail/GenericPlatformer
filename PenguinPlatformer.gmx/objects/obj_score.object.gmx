@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Reset collectible counts
+            <string>///Reset collectible counts for the level
 global.levelTotalFish = 0;
 global.levelCollectedFish = 0;
 </string>
