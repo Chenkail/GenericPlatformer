@@ -42,7 +42,7 @@ if (playerInDoor) {
         ini_write_real("Levels", global.currentLevel, 1);
         ini_close();
         
-        scr_fade_to_black(room_next(room));
+        scr_fade_to_room(room_next(room), global.doorFadeColor);
     }
 }
 </string>

@@ -33,51 +33,47 @@
 global.buttonPressed = false;
 
 //Game name in title screen
-global.gameTitle = "Penguin Platformer";
-global.gameTitleY = room_height/5;
-global.gameTitleFont = fnt_title;
-global.gameTitleFontColor = c_white;
+global.gameTitle = "Penguin Platformer"; //Title of game - to be displayed on main menu
+global.gameTitleY = room_height/5; //Y coordinates of center of title label, in pixels
+global.gameTitleFont = fnt_title; //Font to be used for game title
+global.gameTitleFontColor = c_white; //Font color to be used for game title
 
 //Button size
-global.mainMenuButtonWidth = 100;
-global.mainMenuButtonHeight = 50;
+global.mainMenuButtonWidth = 100; //Width of buttons in the main menu, in pixels
+global.mainMenuButtonHeight = 50; //Height of buttons in the main menu, in pixels
 
 //Play button
-global.playButtonX = room_width/2;
-global.playButtonY = room_height/2;
+global.playButtonX = room_width/2; //X coordinates of play button center, in pixels
+global.playButtonY = room_height/2; //Y coordinates of play button center, in pixels
 
 ///Level select menu
 //Number of levels to display
-global.levelSelectRows = 2;
-global.levelSelectColumns = 4;
+global.levelSelectColumns = 4; //Levels to display per row
+global.levelSelectRows = 2; //Number of rows
 
 //Size constants
-global.levelSelectChoiceWidth = 200;
-global.levelSelectChoiceHeight = 200;
-global.levelSelectSpacing = 25;
-global.levelSelectBoxBuffer = 25;
-global.levelSelectChoiceCornerRadius = min(global.levelSelectChoiceWidth, global.levelSelectChoiceHeight)/4;
+global.levelSelectChoiceWidth = 200; //Width of level select option boxes, in pixels
+global.levelSelectChoiceHeight = 200; //Height of level select option boxes, in pixels
+global.levelSelectSpacing = 25; //Spacing between level select option boxes, in pixels
+global.levelSelectBoxBuffer = 25; //Spacing between outside level select option boxes and the borders of the box around them, in pixels
+global.levelSelectChoiceCornerRadius = min(global.levelSelectChoiceWidth, global.levelSelectChoiceHeight)/4; //Set corner radius to be 1/4 of the smaller dimension of the choice boxes
 
 //Title
-global.levelSelectTitle = "Level Select";
-global.levelSelectTitleY = 100;
-global.levelSelectTitleFont = fnt_title;
-global.levelSelectTitleFontColor = c_white;
+global.levelSelectTitle = "Level Select"; //Title to be displayed on level select screen
+global.levelSelectTitleY = 100; //Y coordinate of center of title, in pixels
+global.levelSelectTitleFont = fnt_title; //Level select title font
+global.levelSelectTitleFontColor = c_white; //Level select title font color
 
 //Box colors
-global.levelSelectBoxColor = c_white;
-global.levelSelectChoiceColor = c_black;
-global.levelSelectChoiceOutline = true;
-global.levelSelectChoiceFont = fnt_title;
-global.levelSelectChoiceFontColor = c_black;
-global.levelSelectChoiceHighlightColor = c_black;
-global.levelSelectChoiceHighlightOutline = false;
-global.levelSelectChoiceHighlightFont = fnt_title;
-global.levelSelectChoiceHighlightFontColor = c_white;
+global.levelSelectBoxColor = c_white; //Color of box around level select choices
+global.levelSelectChoiceColor = c_black; //Color of level select option boxes
+global.levelSelectChoiceOutline = true; //Should the level select option box be just an outline (true) or completely filled (false)
+global.levelSelectChoiceFont = fnt_title; //Font for options in level select menu
+global.levelSelectChoiceFontColor = c_black; //Font color for options in level select menu
 
 //Constants calculation for drawing
 //Do not touch!
-global.levelSelectBoxHeightOffset = global.levelSelectTitleY;
+global.levelSelectBoxHeightOffset = global.levelSelectTitleY; //Number of pixels to shift the level select box
 global.levelSelectBoxWidth =
     global.levelSelectColumns * global.levelSelectChoiceWidth //Total width of option boxes
     + (global.levelSelectColumns - 1) * global.levelSelectSpacing //Total width of spacing between boxes
@@ -103,8 +99,9 @@ global.playerWidth = 64;
 global.playerHeight = 64;
 
 //Set animation speeds for various animations
-global.playerDefaultImageSpeedIdle = 0.06;
-global.playerDefaultImageSpeedWalk = 0.14;
+//These should be adjusted individually through testing and then left alone
+global.playerDefaultImageSpeedIdle = 0.06; //Done. Do not touch!
+global.playerDefaultImageSpeedWalk = 0.14; //Done. Do not touch!
 
 //Defining global variables for image speed
 //Do not touch!
@@ -140,9 +137,9 @@ global.blockImageSpeedModifier = global.blockImageSpeedWood;
 global.canJump = true;
 
 //Set jump constants
-global.playerJumpTime = 0.4;
-global.jumpCheckConstant = 1;
-global.playerJumpHeightConstant = 10;
+global.playerJumpTime = 0.4; //Length of player jump in seconds
+global.jumpCheckConstant = 1; //Pixels below player to test for object
+global.playerJumpHeightConstant = 10; //Height above player's head to which player can jump
 
 //Defining global variables for player jump
 //Do not touch!
@@ -152,12 +149,27 @@ global.playerJumpHeight = global.playerDefaultJumpHeight;
 
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 6;
-global.maxFallSpeed = 10;
-global.fallSpeed = 5;
+global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
+global.fallSpeed = 5; //Initialize global fall speed variable and set it to a positive value so that the player falls if starting a level in the air
 
 ///Door Variables
-global.doorWidth = 64;
-global.doorHeight = 64;
+global.doorFadeColor = c_black; //Color to fade to when transitioning through a doorway
+//Door dimensions
+//Do not touch unless door sprite has been changed
+global.doorWidth = 64; //Width of door object in pixels
+global.doorHeight = 64; //Height of door object in pixels
+
+///Effect variables
+//Fade to next room
+global.fadeTime = 3; //Length of fade in seconds
+global.fadePerTick = 0.05; //How dark should it get per tick (lower number means smoother fade)
+
+//Defining global variables for fade effect
+//Do not touch!
+global.maxFadeAlpha = 1; //1.0 is a complete fade to the color
+global.ticksToFade = global.maxFadeAlpha/global.fadePerTick;
+global.stepsToFade = global.fadeTime * global.stepsPerSecond;
+global.stepsPerTick = global.stepsToFade/global.ticksToFade;
 
 </string>
           </argument>

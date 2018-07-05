@@ -25,10 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeAlpha = 0;
-newRoom = 0;
-fadeSpeed = 10;
-alarm_set(0, fadeSpeed);
+            <string>///Set variables for fade and start alarm for first tick
+//Variables
+fadeAlpha = 0;
+fadeTime = global.fadeTime;
+fadePerTick = global.fadePerTick;
+stepsPerTick = global.stepsPerTick;
+
+//Start alarm for first tick
+alarm_set(0, stepsPerTick);
 </string>
           </argument>
         </arguments>
@@ -51,10 +56,11 @@ alarm_set(0, fadeSpeed);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = fadeSpeed;
-fadeAlpha += 0.05;
-if (fadeAlpha &gt;= 1.0)
-{
+            <string>///Increase alpha and reset alarm
+alarm[0] = stepsPerTick;
+fadeAlpha += fadePerTick;
+if (fadeAlpha &gt;= 1) {
+    //If fade is completely solid go to the next room and destroy the fade
     room_goto(newRoom);
     instance_destroy();
 }
@@ -81,8 +87,9 @@ if (fadeAlpha &gt;= 1.0)
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(fadeAlpha);
-draw_rectangle_color(0 , 0, view_wport[0], view_hport[0], c_black, c_black, c_black, c_black, false);
-draw_set_alpha(1.0);
+draw_rectangle_color(0 , 0, view_wport[0], view_hport[0],
+                        color, color, color, color, false);
+draw_set_alpha(1.0); //Reset alpha for any other draw events
 </string>
           </argument>
         </arguments>

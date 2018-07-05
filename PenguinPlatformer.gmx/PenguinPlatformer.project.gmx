@@ -86,7 +86,7 @@
       </scripts>
       <script>scripts\scr_is_button_pushed.gml</script>
     </scripts>
-    <script>scripts\scr_fade_to_black.gml</script>
+    <script>scripts\scr_fade_to_room.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
@@ -121,7 +121,7 @@
       <object>objects\obj_collectible_fish</object>
     </objects>
     <objects name="Effects">
-      <object>objects\obj_fade_to_black</object>
+      <object>objects\obj_fade_to_room</object>
     </objects>
   </objects>
   <rooms name="rooms">
