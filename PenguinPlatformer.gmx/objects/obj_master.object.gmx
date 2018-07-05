@@ -37,13 +37,17 @@ global.gameTitleY = room_height/5; //Y coordinates of center of title label, in 
 global.gameTitleFont = fnt_title; //Font to be used for game title
 global.gameTitleFontColor = c_white; //Font color to be used for game title
 
-//Button size
-global.mainMenuButtonWidth = 100; //Width of buttons in the main menu, in pixels
-global.mainMenuButtonHeight = 50; //Height of buttons in the main menu, in pixels
+///Buttons
+//Main menu button font and size
+global.mainMenuButtonFont = fnt_menu_buttons; //Font to be used for main menu buttons
+global.mainMenuButtonFontColor = c_white; //Font color to be used for main menu buttons
+global.mainMenuButtonWidth = 200;
+global.mainMenuButtonHeight = 100;
 
 //Play button
-global.playButtonX = room_width/2; //X coordinates of play button center, in pixels
-global.playButtonY = room_height/2; //Y coordinates of play button center, in pixels
+global.mainMenuPlayButtonText = "Play!"; //Set text for play button
+global.mainMenuPlayButtonX = room_width/2; //X coordinates of play button center, in pixels
+global.mainMenuPlayButtonY = room_height/2; //Y coordinates of play button center, in pixels
 
 ///Level select menu
 //Number of levels to display
