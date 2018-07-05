@@ -89,6 +89,7 @@
     <font>fonts\fnt_title</font>
     <font>fonts\fnt_menu_buttons</font>
     <font>fonts\fnt_level_select_buttons</font>
+    <font>fonts\fnt_game_complete</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>

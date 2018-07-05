@@ -32,7 +32,9 @@ draw_set_color(global.gameCompleteFontColor);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-
+//Location
+messageX = global.gameCompleteMessageX;
+messageY = global.gameCompleteMessageY;
 
 draw_text(messageX, messageY, global.gameCompleteMessage);
 </string>

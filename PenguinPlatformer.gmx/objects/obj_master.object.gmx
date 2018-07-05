@@ -91,6 +91,13 @@ global.levelSelectBoxX2 = global.levelSelectBoxX1 + global.levelSelectBoxWidth; 
 global.levelSelectBoxY2 = global.levelSelectBoxY1 + global.levelSelectBoxHeight; //Bottom edge
 global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.levelSelectBoxHeight)/4; //Corner radius dependant on larger dimension
 
+///Game complete level
+global.gameCompleteMessage = "Thanks for playing!";
+global.gameCompleteFont = fnt_game_complete;
+global.gameCompleteFontColor = c_white;
+global.gameCompleteMessageX = room_width/2;
+global.gameCompleteMessageY = room_height/3;
+
 ///Other Control Constants
 //Define game steps per second
 global.stepsPerSecond = 60;
@@ -164,7 +171,7 @@ global.doorHeight = 64; //Height of door object in pixels
 
 ///Effect variables
 //Fade to next room
-global.fadeTime = 3; //Length of fade in seconds
+global.fadeTime = 2; //Length of fade in seconds
 global.fadePerTick = 0.05; //How dark should it get per tick (lower number means smoother fade)
 
 //Defining global variables for fade effect
