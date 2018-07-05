@@ -7,6 +7,7 @@ row = int64((mouse_y - yOffset)/(global.levelSelectChoiceHeight + global.levelSe
 levelChoice = (global.levelSelectColumns * row) + (column + 1);
 
 if(mouse_check_button_released(mb_left)) {
+    global.currentLevel = levelChoice;
     scr_open_level(levelChoice);
 }
 

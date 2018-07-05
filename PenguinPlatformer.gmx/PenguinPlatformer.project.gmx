@@ -119,6 +119,7 @@
       <object>objects\obj_collectible_parent</object>
       <object>objects\obj_collectible_fish</object>
     </objects>
+    <object>objects\obj_fade_to_black</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
@@ -128,6 +129,7 @@
     <rooms name="Levels">
       <room>rooms\rm_level_blank</room>
       <room>rooms\rm_level_1</room>
+      <room>rooms\rm_level_2</room>
     </rooms>
   </rooms>
   <help>

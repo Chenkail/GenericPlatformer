@@ -155,6 +155,9 @@ global.gravity = 6;
 global.maxFallSpeed = 10;
 global.fallSpeed = 5;
 
+///Door Variables
+global.doorWidth = 64;
+global.doorHeight = 64;
 
 </string>
           </argument>
