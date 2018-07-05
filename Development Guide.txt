@@ -21,6 +21,7 @@ Objects
     Master Object
             - The master object should only be used for defining game constants, and all game constants should be defined in
                 the master object's create event code
+            - The master object should not have any local variables
             - The variables can be broken into groups using comment lines and line breaks
             - In general, global variables which are assigned an explicit numerical value can be modified, whereas variables
                 with expressions involving calculations and/or other global variables should not be modified
