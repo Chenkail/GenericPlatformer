@@ -74,6 +74,11 @@ global.levelSelectChoiceOutline = true; //Should the level select option box be 
 global.levelSelectChoiceFont = fnt_level_select_buttons; //Font for options in level select menu
 global.levelSelectChoiceFontColor = c_black; //Font color for options in level select menu
 
+//Check mark dimensions
+//Do not touch unless sprite has been changed
+global.checkMarkWidth = 32;
+global.checkMarkHeight = 32;
+
 //Constants calculation for drawing
 //Do not touch!
 global.levelSelectBoxHeightOffset = global.levelSelectTitleY; //Number of pixels to shift the level select box
@@ -104,7 +109,7 @@ global.stepsPerSecond = 60;
 
 ///Player
 //Define default player sprite size
-//Do not touch!
+//Do not touch unless sprite has been changed
 global.playerWidth = 64;
 global.playerHeight = 64;
 

@@ -5,7 +5,7 @@
   </Configs>
   <datafiles number="1" name="datafiles">
     <datafile>
-      <name>score.ini</name>
+      <name>savedata.ini</name>
       <exists>-1</exists>
       <size>0</size>
       <exportAction>2</exportAction>
@@ -19,7 +19,7 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>score.ini</filename>
+      <filename>savedata.ini</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -54,9 +54,10 @@
       <sprites name="Collectibles">
         <sprite>sprites\spr_collectible_fish</sprite>
       </sprites>
+      <sprite>sprites\spr_door</sprite>
     </sprites>
-    <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_chat_bubble</sprite>
+    <sprite>sprites\spr_check_mark</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -81,6 +82,7 @@
         <script>scripts\scr_level_select_draw_background_box.gml</script>
         <script>scripts\scr_level_select_draw_choices.gml</script>
         <script>scripts\scr_level_select_draw_choice_box.gml</script>
+        <script>scripts\scr_draw_check.gml</script>
         <script>scripts\scr_level_select_mouse_check.gml</script>
         <script>scripts\scr_open_level.gml</script>
       </scripts>
