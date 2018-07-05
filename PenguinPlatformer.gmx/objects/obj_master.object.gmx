@@ -170,6 +170,11 @@ global.gravity = 6;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.fallSpeed = 5; //Initialize global fall speed variable and set it to a positive value so that the player falls if starting a level in the air
 
+///Score initialization
+//Do not touch!
+global.levelTotalFish = 0;
+global.levelCollectedFish = -1;
+
 ///Door Variables
 global.doorFadeColor = c_black; //Color to fade to when transitioning through a doorway
 //Door dimensions
