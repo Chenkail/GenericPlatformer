@@ -86,6 +86,7 @@
       </scripts>
       <script>scripts\scr_is_button_pushed.gml</script>
     </scripts>
+    <script>scripts\scr_fade_to_black.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
