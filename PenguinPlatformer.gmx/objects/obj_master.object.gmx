@@ -29,8 +29,7 @@
 
 ///Main Menu
 //Initialize button pressed constant
-//Do not touch!
-global.buttonPressed = false;
+global.buttonPressed = false; //Do not touch!
 
 //Game name in title screen
 global.gameTitle = "Penguin Platformer"; //Title of game - to be displayed on main menu
@@ -111,7 +110,7 @@ global.playerImageSpeedIdle = global.playerBaseImageSpeedIdle;
 global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk;
 
 //Set default player speed
-global.playerDefaultSpeed = 5;
+global.playerDefaultSpeed = 5; //Player default walking speed in pixels/step
 
 //Defining global variables for player speed
 //Do not touch!
@@ -121,8 +120,8 @@ global.blockSpeedModifier = 0;
 
 ///Blocks
 //Speed constants for different block types
-global.blockSpeedWood = 1;
-global.blockSpeedIce = 1.6;
+global.blockSpeedWood = 1; //Walking speed multiplier wood
+global.blockSpeedIce = 1.6; //Walking speed multiplier ice
 
 //Image speed constants for different block types
 global.blockImageSpeedWood = global.blockSpeedWood;
@@ -133,8 +132,8 @@ global.blockImageSpeedIce = global.blockSpeedIce;
 global.blockImageSpeedModifier = global.blockImageSpeedWood;
 
 ///Jumping and falling
-//Should jump be enabled at start of game?
-global.canJump = true;
+//Initalize jump permission to true
+global.canJump = true; //Do not touch!
 
 //Set jump constants
 global.playerJumpTime = 0.4; //Length of player jump in seconds
