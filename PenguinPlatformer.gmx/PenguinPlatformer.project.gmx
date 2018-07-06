@@ -90,7 +90,7 @@
     </scripts>
     <script>scripts\scr_fade_to_room.gml</script>
     <script>scripts\scr_need_more_fish.gml</script>
-    <script>scripts\scr_reset_savedata.gml</script>
+    <script>scripts\scr_reset_save_data.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
