@@ -170,8 +170,8 @@ global.playerJumpHeightConstant = 10; //Height above player's head to which play
 global.playerDefaultJumpHeight = global.playerHeight + global.playerJumpHeightConstant;
 global.playerJumpHeight = global.playerDefaultJumpHeight;
 
-
 //Set gravity and max fall speed, along with fall speed constant
+global.playerFloatCheckWidth = 16;
 global.gravity = 6;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.playerFallSpeed = 5; //Initialize global player fall speed variable and set it to a positive value so that the player falls if starting a level in the air
