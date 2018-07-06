@@ -216,8 +216,7 @@ global.stepsPerTick = global.stepsToFade/global.ticksToFade;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_reset_save_data();
-game_restart();
+            <string>game_restart();
 </string>
           </argument>
         </arguments>
