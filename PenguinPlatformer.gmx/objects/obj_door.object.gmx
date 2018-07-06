@@ -74,19 +74,20 @@ if ((playerInDoor) and (!currentlyFading)) {
                 //If game complete return to level select
                 nextRoom = rm_level_select;
             } else {
-                if (global.currentLevel = global.numberOfLevels) {
-                    nextRoom = rm_game_complete;
-                } else {
-                    //Go to next level if not on game complete screen or last level
-                    nextRoom = room_next(room);
-                }
                 //Mark level as complete in ini file
                 ini_open("savedata.ini");
                 ini_write_real("levels", global.currentLevel, 1);
                 ini_close();
                 
-                //
-                global.currentLevel++;
+                if (global.currentLevel = global.numberOfLevels) {
+                    nextRoom = rm_game_complete;
+                } else {
+                    //Go to next level if not on game complete screen or last level
+                    nextRoom = room_next(room);
+                    
+                    //Increase global.currentLevel to match transition to next level
+                    global.currentLevel++;
+                }
             }
             scr_fade_to_room(nextRoom, global.doorFadeColor);
             currentlyFading = true;
