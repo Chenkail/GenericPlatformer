@@ -113,9 +113,7 @@ if (!global.playerOnLadder) {
     scr_jump();
 } else {
     //If on ladder, climb it
-    global.playerFallSpeed = 0;
-    vspeed = 0;
-    y -= 5;
+    scr_climb_ladder();
 }
 </string>
           </argument>
