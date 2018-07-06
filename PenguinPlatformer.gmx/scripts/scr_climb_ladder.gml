@@ -3,4 +3,4 @@
 
 global.playerFallSpeed = 0;
 vspeed = 0;
-y -= global.playerClimbSpeed;
+y += argument0 * global.playerClimbSpeed;
