@@ -120,7 +120,7 @@ global.playerWidth = 64;
 global.playerHeight = 64;
 
 //Set default player speeds
-global.playerDefaultSpeed = 5; //Player default walking speed in pixels/step
+global.playerDefaultSpeed = 6; //Player default walking speed in pixels/step
 global.playerDefaultClimbSpeed = 5;
 
 //Defining global variables for player speeds
@@ -163,7 +163,7 @@ global.canJump = true; //Do not touch!
 //Set jump constants
 global.playerJumpTime = 0.4; //Length of player jump in seconds
 global.jumpCheckConstant = 1; //Pixels below player to test for object
-global.playerJumpHeightConstant = 10; //Height above player's head to which player can jump
+global.playerJumpHeightConstant = 50; //Height above player's head to which player can jump
 
 //Defining global variables for player jump
 //Do not touch!
@@ -172,7 +172,7 @@ global.playerJumpHeight = global.playerDefaultJumpHeight;
 
 //Set gravity and max fall speed, along with fall speed constant
 global.playerFloatCheckWidth = 16;
-global.gravity = 6;
+global.gravity = 1.7;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.playerFallSpeed = 5; //Initialize global player fall speed variable and set it to a positive value so that the player falls if starting a level in the air
 
