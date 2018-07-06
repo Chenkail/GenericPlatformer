@@ -59,23 +59,28 @@
     <scripts name="Menus">
       <scripts name="Main Menu">
         <script>scripts\scr_draw_main_menu.gml</script>
-        <script>scripts\scr_open_level_select.gml</script>
         <script>scripts\scr_main_menu_check_play_button.gml</script>
+        <script>scripts\scr_open_level_select.gml</script>
       </scripts>
       <scripts name="Level Select">
-        <script>scripts\scr_level_select_draw_title.gml</script>
-        <script>scripts\scr_level_select_draw_background_box.gml</script>
-        <script>scripts\scr_level_select_draw_choices.gml</script>
-        <script>scripts\scr_level_select_draw_choice_box.gml</script>
-        <script>scripts\scr_is_level_locked.gml</script>
-        <script>scripts\scr_is_level_complete.gml</script>
-        <script>scripts\scr_draw_choice_box_mark.gml</script>
+        <scripts name="Drawing">
+          <script>scripts\scr_level_select_draw_title.gml</script>
+          <script>scripts\scr_level_select_draw_background_box.gml</script>
+          <script>scripts\scr_level_select_draw_choices.gml</script>
+          <script>scripts\scr_level_select_draw_choice_box.gml</script>
+          <script>scripts\scr_draw_choice_box_mark.gml</script>
+        </scripts>
+        <scripts name="Level Status Checking">
+          <script>scripts\scr_is_level_complete.gml</script>
+          <script>scripts\scr_is_level_locked.gml</script>
+        </scripts>
         <script>scripts\scr_level_select_mouse_check.gml</script>
         <script>scripts\scr_open_level.gml</script>
       </scripts>
-      <script>scripts\scr_is_button_pushed.gml</script>
+      <scripts name="Effects">
+        <script>scripts\scr_fade_to_room.gml</script>
+      </scripts>
     </scripts>
-    <script>scripts\scr_fade_to_room.gml</script>
     <script>scripts\scr_reset_save_data.gml</script>
     <script>scripts\scr_exit_to_level_select.gml</script>
   </scripts>
