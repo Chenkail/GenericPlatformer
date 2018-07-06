@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm_set(0, global.needMoreFishTime * global.stepsPerSecond);
+            <string>alarm_set(0, global.needMoreFishTimeout * global.stepsPerSecond);
 global.needMoreFishExists = true;
 </string>
           </argument>
