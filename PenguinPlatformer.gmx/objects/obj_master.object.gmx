@@ -119,6 +119,18 @@ global.stepsPerSecond = 60;
 global.playerWidth = 64;
 global.playerHeight = 64;
 
+//Set default player speeds
+global.playerDefaultSpeed = 5; //Player default walking speed in pixels/step
+global.playerDefaultClimbSpeed = 5;
+
+//Defining global variables for player speeds
+//Do not touch!
+global.playerBaseSpeed = global.playerDefaultSpeed;
+global.playerSpeed = global.playerBaseSpeed;
+global.playerBaseClimbSpeed = global.playerDefaultSpeed;
+global.playerClimbSpeed = global.playerBaseSpeed;
+global.blockSpeedModifier = 0;
+
 //Set animation speeds for various animations
 //These should be adjusted individually through testing and then left alone
 global.playerDefaultImageSpeedIdle = 0.06; //Done. Do not touch!
@@ -130,15 +142,6 @@ global.playerBaseImageSpeedIdle = global.playerDefaultImageSpeedIdle;
 global.playerBaseImageSpeedWalk = global.playerDefaultImageSpeedWalk;
 global.playerImageSpeedIdle = global.playerBaseImageSpeedIdle;
 global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk;
-
-//Set default player speed
-global.playerDefaultSpeed = 5; //Player default walking speed in pixels/step
-
-//Defining global variables for player speed
-//Do not touch!
-global.playerBaseSpeed = global.playerDefaultSpeed;
-global.playerSpeed = global.playerBaseSpeed;
-global.blockSpeedModifier = 0;
 
 ///Blocks
 //Speed constants for different block types
@@ -172,6 +175,11 @@ global.playerJumpHeight = global.playerDefaultJumpHeight;
 global.gravity = 6;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.fallSpeed = 5; //Initialize global fall speed variable and set it to a positive value so that the player falls if starting a level in the air
+
+///Ladder
+//Ladder collision check (how close does the center of the player need to be to the center of the ladder to register?)
+global.ladderCheckWidth = 32; //Pixels to left/right (total width of box is twice this)
+global.ladderCheckHeight = 32; //Pixels up/down (total height of box is twice this)
 
 ///Door
 global.doorFadeColor = c_black; //Color to fade to when transitioning through a doorway
