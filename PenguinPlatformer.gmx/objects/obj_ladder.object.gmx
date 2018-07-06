@@ -7,7 +7,42 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Check if player in ladder frame and climb ladder depending on 
+//Define coordinates to check
+checkX1 = x - 33;//global.ladderCheckWidth;
+checkY1 = y - 33;//global.ladderCheckHeight - 1;
+checkX2 = x + 33;//global.ladderCheckWidth;
+checkY2 = y + 33;//global.ladderCheckHeight + 1;
+playerX = other.x;
+playerY = other.y;
+
+//Check to see if player is lined up with ladder
+global.playerOnLadder = point_in_rectangle(playerX, playerY, checkX1, checkY1, checkX2, checkY2);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

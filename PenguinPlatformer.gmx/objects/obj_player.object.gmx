@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = global.playerImageSpeedIdle;
-
+global.playerOnLadder = false;
 </string>
           </argument>
         </arguments>
@@ -73,13 +73,14 @@
           <argument>
             <kind>1</kind>
             <string>///Fall
-if ((vspeed &lt; 0)) {
-    vspeed += global.gravity;
-} else if (place_free(x, y + global.playerHeight/2 + 1)) {
-    global.playerFallSpeed = min(global.playerFallSpeed + global.gravity, global.maxFallSpeed);
-    vspeed = global.playerFallSpeed;
+if (!global.playerOnLadder) {
+    if ((vspeed &lt; 0)) {
+        vspeed += global.gravity;
+    } else if (place_free(x, y + global.playerHeight/2 + 1)) {
+        global.playerFallSpeed = min(global.playerFallSpeed + global.gravity, global.maxFallSpeed);
+        vspeed = global.playerFallSpeed;
+    }
 }
-
 </string>
           </argument>
         </arguments>
@@ -239,24 +240,26 @@ if (global.canJump) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Jump
-if (alarm_get(0) &lt; 0) {
-    global.canJump = true;
-}
-
-//Test if player is midair
-if (place_empty(x, y + global.jumpCheckConstant)) {
-    global.canJump = false;
-}
-
-if (global.canJump) {
-    global.playerJumpSpeed = sqrt(2 * global.gravity * global.playerJumpHeight);
-    vspeed = -global.playerJumpSpeed;
-    /* Disable jump for time it takes to fall back
-     * down to the level the jump started at
-     */
-    global.canJump = false;
-    alarm_set(0, global.playerJumpTime * global.stepsPerSecond);
+            <string>///Jump if not on ladder
+if (!global.playerOnLadder) {
+    if (alarm_get(0) &lt; 0) {
+        global.canJump = true;
+    }
+    
+    //Test if player is midair
+    if (place_empty(x, y + global.jumpCheckConstant)) {
+        global.canJump = false;
+    }
+    
+    if (global.canJump) {
+        global.playerJumpSpeed = sqrt(2 * global.gravity * global.playerJumpHeight);
+        vspeed = -global.playerJumpSpeed;
+        /* Disable jump for time it takes to fall back
+         * down to the level the jump started at
+         */
+        global.canJump = false;
+        alarm_set(0, global.playerJumpTime * global.stepsPerSecond);
+    }
 }
 </string>
           </argument>
