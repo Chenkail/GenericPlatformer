@@ -4,7 +4,7 @@
 if (other.y <= y - blockHeight/2) {
     if (other.y > y - blockHeight/2 - global.playerHeight/2) {
         other.y = y - blockHeight/2 - global.playerHeight/2;
-        global.fallSpeed = 0;
+        global.playerFallSpeed = 0;
     }
 } else {
     //Stop moving if running into a wall

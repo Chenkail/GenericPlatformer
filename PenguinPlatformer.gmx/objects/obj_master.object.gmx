@@ -174,7 +174,7 @@ global.playerJumpHeight = global.playerDefaultJumpHeight;
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 6;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
-global.fallSpeed = 5; //Initialize global fall speed variable and set it to a positive value so that the player falls if starting a level in the air
+global.playerFallSpeed = 5; //Initialize global player fall speed variable and set it to a positive value so that the player falls if starting a level in the air
 
 ///Ladder
 //Ladder collision check (how close does the center of the player need to be to the center of the ladder to register?)
