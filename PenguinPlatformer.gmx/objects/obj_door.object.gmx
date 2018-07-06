@@ -62,7 +62,7 @@ playerInDoor = collision_rectangle(doorX1, doorY1, doorX2, doorY2, obj_player, f
 
 //Check to see if player has all the fish
 allFishCollected = false;
-if (global.levelCollectedFish = global.levelTotalFish) {
+if (global.levelCollectedFish == global.levelTotalFish) {
     allFishCollected = true;
 }
 
@@ -70,7 +70,7 @@ if (global.levelCollectedFish = global.levelTotalFish) {
 if ((playerInDoor) and (!currentlyFading)) {
     if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord('S'))) {
         if (allFishCollected) {            
-            if (room = rm_game_complete) {
+            if (room == rm_game_complete) {
                 //If game complete return to level select
                 nextRoom = rm_level_select;
             } else {
@@ -79,7 +79,7 @@ if ((playerInDoor) and (!currentlyFading)) {
                 ini_write_real("levels", global.currentLevel, 1);
                 ini_close();
                 
-                if (global.currentLevel = global.numberOfLevels) {
+                if (global.currentLevel == global.numberOfLevels) {
                     nextRoom = rm_game_complete;
                 } else {
                     //Go to next level if not on game complete screen or last level

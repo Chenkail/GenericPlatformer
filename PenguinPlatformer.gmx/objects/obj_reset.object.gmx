@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>///Run score reset script if first time launching
 ini_open("first_run.ini")
-isFirstRun = ini_read_real("run", "run", 0);
-if (isFirstRun = 1) {
+isFirstRun = ini_read_real("run", "run", 1);
+if (isFirstRun == 1) {
     scr_reset_save_data();
     ini_write_real("run", "run", 0);
 }
