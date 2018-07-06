@@ -93,7 +93,6 @@ if ((playerInDoor) and (!currentlyFading)) {
             currentlyFading = true;
         } else {
             //Draw need more fish
-            scr_need_more_fish(x, y);
         }
     }
 }
