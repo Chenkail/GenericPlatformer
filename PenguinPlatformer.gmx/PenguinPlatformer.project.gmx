@@ -113,6 +113,11 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <objects name="Control Objects">
+      <object>objects\obj_master</object>
+      <object>objects\obj_score</object>
+      <object>objects\obj_reset</object>
+    </objects>
     <objects name="Level Design">
       <object>objects\obj_door</object>
       <object>objects\obj_ladder</object>
@@ -129,11 +134,6 @@
           <object>objects\obj_block_wood_medium</object>
         </objects>
       </objects>
-    </objects>
-    <objects name="Control Objects">
-      <object>objects\obj_master</object>
-      <object>objects\obj_score</object>
-      <object>objects\obj_reset</object>
     </objects>
     <objects name="Menus">
       <object>objects\obj_menu_main</object>
