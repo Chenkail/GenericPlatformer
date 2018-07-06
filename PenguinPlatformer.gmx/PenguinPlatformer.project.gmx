@@ -57,6 +57,7 @@
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_chat_bubble</sprite>
       <sprite>sprites\spr_need_more_fish</sprite>
+      <sprite>sprites\spr_ladder</sprite>
     </sprites>
     <sprites name="Level Select Menu">
       <sprite>sprites\spr_check_mark</sprite>
@@ -112,7 +113,23 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_door</object>
+    <objects name="Level Design">
+      <object>objects\obj_door</object>
+      <object>objects\obj_ladder</object>
+      <objects name="Blocks">
+        <object>objects\obj_block_parent</object>
+        <objects name="Ice Blocks">
+          <object>objects\obj_block_ice_parent</object>
+          <object>objects\obj_block_ice_small</object>
+          <object>objects\obj_block_ice_medium</object>
+        </objects>
+        <objects name="Wood Blocks">
+          <object>objects\obj_block_wood_parent</object>
+          <object>objects\obj_block_wood_small</object>
+          <object>objects\obj_block_wood_medium</object>
+        </objects>
+      </objects>
+    </objects>
     <objects name="Control Objects">
       <object>objects\obj_master</object>
       <object>objects\obj_score</object>
@@ -122,28 +139,15 @@
       <object>objects\obj_menu_main</object>
       <object>objects\obj_menu_level_select</object>
     </objects>
-    <objects name="Blocks">
-      <object>objects\obj_block_parent</object>
-      <objects name="Ice Blocks">
-        <object>objects\obj_block_ice_parent</object>
-        <object>objects\obj_block_ice_small</object>
-        <object>objects\obj_block_ice_medium</object>
-      </objects>
-      <objects name="Wood Blocks">
-        <object>objects\obj_block_wood_parent</object>
-        <object>objects\obj_block_wood_small</object>
-        <object>objects\obj_block_wood_medium</object>
-      </objects>
-    </objects>
     <objects name="Collectibles">
       <object>objects\obj_collectible_parent</object>
       <object>objects\obj_collectible_fish</object>
     </objects>
     <objects name="Effects">
+      <object>objects\obj_need_more_fish</object>
       <object>objects\obj_fade_to_room</object>
+      <object>objects\obj_game_complete</object>
     </objects>
-    <object>objects\obj_game_complete</object>
-    <object>objects\obj_need_more_fish</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
