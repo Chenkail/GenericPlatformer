@@ -121,15 +121,13 @@ switch (keyboard_key)
     case vk_left:
     case ord("A"):
         sprite_index = spr_player_64_left;
-        image_speed = global.playerImageSpeedWalk;
-        x -= global.playerSpeed;
+        scr_walk(-1);
         break;
     //Go right
     case vk_right:
     case ord("D"):
         sprite_index = spr_player_64_right;
-        image_speed = global.playerImageSpeedWalk;
-        x += global.playerSpeed;
+        scr_walk(1);
         break;
     //Jump/Climb ladder
     case vk_up:
