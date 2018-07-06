@@ -69,7 +69,6 @@
         <script>scripts\scr_level_select_draw_choice_box.gml</script>
         <script>scripts\scr_is_level_locked.gml</script>
         <script>scripts\scr_is_level_complete.gml</script>
-        <script>scripts\scr_draw_check.gml</script>
         <script>scripts\scr_draw_choice_box_mark.gml</script>
         <script>scripts\scr_level_select_mouse_check.gml</script>
         <script>scripts\scr_open_level.gml</script>

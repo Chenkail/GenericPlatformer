@@ -7,12 +7,12 @@ row = int64((mouse_y - yOffset)/(global.levelSelectChoiceHeight + global.levelSe
 levelChoice = (global.levelSelectColumns * row) + (column + 1);
 
 if(mouse_check_button_released(mb_left)) {
-    global.currentLevel = levelChoice;
+    //Test to see if choice is a valid level
     if (levelChoice <= global.numberOfLevels) {
-        if (scr_is_level_locked(levelChoice)) {
-            //Display locked message
-        } else {
+        //Is the level locked?
+        if (!scr_is_level_locked(levelChoice)) {
             scr_open_level(levelChoice);
+            global.currentLevel = levelChoice;
         }
     }
 }
