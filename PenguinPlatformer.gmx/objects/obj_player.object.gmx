@@ -124,8 +124,6 @@ switch (keyboard_key)
         image_speed = global.playerImageSpeedWalk;
         x += global.playerSpeed;
         break;
-    //Jump
-    
     }
 </string>
           </argument>
