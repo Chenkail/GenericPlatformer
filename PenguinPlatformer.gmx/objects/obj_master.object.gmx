@@ -171,8 +171,11 @@ global.gravity = 6;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.fallSpeed = 5; //Initialize global fall speed variable and set it to a positive value so that the player falls if starting a level in the air
 
-///Door Variables
+///Door
 global.doorFadeColor = c_black; //Color to fade to when transitioning through a doorway
+//Door collision check (how close does the center of the player need to be to the center of the door to register?)
+global.doorCheckWidth = 32; //Pixels to left/right (total width of box is twice this)
+global.doorCheckHeight = 32; //Pixels up/down (total height of box is twice this)
 //Door dimensions
 //Do not touch unless door sprite has been changed
 global.doorWidth = 64; //Width of door object in pixels

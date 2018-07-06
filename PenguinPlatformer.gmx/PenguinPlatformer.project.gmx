@@ -72,6 +72,7 @@
     </scripts>
     <script>scripts\scr_fade_to_room.gml</script>
     <script>scripts\scr_reset_save_data.gml</script>
+    <script>scripts\scr_exit_to_level_select.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
