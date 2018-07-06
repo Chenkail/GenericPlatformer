@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>//This toggle prevents starting the fade more than once
 currentlyFading = false;
+
+global.needMoreFishExists = false;
 </string>
           </argument>
         </arguments>
@@ -93,8 +95,9 @@ if ((playerInDoor) and (!currentlyFading)) {
             }
             scr_fade_to_room(nextRoom, global.doorFadeColor);
             currentlyFading = true;
-        } else {
-            //Draw need more fish
+        } else if (!global.needMoreFishExists) {
+            //Draw need more fish if it doesn't already exist
+            scr_draw_need_more_fish(x, y);
         }
     }
 }

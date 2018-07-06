@@ -3,7 +3,7 @@
  */
 
 var needMoreFish;
-messageX = argument0 - global.needMoreFishWidth;
+messageX = argument0;
 messageY = argument1 - global.needMoreFishHeight;
 
 needMoreFish = instance_create(messageX, messageY, obj_need_more_fish);

@@ -184,8 +184,11 @@ global.doorWidth = 64; //Width of door object in pixels
 global.doorHeight = 64; //Height of door object in pixels
 
 ///Need more fish event (when player has not collected all the fish in the level)
-global.needMoreFishScaling = 1; //Scaling of fish sprite to put in chat bubble
-global.needMoreFishHeight = 64; //Do not touch unless sprites are changed
+global.needMoreFishTime = 3; //Time before need more fish message disappears
+//Dimensions
+//Do not touch unless sprites are changed
+global.needMoreFishWidth = 64;
+global.needMoreFishHeight = 64;
 
 ///Effect variables
 //Fade to next room
