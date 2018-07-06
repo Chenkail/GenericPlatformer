@@ -107,15 +107,7 @@ if (!global.playerOnLadder) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Jump or climb ladder
-//If not on ladder, jump
-if (!global.playerOnLadder) {
-    scr_jump();
-} else {
-    //If on ladder, climb it
-    scr_climb_ladder();
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -160,6 +152,18 @@ switch (keyboard_key)
         sprite_index = spr_player_64_right;
         image_speed = global.playerImageSpeedWalk;
         x += global.playerSpeed;
+        break;
+    //Jump/Climb ladder
+    case vk_up:
+    case ord("W"):
+        ///Jump or climb ladder
+        //If not on ladder, jump
+        if (!global.playerOnLadder) {
+            scr_jump();
+        } else {
+            //If on ladder, climb it
+            scr_climb_ladder();
+        }
         break;
     }
 </string>
