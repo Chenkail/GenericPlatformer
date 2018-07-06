@@ -107,7 +107,29 @@ if (!global.playerOnLadder) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.playerOnLadder) {
+            <string>///Jump or climb ladder
+//If not on ladder, jump
+if (!global.playerOnLadder) {
+    if (alarm_get(0) &lt; 0) {
+        global.canJump = true;
+    }
+    
+    //Test if player is midair
+    if (place_empty(x, y + global.jumpCheckConstant)) {
+        global.canJump = false;
+    }
+    
+    if (global.canJump) {
+        global.playerJumpSpeed = sqrt(2 * global.gravity * global.playerJumpHeight);
+        vspeed = -global.playerJumpSpeed;
+        /* Disable jump for time it takes to fall back
+         * down to the level the jump started at
+         */
+        global.canJump = false;
+        alarm_set(0, global.playerJumpTime * global.stepsPerSecond);
+    }
+} else {
+    //If on ladder, climb it
     global.playerFallSpeed = 0;
     vspeed = 0;
     y -= 5;
@@ -271,28 +293,7 @@ if (global.canJump) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Jump if not on ladder
-if (!global.playerOnLadder) {
-    if (alarm_get(0) &lt; 0) {
-        global.canJump = true;
-    }
-    
-    //Test if player is midair
-    if (place_empty(x, y + global.jumpCheckConstant)) {
-        global.canJump = false;
-    }
-    
-    if (global.canJump) {
-        global.playerJumpSpeed = sqrt(2 * global.gravity * global.playerJumpHeight);
-        vspeed = -global.playerJumpSpeed;
-        /* Disable jump for time it takes to fall back
-         * down to the level the jump started at
-         */
-        global.canJump = false;
-        alarm_set(0, global.playerJumpTime * global.stepsPerSecond);
-    }
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
