@@ -99,6 +99,7 @@
     <scripts name="Effects">
       <script>scripts\scr_fade_to_room.gml</script>
     </scripts>
+    <script>scripts\scr_draw_need_more_fish.gml</script>
     <script>scripts\scr_reset_save_data.gml</script>
     <script>scripts\scr_exit_to_level_select.gml</script>
   </scripts>
