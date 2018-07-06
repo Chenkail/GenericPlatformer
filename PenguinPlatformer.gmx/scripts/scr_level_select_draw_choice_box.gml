@@ -35,7 +35,7 @@ if (currentLevelLabel <= global.numberOfLevels) {
     ini_open("savedata.ini");
     levelComplete = ini_read_real("levels", currentLevelLabel, 0);
     ini_close();
-    if (levelComplete = 1) {
+    if (levelComplete == 1) {
         scr_draw_check(boxX2, boxY2);
     }
 }

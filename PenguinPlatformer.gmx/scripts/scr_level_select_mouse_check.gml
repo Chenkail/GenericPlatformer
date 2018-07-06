@@ -10,7 +10,7 @@ ini_open("savedata.ini");
 previousLevelComplete = ini_read_real("levels", levelChoice - 1, 0);
 
 levelUnlocked = false;
-if ((levelChoice = 1) or (previousLevelComplete = 1)) {
+if ((levelChoice == 1) or (previousLevelComplete == 1)) {
     levelUnlocked = true; //Can open level if it's the first level or if the previous level has been completed
 }
 
