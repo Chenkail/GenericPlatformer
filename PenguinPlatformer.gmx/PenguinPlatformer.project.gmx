@@ -56,6 +56,7 @@
       </sprites>
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_chat_bubble</sprite>
+      <sprite>sprites\spr_need_more_fish</sprite>
     </sprites>
     <sprites name="Level Select Menu">
       <sprite>sprites\spr_check_mark</sprite>
@@ -142,6 +143,7 @@
       <object>objects\obj_fade_to_room</object>
     </objects>
     <object>objects\obj_game_complete</object>
+    <object>objects\obj_need_more_fish</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
