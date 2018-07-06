@@ -143,7 +143,15 @@ switch (keyboard_key)
             scr_climb_ladder(-1);
         }
         break;
+    case vk_down:
+    case ord("S"):
+        if (global.playerOnLadder) {
+            //If on ladder, climb downwards
+            scr_climb_ladder(1);
+        }
+        break;
     }
+
 </string>
           </argument>
         </arguments>
