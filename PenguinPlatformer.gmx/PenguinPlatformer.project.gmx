@@ -40,6 +40,7 @@
     </sprites>
     <sprite>sprites\spr_chat_bubble</sprite>
     <sprite>sprites\spr_check_mark</sprite>
+    <sprite>sprites\spr_lock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -64,7 +65,10 @@
         <script>scripts\scr_level_select_draw_background_box.gml</script>
         <script>scripts\scr_level_select_draw_choices.gml</script>
         <script>scripts\scr_level_select_draw_choice_box.gml</script>
+        <script>scripts\scr_is_level_locked.gml</script>
+        <script>scripts\scr_is_level_complete.gml</script>
         <script>scripts\scr_draw_check.gml</script>
+        <script>scripts\scr_draw_choice_box_mark.gml</script>
         <script>scripts\scr_level_select_mouse_check.gml</script>
         <script>scripts\scr_open_level.gml</script>
       </scripts>

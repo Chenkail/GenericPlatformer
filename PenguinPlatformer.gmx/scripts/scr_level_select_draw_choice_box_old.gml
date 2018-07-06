@@ -35,5 +35,7 @@ if (currentLevelLabel <= global.numberOfLevels) {
     ini_open("savedata.ini");
     levelComplete = ini_read_real("levels", currentLevelLabel, 0);
     ini_close();
-    scr_draw_choice_box_mark(boxX2, boxY2, currentLevelLabel);
+    if (levelComplete == 1) {
+        scr_draw_check(boxX2, boxY2);
+    }
 }

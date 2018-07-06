@@ -76,8 +76,8 @@ global.levelSelectChoiceFont = fnt_level_select_buttons; //Font for options in l
 global.levelSelectChoiceFontColor = c_black; //Font color for options in level select menu
 
 //Check mark
-global.checkMarkHorizontalOffset = 5;
-global.checkMarkVerticalOffset = 5;
+global.levelChoiceMarkHorizontalOffset = 5;
+global.levelChoiceMarkVerticalOffset = 5;
 //Dimensions
 //Do not touch unless sprite has been changed
 global.checkMarkWidth = 32;
