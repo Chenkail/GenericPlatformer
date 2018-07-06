@@ -66,21 +66,27 @@ if (global.levelCollectedFish = global.levelTotalFish) {
     allFishCollected = true;
 }
 
-
+//Only start fade transistion if player is touching door and not already fading
 if ((playerInDoor) and (!currentlyFading)) {
     if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord('S'))) {
-        if (allFishCollected) {
-            //Mark level as complete in ini file
-            ini_open("savedata.ini");
-            ini_write_real("Levels", global.currentLevel, 1);
-            ini_close();
-            
-            if (room != rm_game_complete) {
-                //Go to next level if not on game complete screen
-                nextRoom = room_next(room);
-            } else {
+        if (allFishCollected) {            
+            if (room = rm_game_complete) {
                 //If game complete return to level select
                 nextRoom = rm_level_select;
+            } else {
+                if (global.currentLevel = global.numberOfLevels) {
+                    nextRoom = rm_game_complete;
+                } else {
+                    //Go to next level if not on game complete screen or last level
+                    nextRoom = room_next(room);
+                }
+                //Mark level as complete in ini file
+                ini_open("savedata.ini");
+                ini_write_real("levels", global.currentLevel, 1);
+                ini_close();
+                
+                //
+                global.currentLevel++;
             }
             scr_fade_to_room(nextRoom, global.doorFadeColor);
             currentlyFading = true;

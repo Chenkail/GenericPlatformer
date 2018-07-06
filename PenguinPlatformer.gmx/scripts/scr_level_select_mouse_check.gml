@@ -8,7 +8,9 @@ levelChoice = (global.levelSelectColumns * row) + (column + 1);
 
 if(mouse_check_button_released(mb_left)) {
     global.currentLevel = levelChoice;
-    scr_open_level(levelChoice);
+    if (levelChoice <= global.numberOfLevels) {
+        scr_open_level(levelChoice);
+    }
 }
 
 

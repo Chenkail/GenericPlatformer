@@ -50,7 +50,8 @@ global.mainMenuPlayButtonX = room_width/2; //X coordinates of play button center
 global.mainMenuPlayButtonY = room_height/2; //Y coordinates of play button center, in pixels
 
 ///Level select menu
-//Number of levels to display
+//Number of levels
+global.numberOfLevels = 2; //Total number of levels in the game
 global.levelSelectColumns = 4; //Levels to display per row
 global.levelSelectRows = 2; //Number of rows
 
@@ -170,11 +171,6 @@ global.gravity = 6;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.fallSpeed = 5; //Initialize global fall speed variable and set it to a positive value so that the player falls if starting a level in the air
 
-///Score initialization
-//Do not touch!
-global.levelTotalFish = 0;
-global.levelCollectedFish = -1;
-
 ///Door Variables
 global.doorFadeColor = c_black; //Color to fade to when transitioning through a doorway
 //Door dimensions
@@ -220,7 +216,8 @@ global.stepsPerTick = global.stepsToFade/global.ticksToFade;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>scr_reset_savedata();
+game_restart();
 </string>
           </argument>
         </arguments>

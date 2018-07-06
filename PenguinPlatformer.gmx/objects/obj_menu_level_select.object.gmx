@@ -29,6 +29,9 @@
 //Set constants for play button
 buttonPressed = false;
 mouseOver = false;
+
+global.levelTotalFish = 0;
+global.levelCollectedFish = -1;
 </string>
           </argument>
         </arguments>
