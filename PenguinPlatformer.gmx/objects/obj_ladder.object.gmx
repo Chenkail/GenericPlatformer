@@ -35,7 +35,7 @@ playerX = other.x;
 playerY = other.y;
 
 //Check to see if player is lined up with ladder
-global.playerOnLadder = point_in_rectangle(playerX, playerY, checkX1, checkY1, checkX2, checkY2);
+global.playerOnLadder = true;//point_in_rectangle(playerX, playerY, checkX1, checkY1, checkX2, checkY2);
 
 </string>
           </argument>

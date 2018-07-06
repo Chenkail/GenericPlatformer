@@ -82,6 +82,8 @@ if (!global.playerOnLadder) {
     }
 } else {
     vspeed = 0;
+    //Check to see if player is lined up with ladder
+    global.playerOnLadder = place_meeting(x, y + 33, obj_ladder);
 }
 </string>
           </argument>
@@ -108,7 +110,7 @@ if (!global.playerOnLadder) {
             <string>if (global.playerOnLadder) {
     global.playerFallSpeed = 0;
     vspeed = 0;
-    y -= 30;
+    y -= 5;
 }
 </string>
           </argument>
