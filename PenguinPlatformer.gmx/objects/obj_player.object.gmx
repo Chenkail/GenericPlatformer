@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>image_speed = global.playerImageSpeedIdle;
 global.playerOnLadder = false;
+
+global.playerWidth = sprite_width;
+global.playerHeight = sprite_height;
 </string>
           </argument>
         </arguments>

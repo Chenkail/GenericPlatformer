@@ -123,6 +123,10 @@
       <object>objects\obj_score</object>
       <object>objects\obj_reset</object>
     </objects>
+    <objects name="Menus">
+      <object>objects\obj_menu_main</object>
+      <object>objects\obj_menu_level_select</object>
+    </objects>
     <objects name="Level Design">
       <objects name="Blocks">
         <objects name="Wood Blocks">
@@ -143,10 +147,6 @@
       </objects>
       <object>objects\obj_door</object>
       <object>objects\obj_ladder</object>
-    </objects>
-    <objects name="Menus">
-      <object>objects\obj_menu_main</object>
-      <object>objects\obj_menu_level_select</object>
     </objects>
     <objects name="Effects">
       <object>objects\obj_need_more_fish</object>
