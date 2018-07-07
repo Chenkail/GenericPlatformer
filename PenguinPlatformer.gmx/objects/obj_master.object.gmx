@@ -169,12 +169,6 @@ global.needMoreFishHeight = 64;
 global.fadeTime = 2; //Length of fade in seconds
 global.fadePerTick = 0.05; //How dark should it get per tick (lower number means smoother fade)
 
-//Defining global variables for fade effect
-//Do not touch!
-global.maxFadeAlpha = 1; //1.0 is a complete fade to the color
-global.ticksToFade = global.maxFadeAlpha/global.fadePerTick;
-global.stepsToFade = global.fadeTime * global.stepsPerSecond;
-global.stepsPerTick = global.stepsToFade/global.ticksToFade;
 
 </string>
           </argument>

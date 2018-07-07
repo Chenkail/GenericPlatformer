@@ -26,6 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Set variables for fade and start alarm for first tick
+//Calculations for variables
+//Do not touch!
+global.maxFadeAlpha = 1; //1.0 is a complete fade to the color
+global.ticksToFade = global.maxFadeAlpha/global.fadePerTick;
+global.stepsToFade = global.fadeTime * global.stepsPerSecond;
+global.stepsPerTick = global.stepsToFade/global.ticksToFade;
+
 //Variables
 fadeAlpha = 0;
 fadeTime = global.fadeTime;
