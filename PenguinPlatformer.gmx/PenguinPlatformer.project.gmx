@@ -59,13 +59,13 @@
       <sprite>sprites\spr_chat_bubble</sprite>
       <sprite>sprites\spr_need_more_fish</sprite>
       <sprite>sprites\spr_ladder</sprite>
+      <sprites name="Tools">
+        <sprite>sprites\spr_freeze_gun_projectile</sprite>
+      </sprites>
     </sprites>
     <sprites name="Level Select Menu">
       <sprite>sprites\spr_check_mark</sprite>
       <sprite>sprites\spr_lock</sprite>
-    </sprites>
-    <sprites name="Tools">
-      <sprite>sprites\spr_freeze_gun_projectile</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
