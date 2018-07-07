@@ -59,6 +59,7 @@
       <sprite>sprites\spr_chat_bubble</sprite>
       <sprite>sprites\spr_need_more_fish</sprite>
       <sprite>sprites\spr_ladder</sprite>
+      <sprite>sprites\spr_hint</sprite>
       <sprites name="Tools">
         <sprite>sprites\spr_freeze_gun_projectile</sprite>
       </sprites>
@@ -144,6 +145,7 @@
       <objects name="Miscellaneous">
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
+        <object>objects\obj_hint</object>
       </objects>
       <objects name="Collectibles">
         <object>objects\obj_collectible_fish</object>
