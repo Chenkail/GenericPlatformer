@@ -98,6 +98,7 @@
         </scripts>
         <script>scripts\scr_level_select_mouse_check.gml</script>
         <script>scripts\scr_open_level.gml</script>
+        <script>scripts\scr_unlock_all_levels.gml</script>
       </scripts>
     </scripts>
     <scripts name="Effects">
