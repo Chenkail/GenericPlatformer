@@ -64,6 +64,9 @@
       <sprite>sprites\spr_check_mark</sprite>
       <sprite>sprites\spr_lock</sprite>
     </sprites>
+    <sprites name="Tools">
+      <sprite>sprites\spr_freeze_gun_projectile</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -128,7 +131,7 @@
       <object>objects\obj_menu_level_select</object>
     </objects>
     <objects name="Level Design">
-      <objects name="Blocks">
+      <objects name="Solid Blocks">
         <objects name="Wood Blocks">
           <object>objects\obj_block_wood_medium</object>
           <object>objects\obj_block_wood_small</object>
@@ -141,12 +144,18 @@
         </objects>
         <object>objects\obj_block_parent</object>
       </objects>
+      <objects name="Miscellaneous">
+        <object>objects\obj_door</object>
+        <object>objects\obj_ladder</object>
+      </objects>
       <objects name="Collectibles">
         <object>objects\obj_collectible_fish</object>
         <object>objects\obj_collectible_parent</object>
       </objects>
-      <object>objects\obj_door</object>
-      <object>objects\obj_ladder</object>
+      <objects name="Tools">
+        <object>objects\obj_freeze_gun</object>
+        <object>objects\obj_freeze_gun_projectile</object>
+      </objects>
     </objects>
     <objects name="Effects">
       <object>objects\obj_fade_to_room</object>
