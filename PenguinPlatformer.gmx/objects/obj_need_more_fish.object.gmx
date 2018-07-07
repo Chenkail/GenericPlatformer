@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm_set(0, global.needMoreFishTimeout * global.stepsPerSecond);
+            <string>///Set timer to delete instance and set global.needMoreFishExists to true
+alarm_set(0, global.needMoreFishTimeout * global.stepsPerSecond);
 global.needMoreFishExists = true;
 </string>
           </argument>
