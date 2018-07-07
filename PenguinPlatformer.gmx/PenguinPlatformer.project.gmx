@@ -131,13 +131,11 @@
     <objects name="Level Design">
       <objects name="Solid Blocks">
         <objects name="Wood Blocks">
-          <object>objects\obj_block_wood_medium</object>
-          <object>objects\obj_block_wood_small</object>
+          <object>objects\obj_block_wood_square</object>
           <object>objects\obj_block_wood_parent</object>
         </objects>
         <objects name="Ice Blocks">
-          <object>objects\obj_block_ice_medium</object>
-          <object>objects\obj_block_ice_small</object>
+          <object>objects\obj_block_ice_square</object>
           <object>objects\obj_block_ice_parent</object>
         </objects>
         <object>objects\obj_block_parent</object>
