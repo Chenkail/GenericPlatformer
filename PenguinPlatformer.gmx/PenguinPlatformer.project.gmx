@@ -73,12 +73,8 @@
   <scripts name="scripts">
     <scripts name="Blocks">
       <script>scripts\scr_player_block_collisions.gml</script>
+      <script>scripts\scr_size_check.gml</script>
       <script>scripts\scr_block_speed_change.gml</script>
-      <scripts name="Set Block Size">
-        <script>scripts\scr_block_size_32x32.gml</script>
-        <script>scripts\scr_block_size_64x64.gml</script>
-        <script>scripts\scr_block_size_128x128.gml</script>
-      </scripts>
     </scripts>
     <scripts name="Menus">
       <scripts name="Main Menu">
