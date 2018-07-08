@@ -55,14 +55,18 @@
       <sprites name="Collectibles">
         <sprite>sprites\spr_collectible_fish</sprite>
       </sprites>
-      <sprite>sprites\spr_door</sprite>
-      <sprite>sprites\spr_chat_bubble</sprite>
-      <sprite>sprites\spr_need_more_fish</sprite>
-      <sprite>sprites\spr_ladder</sprite>
-      <sprite>sprites\spr_hint</sprite>
-      <sprite>sprites\spr_portal_blue</sprite>
+      <sprites name="Miscellaneous">
+        <sprite>sprites\spr_door</sprite>
+        <sprite>sprites\spr_ladder</sprite>
+        <sprite>sprites\spr_portal_blue</sprite>
+      </sprites>
       <sprites name="Tools">
         <sprite>sprites\spr_freeze_gun_projectile</sprite>
+      </sprites>
+      <sprites name="Other">
+        <sprite>sprites\spr_hint</sprite>
+        <sprite>sprites\spr_chat_bubble</sprite>
+        <sprite>sprites\spr_need_more_fish</sprite>
       </sprites>
     </sprites>
     <sprites name="Level Select Menu">
@@ -146,6 +150,7 @@
       <objects name="Miscellaneous">
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
+        <object>objects\obj_portal_blue_1</object>
         <object>objects\obj_hint</object>
       </objects>
       <objects name="Collectibles">
