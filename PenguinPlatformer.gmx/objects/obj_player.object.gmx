@@ -29,7 +29,6 @@
 image_speed = global.playerImageSpeedIdle;
 global.playerOnLadder = false;
 global.playerTraveling = false;
-global.canTeleport = true;
 
 global.playerWidth = sprite_width;
 global.playerHeight = sprite_height;

@@ -49,11 +49,9 @@
         <sprite>sprites\spr_collectible_fish</sprite>
       </sprites>
       <sprites name="Miscellaneous">
-        <sprites name="Portals">
-          <sprite>sprites\spr_portal_blue</sprite>
-        </sprites>
         <sprite>sprites\spr_door</sprite>
         <sprite>sprites\spr_ladder</sprite>
+        <sprite>sprites\spr_portal_blue</sprite>
       </sprites>
       <sprites name="Tools">
         <sprite>sprites\spr_freeze_gun_projectile</sprite>
@@ -143,12 +141,9 @@
         <object>objects\obj_block_parent</object>
       </objects>
       <objects name="Miscellaneous">
-        <objects name="Portals">
-          <object>objects\obj_portal_blue_1</object>
-          <object>objects\obj_portal_blue_2</object>
-        </objects>
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
+        <object>objects\obj_portal_blue_1</object>
         <object>objects\obj_hint</object>
       </objects>
       <objects name="Collectibles">
@@ -177,7 +172,6 @@
       <room>rooms\rm_level_2</room>
       <room>rooms\rm_level_3</room>
       <room>rooms\rm_level_4</room>
-      <room>rooms\rm_level_5</room>
       <room>rooms\rm_game_complete</room>
     </rooms>
   </rooms>
