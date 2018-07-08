@@ -4,7 +4,7 @@ yOffset = global.levelSelectBoxY1 + global.levelSelectBoxBuffer;
 column = int64((mouse_x - xOffset)/(global.levelSelectChoiceWidth + global.levelSelectSpacing));
 row = int64((mouse_y - yOffset)/(global.levelSelectChoiceHeight + global.levelSelectSpacing));
 
-levelChoice = (global.levelSelectColumns * row) + (column + 1);
+levelChoice = ((global.levelSelectPage - 1) * global.levelSelectColumns * global.levelSelectRows) + ((global.levelSelectColumns * row) + (column + 1));
 
 if(mouse_check_button_released(mb_left)) {
     //Test to see if choice is a valid level
