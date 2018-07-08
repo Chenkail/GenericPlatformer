@@ -29,9 +29,6 @@
 global.portalBlue1X = x;
 global.portalBlue1Y = y;
 
-global.portalCheckWidth = sprite_width/2;
-global.portalCheckHeight = sprite_height/2;
-
 </string>
           </argument>
         </arguments>
