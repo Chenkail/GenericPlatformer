@@ -1,5 +1,5 @@
 numberOfButtons = 4;
-buttonRowWidth = (numberOfButtons * global.levelSelectPageButtonWidth) + ((numberOfButtons - 1) * global.levelSelectPageButtonSpacing);
+buttonRowWidth = global.pageButtonRowWidth;
 buttonRowHeight = global.levelSelectPageButtonHeight;
 buttonRowLeft = room_width - buttonRowWidth/2;
 buttonRowRight = global.levelSelectPageButtonY - buttonRowHeight/2;

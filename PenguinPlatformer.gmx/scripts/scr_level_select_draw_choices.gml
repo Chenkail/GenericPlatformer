@@ -11,8 +11,6 @@ firstBoxX = global.levelSelectBoxLeft
 firstBoxY = global.levelSelectBoxTop
             + global.levelSelectBoxBuffer
             + global.levelSelectChoiceHeight/2;
-
-cornerRadius = global.levelSelectChoiceCornerRadius;
             
 boxX = firstBoxX;
 boxY = firstBoxY;

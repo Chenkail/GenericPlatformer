@@ -49,7 +49,10 @@ global.levelSelectBoxRight = global.levelSelectBoxLeft + global.levelSelectBoxWi
 global.levelSelectBoxBottom = global.levelSelectBoxTop + global.levelSelectBoxHeight; //Bottom edge
 
 //Page control buttons
+global.levelSelectPageControlButtonCount = 4;
+global.pageButtonRowWidth = (global.levelSelectPageControlButtonCount * global.levelSelectPageButtonWidth) + ((global.levelSelectPageControlButtonCount - 1) * global.levelSelectPageButtonSpacing);
 global.levelSelectPageButtonY = global.levelSelectBoxBottom + global.levelSelectPageButtonYSpacing - global.levelSelectPageButtonHeight/2;
+global.levelSelectPageButtonCornerRadius = min(global.levelSelectPageButtonWidth, global.levelSelectPageButtonHeight) * global.levelSelectPageButtonCornerRadiusProportion;
 </string>
           </argument>
         </arguments>
@@ -73,6 +76,46 @@ global.levelSelectPageButtonY = global.levelSelectBoxBottom + global.levelSelect
           <argument>
             <kind>9</kind>
             <script>scr_level_select_level_choice</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_level_select_page_buttons</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -195,6 +238,46 @@ global.levelSelectPageButtonY = global.levelSelectBoxBottom + global.levelSelect
           <argument>
             <kind>9</kind>
             <script>scr_level_select_draw_choices</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_level_select_draw_page_control</script>
           </argument>
           <argument>
             <kind>0</kind>
