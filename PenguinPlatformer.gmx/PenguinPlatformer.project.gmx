@@ -60,6 +60,7 @@
       <sprite>sprites\spr_need_more_fish</sprite>
       <sprite>sprites\spr_ladder</sprite>
       <sprite>sprites\spr_hint</sprite>
+      <sprite>sprites\spr_portal_blue</sprite>
       <sprites name="Tools">
         <sprite>sprites\spr_freeze_gun_projectile</sprite>
       </sprites>
