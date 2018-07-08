@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = global.playerImageSpeedIdle;
+            <string>//Reset variables
+image_speed = global.playerImageSpeedIdle;
 global.playerOnLadder = false;
+global.goingThroughDoor = false;
 
 global.playerWidth = sprite_width;
 global.playerHeight = sprite_height;
