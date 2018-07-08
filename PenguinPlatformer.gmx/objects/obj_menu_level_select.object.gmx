@@ -50,8 +50,8 @@ global.levelSelectBoxBottom = global.levelSelectBoxTop + global.levelSelectBoxHe
 
 //Page control buttons
 global.levelSelectPageControlButtonCount = 4;
-global.pageButtonRowWidth = (global.levelSelectPageControlButtonCount * global.levelSelectPageButtonWidth) + ((global.levelSelectPageControlButtonCount - 1) * global.levelSelectPageButtonSpacing);
-global.levelSelectPageButtonY = global.levelSelectBoxBottom + global.levelSelectPageButtonYSpacing - global.levelSelectPageButtonHeight/2;
+global.pageButtonRowWidth = 375;
+global.levelSelectPageButtonY = global.levelSelectBoxBottom + global.levelSelectPageButtonYSpacing + global.levelSelectPageButtonHeight/2;
 global.levelSelectPageButtonCornerRadius = min(global.levelSelectPageButtonWidth, global.levelSelectPageButtonHeight) * global.levelSelectPageButtonCornerRadiusProportion;
 </string>
           </argument>
