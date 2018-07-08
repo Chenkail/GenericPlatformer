@@ -11,11 +11,11 @@ if (other.y <= y - blockHeight/2) {
     
     //Player is left of block
     if ((other.x < x) && (other.x > x - blockWidth/2 - global.playerWidth/2)) {
-        other.x = x - blockWidth/2 - global.playerWidth/2
+        other.x = x - blockWidth/2 - global.playerWidth/2;
     }
     //Player is right of block
     if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
-        other.x = x + blockWidth/2 + global.playerWidth/2
+        other.x = x + blockWidth/2 + global.playerWidth/2;
     }
 }
 
