@@ -65,7 +65,6 @@ playerX = other.x;
 playerY = other.y;
 
 //Check to see if player is in door boundary
-playerInDoor = false;
 playerInDoor = point_in_rectangle(playerX, playerY, checkX1, checkY1, checkX2, checkY2);
 
 //Check to see if player has all the fish

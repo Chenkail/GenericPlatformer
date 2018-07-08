@@ -144,6 +144,7 @@
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
         <object>objects\obj_portal_blue_1</object>
+        <object>objects\obj_portal_blue_2</object>
         <object>objects\obj_hint</object>
       </objects>
       <objects name="Collectibles">
@@ -172,6 +173,7 @@
       <room>rooms\rm_level_2</room>
       <room>rooms\rm_level_3</room>
       <room>rooms\rm_level_4</room>
+      <room>rooms\rm_level_5</room>
       <room>rooms\rm_game_complete</room>
     </rooms>
   </rooms>

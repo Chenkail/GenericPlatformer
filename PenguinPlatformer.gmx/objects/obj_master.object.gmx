@@ -53,7 +53,7 @@ global.mainMenuPlayButtonHeight = 100;
 
 ///Level select menu
 //Number of levels
-global.numberOfLevels = 4; //Total number of levels in the game
+global.numberOfLevels = 5; //Total number of levels in the game
 global.levelSelectColumns = 4; //Levels to display per row
 global.levelSelectRows = 2; //Number of rows
 
@@ -163,6 +163,11 @@ global.needMoreFishTimeout = 2; //Time before need more fish message disappears,
 //Do not touch unless sprite is changed
 global.needMoreFishWidth = 64;
 global.needMoreFishHeight = 64;
+
+///Portals
+global.portalCooldown = 1; //Time between portal uses, in seconds
+global.portalCheckWidth = 15; //Pixels to left/right (total width of box is twice this)
+global.portalCheckHeight = 32; //Pixels up/down (total height of box is twice this)
 
 ///Effect variables
 //Fade to next room
