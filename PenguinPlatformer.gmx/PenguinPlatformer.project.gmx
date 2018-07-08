@@ -158,6 +158,7 @@
       </objects>
       <objects name="Miscellaneous">
         <objects name="Portals">
+          <object>objects\obj_portal_parent</object>
           <object>objects\obj_portal_blue_1</object>
           <object>objects\obj_portal_blue_2</object>
           <object>objects\obj_portal_orange_1</object>
