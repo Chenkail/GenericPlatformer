@@ -28,7 +28,6 @@
             <string>///Set up level select menu
 //Calculations for large box
 //Do not touch!
-global.levelSelectBoxHeightOffset = global.levelSelectTitleY; //Number of pixels to shift the level select box
 global.levelSelectBoxWidth = global.levelSelectColumns * global.levelSelectChoiceWidth //Total width of option boxes
     + (global.levelSelectColumns - 1) * global.levelSelectSpacing //Total width of spacing between boxes
     + 2 *  global.levelSelectBoxBuffer; //Buffer spacing on both sides
@@ -36,6 +35,7 @@ global.levelSelectBoxHeight = global.levelSelectRows * global.levelSelectChoiceH
     + (global.levelSelectRows - 1) * global.levelSelectSpacing //Total height of spacing between boxes
     + 2 *  global.levelSelectBoxBuffer; //Buffer spacing on top/bottom
 global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.levelSelectBoxHeight) * global.levelSelectBoxCornerRadiusProportion; //Corner radius dependant on smaller dimension
+global.levelSelectChoiceCornerRadius = min(global.levelSelectChoiceWidth, global.levelSelectChoiceHeight) * global.levelSelectChoiceCornerRadiusProportion; //Set corner radius to be 1/4 of the smaller dimension of the choice boxes
 global.levelSelectBoxX1 = room_width/2 - global.levelSelectBoxWidth/2; //Left edge
 global.levelSelectBoxY1 = room_height/2 - global.levelSelectBoxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
 global.levelSelectBoxX2 = global.levelSelectBoxX1 + global.levelSelectBoxWidth; //Right edge
