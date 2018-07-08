@@ -68,8 +68,8 @@ global.levelSelectBoxHeightOffset = 60; //Number of pixels to shift the level se
 
 //Page control buttons
 global.levelSelectPageButtonOutlineColor = c_black; //Color of page control button outlines
-global.levelSelectPageButtonWidth = 100; //Width of page control buttons, in pixels
-global.levelSelectPageButtonHeight = 100; //Height of page control buttons, in pixels
+global.levelSelectPageButtonWidth = 70; //Width of page control buttons, in pixels
+global.levelSelectPageButtonHeight = 70; //Height of page control buttons, in pixels
 global.levelSelectPageButtonSpacing = 25; //Spacing between page control buttons, in pixels
 global.levelSelectPageButtonYSpacing = 10; //Number of pixels between bottom of large box and top of page control buttons
 global.levelSelectPageButtonCornerRadiusProportion = 0.25; //Proportion of page buttons' smaller side length that the corner radius should be
