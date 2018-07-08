@@ -9,15 +9,15 @@ if (other.y <= y - blockHeight/2) {
 } else {
     //Block should move when player pushes it from the side
     
-    //Player is left of block
+    //Player is left of block pushing to the right
     if ((other.x < x) && (other.x > x - blockWidth/2 - global.playerWidth/2)) {
-        x += global.playerSpeed;
-        other.x = x - blockWidth/2 - global.playerWidth/2;
+        x += global.playerSpeed; //Move block to the right
+        other.x = x - blockWidth/2 - global.playerWidth/2; //Move player back if intersecting
     }
-    //Player is right of block
+    //Player is right of block pushing to the left
     if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
-        x -= global.playerSpeed;
-        other.x = x + blockWidth/2 + global.playerWidth/2;
+        x -= global.playerSpeed; //Move block to the left
+        other.x = x + blockWidth/2 + global.playerWidth/2; //Move player back if intersecting
     }
 }
 
