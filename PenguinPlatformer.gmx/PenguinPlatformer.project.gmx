@@ -122,11 +122,16 @@
       <script>scripts\scr_fade_to_room.gml</script>
     </scripts>
     <scripts name="Game Mechanics">
-      <script>scripts\scr_walk.gml</script>
-      <script>scripts\scr_climb_ladder.gml</script>
-      <script>scripts\scr_reset_player_image.gml</script>
+      <scripts name="Player Movement">
+        <script>scripts\scr_walk.gml</script>
+        <script>scripts\scr_jump.gml</script>
+        <script>scripts\scr_climb_ladder.gml</script>
+        <script>scripts\scr_reset_player_image.gml</script>
+      </scripts>
+      <scripts name="Movable Block">
+        <script>scripts\scr_movable_block_player_collisions.gml</script>
+      </scripts>
       <script>scripts\scr_draw_need_more_fish.gml</script>
-      <script>scripts\scr_jump.gml</script>
     </scripts>
     <script>scripts\scr_exit_to_level_select.gml</script>
   </scripts>
@@ -199,6 +204,7 @@
     <rooms name="Levels">
       <room>rooms\rm_level_blank</room>
       <room>rooms\rm_level_1</room>
+      <room>rooms\rm_level_7</room>
       <room>rooms\rm_level_2</room>
       <room>rooms\rm_level_3</room>
       <room>rooms\rm_level_4</room>
