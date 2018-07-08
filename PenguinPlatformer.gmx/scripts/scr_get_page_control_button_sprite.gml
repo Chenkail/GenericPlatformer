@@ -11,3 +11,4 @@ switch (argument0) {
     case 4:
         return spr_page_last;
 }
+
