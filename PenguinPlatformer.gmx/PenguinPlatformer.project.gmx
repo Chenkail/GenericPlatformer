@@ -98,8 +98,6 @@
           <script>scripts\scr_level_select_draw_choices.gml</script>
           <script>scripts\scr_level_select_draw_choice_box.gml</script>
           <script>scripts\scr_draw_choice_box_mark.gml</script>
-          <script>scripts\scr_level_select_draw_page_control.gml</script>
-          <script>scripts\scr_level_select_draw_page_control_button.gml</script>
         </scripts>
         <scripts name="Level Status Checking">
           <script>scripts\scr_is_level_complete.gml</script>
@@ -110,7 +108,6 @@
           <script>scripts\scr_level_select_previous_page.gml</script>
           <script>scripts\scr_level_select_next_page.gml</script>
           <script>scripts\scr_level_select_last_page.gml</script>
-          <script>scripts\scr_level_select_click_page_buttons.gml</script>
           <script>scripts\scr_get_page_control_button_sprite.gml</script>
         </scripts>
         <script>scripts\scr_level_select_level_choice.gml</script>

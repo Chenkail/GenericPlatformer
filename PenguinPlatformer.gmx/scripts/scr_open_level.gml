@@ -62,9 +62,6 @@ switch (argument0) {
     case 20:
         level = rm_level_20;
         break;
-
-    default:
-        level = rm_level_select;
 }
 
 room_goto(level);
