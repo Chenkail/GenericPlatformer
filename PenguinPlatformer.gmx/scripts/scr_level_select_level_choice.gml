@@ -6,7 +6,7 @@ row = int64((mouse_y - yOffset)/(global.levelSelectChoiceHeight + global.levelSe
 
 levelChoice = ((global.levelSelectPage - 1) * global.levelSelectColumns * global.levelSelectRows) + ((global.levelSelectColumns * row) + (column + 1));
 
-if(mouse_check_button_released(mb_left)) {
+if(mouse_check_button_pressed(mb_left)) {
     //Test to see if choice is a valid level
     if (levelChoice <= global.numberOfLevels) {
         //Is the level locked?
