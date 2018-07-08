@@ -94,7 +94,7 @@ if (fadeAlpha &gt;= 1) {
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(fadeAlpha);
-draw_rectangle_color(0 , 0, view_wport[0], view_hport[0],
+draw_rectangle_color(0 , 0, room_width, room_height,
                         color, color, color, color, false);
 draw_set_alpha(1.0); //Reset alpha for any other draw events
 </string>
