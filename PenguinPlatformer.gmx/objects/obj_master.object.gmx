@@ -146,7 +146,7 @@ global.blockImageSpeedIce = global.blockSpeedIce;
 //Set jump constants
 global.playerJumpTime = 0.4; //Length of player jump in seconds
 global.jumpCheckConstant = 1; //Pixels below player to test for object
-global.playerDefaultJumpHeight = 104;
+global.playerDefaultJumpHeight = 70; //Player default jump height, in pixels
 
 //Set gravity and max fall speed, along with fall speed constant
 global.gravity = 1.5;
