@@ -51,6 +51,7 @@
       <sprites name="Miscellaneous">
         <sprites name="Portals">
           <sprite>sprites\spr_portal_blue</sprite>
+          <sprite>sprites\spr_portal_orange</sprite>
         </sprites>
         <sprite>sprites\spr_door</sprite>
         <sprite>sprites\spr_ladder</sprite>
@@ -146,6 +147,8 @@
         <objects name="Portals">
           <object>objects\obj_portal_blue_1</object>
           <object>objects\obj_portal_blue_2</object>
+          <object>objects\obj_portal_orange_1</object>
+          <object>objects\obj_portal_orange_2</object>
         </objects>
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
