@@ -25,8 +25,79 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.portalBlue1X = x;
+            <string>///Declare portal's position to global variables
+global.portalBlue1X = x;
 global.portalBlue1Y = y;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Allow teleporting
+global.canTeleport = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Check if player in portal frame and if so, teleport when down arrow is pressed.
+//Define coordinates to check
+checkX1 = x - global.portalCheckWidth;
+checkY1 = y - global.portalCheckHeight;
+checkX2 = x + global.portalCheckWidth;
+checkY2 = y + global.portalCheckHeight;
+playerX = other.x;
+playerY = other.y;
+
+//Check to see if player is in portal boundary
+playerInPortal = point_in_rectangle(playerX, playerY, checkX1, checkY1, checkX2, checkY2);
+
+//Teleport to blue portal 2
+if ((playerInPortal) and (global.canTeleport)) {
+    if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord('S'))) {
+         other.x = global.portalBlue2X;
+         other.y = global.portalBlue2Y;
+         
+         //Set alarm to prevent player from automatically teleporting back
+         global.canTeleport = false;
+         alarm_set(0, global.portalCooldown * global.stepsPerSecond);
+    }
+}
 </string>
           </argument>
         </arguments>
