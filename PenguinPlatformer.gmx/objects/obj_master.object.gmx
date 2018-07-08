@@ -165,7 +165,7 @@ global.needMoreFishWidth = 64;
 global.needMoreFishHeight = 64;
 
 ///Portals
-global.portalCooldown = 1; //Time between portal uses, in seconds
+global.portalCooldown = 0.1; //Time between portal uses, in seconds
 global.portalCheckWidth = 15; //Pixels to left/right (total width of box is twice this)
 global.portalCheckHeight = 32; //Pixels up/down (total height of box is twice this)
 
