@@ -22,7 +22,7 @@ if(mouse_check_button_pressed(mb_left)) {
             break;
         case 3:
             //Go to last page
-            global.levelSelectPage = int64(global.numberOfLevels / (global.levelSelectColumns * global.levelSelectRows) + 1);
+            global.levelSelectPage = global.levelSelectPageCount;
     }
 }
 

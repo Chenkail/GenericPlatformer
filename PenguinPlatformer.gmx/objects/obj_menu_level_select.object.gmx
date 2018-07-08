@@ -26,6 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Set up level select menu
+//Calculations for global variables
+global.levelsPerPage = global.levelSelectColumns * global.levelSelectRows;
+global.levelSelectPageCount = int64(global.numberOfLevels / global.levelsPerPage)
+if ((global.numberOfLevels mod global.levelsPerPage) != 0) {
+    global.levelSelectPageCount++;
+}
+
 //Calculations for large box
 //Do not touch!
 global.levelSelectBoxWidth = global.levelSelectColumns * global.levelSelectChoiceWidth //Total width of option boxes
@@ -40,10 +47,6 @@ global.levelSelectBoxX1 = room_width/2 - global.levelSelectBoxWidth/2; //Left ed
 global.levelSelectBoxY1 = room_height/2 - global.levelSelectBoxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
 global.levelSelectBoxX2 = global.levelSelectBoxX1 + global.levelSelectBoxWidth; //Right edge
 global.levelSelectBoxY2 = global.levelSelectBoxY1 + global.levelSelectBoxHeight; //Bottom edge
-
-//Set constants for play button
-buttonPressed = false;
-mouseOver = false;
 
 </string>
           </argument>
