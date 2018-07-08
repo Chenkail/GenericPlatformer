@@ -112,7 +112,7 @@ global.stepsPerSecond = 60;
 ///Player
 //Set default player speeds
 global.playerDefaultSpeed = 6; //Player default walking speed in pixels/step
-global.playerDefaultClimbSpeed = 5;
+global.playerDefaultClimbSpeed = 5; //Player default ladder climbing speed
 
 //Defining global variables for player speeds
 //Do not touch!
@@ -123,9 +123,8 @@ global.playerClimbSpeed = global.playerBaseSpeed;
 global.blockSpeedModifier = 0;
 
 //Set animation speeds for various animations
-//These should be adjusted individually through testing and then left alone
-global.playerDefaultImageSpeedIdle = 0.06; //Done. Do not touch!
-global.playerDefaultImageSpeedWalk = 0.14; //Done. Do not touch!
+global.playerDefaultImageSpeedIdle = 0.06;
+global.playerDefaultImageSpeedWalk = 0.14;
 
 //Defining global variables for image speed
 //Do not touch!
@@ -183,29 +182,6 @@ global.portalCheckHeight = 32; //Pixels up/down (total height of box is twice th
 global.fadeTime = 2; //Length of fade in seconds
 global.fadePerTick = 0.05; //How dark should it get per tick (lower number means smoother fade)
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="112">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>game_restart();
 </string>
           </argument>
         </arguments>
