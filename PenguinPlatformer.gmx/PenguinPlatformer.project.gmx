@@ -83,7 +83,6 @@
         <script>scripts\scr_draw_main_menu.gml</script>
         <script>scripts\scr_main_menu_check_play_button.gml</script>
         <script>scripts\scr_open_level_select.gml</script>
-        <script>scripts\scr_reset_player_image.gml</script>
         <script>scripts\scr_reset_save_data.gml</script>
       </scripts>
       <scripts name="Level Select">
@@ -109,6 +108,7 @@
     <scripts name="Game Mechanics">
       <script>scripts\scr_walk.gml</script>
       <script>scripts\scr_climb_ladder.gml</script>
+      <script>scripts\scr_reset_player_image.gml</script>
       <script>scripts\scr_draw_need_more_fish.gml</script>
       <script>scripts\scr_jump.gml</script>
     </scripts>
@@ -183,6 +183,7 @@
       <room>rooms\rm_level_4</room>
       <room>rooms\rm_level_5</room>
       <room>rooms\rm_level_6</room>
+      <room>rooms\rm_level_9</room>
       <room>rooms\rm_game_complete</room>
     </rooms>
   </rooms>
