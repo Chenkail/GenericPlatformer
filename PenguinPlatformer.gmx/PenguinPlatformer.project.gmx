@@ -60,6 +60,9 @@
       <sprites name="Tools">
         <sprite>sprites\spr_freeze_gun_projectile</sprite>
       </sprites>
+      <sprites name="Help Bubbles">
+        <sprite>sprites\spr_help_bubble_door</sprite>
+      </sprites>
       <sprites name="Other">
         <sprite>sprites\spr_hint</sprite>
         <sprite>sprites\spr_chat_bubble</sprite>
@@ -173,6 +176,10 @@
       <objects name="Collectibles">
         <object>objects\obj_collectible_fish</object>
         <object>objects\obj_collectible_parent</object>
+      </objects>
+      <objects name="Help Bubbles">
+        <object>objects\obj_help_bubble_door</object>
+        <object>objects\obj_help_bubble_parent</object>
       </objects>
       <objects name="Tools">
         <object>objects\obj_freeze_gun</object>

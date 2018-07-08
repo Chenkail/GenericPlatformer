@@ -141,6 +141,7 @@
     <instance objName="obj_block_wood_square" x="64" y="160" name="inst_E0D2FAE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_square" x="1536" y="160" name="inst_6E04156B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_square" x="1536" y="224" name="inst_6AF420C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_help_bubble_door" x="1472" y="672" name="inst_CFD1C16F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
