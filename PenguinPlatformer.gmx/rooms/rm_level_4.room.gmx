@@ -138,11 +138,6 @@
     <instance objName="obj_block_wood_square" x="832" y="720" name="inst_0C31CA77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_square" x="768" y="720" name="inst_80136C93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_square" x="896" y="720" name="inst_7101CE1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_ice_square" x="448" y="272" name="inst_4BE0A744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_ice_square" x="512" y="272" name="inst_2835C06D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_ice_square" x="576" y="272" name="inst_06CD4C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_ice_square" x="640" y="272" name="inst_48B77873" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block_ice_square" x="704" y="272" name="inst_ED077E3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ice_square" x="384" y="272" name="inst_58B75198" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ice_square" x="320" y="272" name="inst_BB0D85F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_ice_square" x="256" y="272" name="inst_C5469666" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
