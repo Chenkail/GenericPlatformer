@@ -98,7 +98,7 @@ if ((playerInDoor) and (!currentlyFading)) {
                 }
             }
             global.goingThroughDoor = true;
-            other.sprite_index = spr_player_64_back;
+            other.sprite_index = spr_player_back;
             scr_fade_to_room(nextRoom, global.doorFadeColor);
             currentlyFading = true;
         } else if (!global.needMoreFishExists) {

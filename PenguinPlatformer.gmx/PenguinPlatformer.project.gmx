@@ -26,17 +26,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player Sprites">
-      <sprites name="32x32">
-        <sprite>sprites\spr_player_32_idle</sprite>
-        <sprite>sprites\spr_player_32_left</sprite>
-        <sprite>sprites\spr_player_32_right</sprite>
-      </sprites>
-      <sprites name="64x64">
-        <sprite>sprites\spr_player_64_idle</sprite>
-        <sprite>sprites\spr_player_64_back</sprite>
-        <sprite>sprites\spr_player_64_right</sprite>
-        <sprite>sprites\spr_player_64_left</sprite>
-      </sprites>
+      <sprite>sprites\spr_player_idle</sprite>
+      <sprite>sprites\spr_player_back</sprite>
+      <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_player_left</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprites name="Ice Blocks">

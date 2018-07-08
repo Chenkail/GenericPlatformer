@@ -2,7 +2,7 @@
  */
 
 //Set animation
-sprite_index = spr_player_64_back;
+sprite_index = spr_player_back;
 
 global.playerFallSpeed = 0;
 vspeed = 0;
