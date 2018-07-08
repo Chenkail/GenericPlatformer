@@ -65,7 +65,6 @@
       </sprites>
       <sprites name="Other">
         <sprite>sprites\spr_hint</sprite>
-        <sprite>sprites\spr_chat_bubble</sprite>
         <sprite>sprites\spr_need_more_fish</sprite>
       </sprites>
     </sprites>
