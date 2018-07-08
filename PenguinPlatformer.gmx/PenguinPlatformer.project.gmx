@@ -105,8 +105,12 @@
           <script>scripts\scr_is_level_complete.gml</script>
           <script>scripts\scr_is_level_locked.gml</script>
         </scripts>
+        <scripts name="Page Control">
+          <script>scripts\scr_level_select_previous_page.gml</script>
+          <script>scripts\scr_level_select_next_page.gml</script>
+          <script>scripts\scr_get_page_control_button_sprite.gml</script>
+        </scripts>
         <script>scripts\scr_level_select_level_choice.gml</script>
-        <script>scripts\scr_get_page_control_button_sprite.gml</script>
         <script>scripts\scr_open_level.gml</script>
         <script>scripts\scr_unlock_all_levels.gml</script>
       </scripts>
