@@ -28,7 +28,7 @@
             <string>//Reset variables
 image_speed = global.playerImageSpeedIdle;
 global.playerOnLadder = false;
-global.goingThroughDoor = false;
+global.playerTraveling = false;
 
 global.playerWidth = sprite_width;
 global.playerHeight = sprite_height;
@@ -120,40 +120,41 @@ global.playerSpeed = global.playerBaseSpeed * global.blockSpeedModifier;
 //Set player image speed
 global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk * global.blockImageSpeedModifier;
 
-switch (keyboard_key)
-    {
-    //Go left
-    case vk_left:
-    case ord("A"):
-        sprite_index = spr_player_left;
-        scr_walk(-1);
-        break;
-    //Go right
-    case vk_right:
-    case ord("D"):
-        sprite_index = spr_player_right;
-        scr_walk(1);
-        break;
-    //Jump/Climb ladder
-    case vk_up:
-    case ord("W"):
-        ///Jump or climb ladder
-        //If not on ladder, jump
-        if (!global.playerOnLadder) {
-            scr_jump();
-        } else {
-            //If on ladder, climb upwards
-            scr_climb_ladder(-1);
-        }
-        break;
-    case vk_down:
-    case ord("S"):
-        if (global.playerOnLadder) {
-            //If on ladder, climb downwards
-            scr_climb_ladder(1);
-        }
-        break;
+if (!global.playerTraveling) {
+    switch (keyboard_key) {
+        //Go left
+        case vk_left:
+        case ord("A"):
+            sprite_index = spr_player_left;
+            scr_walk(-1);
+            break;
+        //Go right
+        case vk_right:
+        case ord("D"):
+            sprite_index = spr_player_right;
+            scr_walk(1);
+            break;
+        //Jump/Climb ladder
+        case vk_up:
+        case ord("W"):
+            ///Jump or climb ladder
+            //If not on ladder, jump
+            if (!global.playerOnLadder) {
+                scr_jump();
+            } else {
+                //If on ladder, climb upwards
+                scr_climb_ladder(-1);
+            }
+            break;
+        case vk_down:
+        case ord("S"):
+            if (global.playerOnLadder) {
+                //If on ladder, climb downwards
+                scr_climb_ladder(1);
+            }
+            break;
     }
+}
 
 </string>
           </argument>

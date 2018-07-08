@@ -97,7 +97,7 @@ if ((playerInDoor) and (!currentlyFading)) {
                     global.currentLevel++;
                 }
             }
-            global.goingThroughDoor = true;
+            global.playerTraveling = true;
             other.sprite_index = spr_player_back;
             scr_fade_to_room(nextRoom, global.doorFadeColor);
             currentlyFading = true;
