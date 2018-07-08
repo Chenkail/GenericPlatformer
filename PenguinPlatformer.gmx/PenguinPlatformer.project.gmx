@@ -68,6 +68,10 @@
     <sprites name="Level Select Menu">
       <sprite>sprites\spr_check_mark</sprite>
       <sprite>sprites\spr_lock</sprite>
+      <sprite>sprites\spr_page_first</sprite>
+      <sprite>sprites\spr_page_previous</sprite>
+      <sprite>sprites\spr_page_next</sprite>
+      <sprite>sprites\spr_page_last</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
