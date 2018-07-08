@@ -67,7 +67,7 @@ mouseOver = false;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_level_select_mouse_check</script>
+            <script>scr_level_select_level_choice</script>
           </argument>
           <argument>
             <kind>0</kind>
