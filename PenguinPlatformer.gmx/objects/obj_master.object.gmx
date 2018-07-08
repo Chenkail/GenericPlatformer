@@ -95,6 +95,9 @@ global.levelChoiceMarkVerticalOffset = 5;
 global.checkMarkWidth = 32;
 global.checkMarkHeight = 32;
 
+///Help bubble constants
+global.helpBubbleImageSpeedDefault = 0.1;
+
 ///Game complete level
 global.gameCompleteMessage = "Thanks for playing!";
 global.gameCompleteFont = fnt_game_complete;
@@ -141,16 +144,12 @@ global.blockImageSpeedWood = global.blockSpeedWood;
 global.blockImageSpeedIce = global.blockSpeedIce;
 
 ///Jumping and falling
-//Initalize jump permission to true
-global.canJump = true; //Do not touch!
-
 //Set jump constants
 global.playerJumpTime = 0.4; //Length of player jump in seconds
 global.jumpCheckConstant = 1; //Pixels below player to test for object
 global.playerDefaultJumpHeight = 104;
 
 //Set gravity and max fall speed, along with fall speed constant
-global.playerFloatCheckWidth = 16;
 global.gravity = 1.5;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 global.playerFallSpeed = 5; //Initialize global player fall speed variable and set it to a positive value so that the player falls if starting a level in the air
@@ -183,7 +182,6 @@ global.portalCheckHeight = 32; //Pixels up/down (total height of box is twice th
 //Fade to next room
 global.fadeTime = 2; //Length of fade in seconds
 global.fadePerTick = 0.05; //How dark should it get per tick (lower number means smoother fade)
-
 
 </string>
           </argument>
