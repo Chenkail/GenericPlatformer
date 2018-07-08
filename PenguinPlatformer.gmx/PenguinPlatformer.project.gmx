@@ -55,6 +55,7 @@
         </sprites>
         <sprite>sprites\spr_door</sprite>
         <sprite>sprites\spr_ladder</sprite>
+        <sprite>sprites\spr_movable_block</sprite>
       </sprites>
       <sprites name="Tools">
         <sprite>sprites\spr_freeze_gun_projectile</sprite>
@@ -167,6 +168,7 @@
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
         <object>objects\obj_hint</object>
+        <object>objects\obj_movable_block</object>
       </objects>
       <objects name="Collectibles">
         <object>objects\obj_collectible_fish</object>
