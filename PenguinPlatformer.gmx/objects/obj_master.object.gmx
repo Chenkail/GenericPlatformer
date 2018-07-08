@@ -53,7 +53,7 @@ global.mainMenuPlayButtonHeight = 100;
 
 ///Level select menu
 //Number of levels
-global.numberOfLevels = 5; //Total number of levels in the game
+global.numberOfLevels = 6; //Total number of levels in the game
 global.levelSelectColumns = 4; //Levels to display per row
 global.levelSelectRows = 2; //Number of rows
 
