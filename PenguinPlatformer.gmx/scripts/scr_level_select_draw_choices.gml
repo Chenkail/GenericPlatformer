@@ -4,11 +4,11 @@ firstLevelNumber = (global.levelSelectPage - 1) * global.levelSelectRows * globa
 currentLevelLabel = firstLevelNumber;
 
 //Define starting x and y
-firstBoxX = global.levelSelectBoxX1
+firstBoxX = global.levelSelectBoxLeft
             + global.levelSelectBoxBuffer
             + global.levelSelectChoiceWidth/2;
             
-firstBoxY = global.levelSelectBoxY1
+firstBoxY = global.levelSelectBoxTop
             + global.levelSelectBoxBuffer
             + global.levelSelectChoiceHeight/2;
 

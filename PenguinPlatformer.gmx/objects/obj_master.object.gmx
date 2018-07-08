@@ -57,14 +57,20 @@ global.numberOfLevels = 16; //Total number of levels in the game
 global.levelSelectColumns = 4; //Levels to display per row
 global.levelSelectRows = 2; //Number of rows
 
-//Size constants and location
+//Size constants and locations
 global.levelSelectChoiceWidth = 200; //Width of level select option boxes, in pixels
 global.levelSelectChoiceHeight = 200; //Height of level select option boxes, in pixels
 global.levelSelectSpacing = 25; //Spacing between level select option boxes, in pixels
 global.levelSelectBoxBuffer = 25; //Spacing between outside level select option boxes and the borders of the box around them, in pixels
 global.levelSelectBoxCornerRadiusProportion = 0.25; //Proportion of large box's smaller side length that the corner radius should be
-global.levelSelectChoiceCornerRadiusProportion = 0.25; //Proportion of choice box's smaller side length that the corner radius should be
+global.levelSelectChoiceCornerRadiusProportion = 0.25; //Proportion of choice boxes' smaller side length that the corner radius should be
 global.levelSelectBoxHeightOffset = 60; //Number of pixels to shift the level select box
+
+//Page control buttons
+global.levelSelectPageButtonWidth = 100; //Width of page control buttons, in pixels
+global.levelSelectPageButtonHeight = 100; //Height of page control buttons, in pixels
+global.levelSelectPageButtonYSpacing = 10; //Number of pixels between bottom of large box and top of page control buttons
+global.levelSelectPageButtonCornerRadiusProportion = 0.25; //Proportion of page buttons' smaller side length that the corner radius should be
 
 //Title
 global.levelSelectTitle = "Level Select"; //Title to be displayed on level select screen

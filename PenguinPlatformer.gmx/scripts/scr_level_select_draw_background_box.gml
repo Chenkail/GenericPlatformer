@@ -1,9 +1,9 @@
 //Draw level select background box
 draw_roundrect_colour_ext(
-    global.levelSelectBoxX1,
-    global.levelSelectBoxY1,
-    global.levelSelectBoxX2,
-    global.levelSelectBoxY2,
+    global.levelSelectBoxLeft,
+    global.levelSelectBoxTop,
+    global.levelSelectBoxRight,
+    global.levelSelectBoxBottom,
     global.levelSelectBoxCornerRadius,
     global.levelSelectBoxCornerRadius,
     global.levelSelectBoxColor, //Color of center
