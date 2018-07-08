@@ -130,6 +130,7 @@
     <objects name="Menus">
       <object>objects\obj_menu_main</object>
       <object>objects\obj_menu_level_select</object>
+      <object>objects\obj_level_select_page_buttons</object>
     </objects>
     <objects name="Level Design">
       <objects name="Solid Blocks">
