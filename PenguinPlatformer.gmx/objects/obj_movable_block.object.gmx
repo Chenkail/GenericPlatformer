@@ -89,10 +89,10 @@
           <argument>
             <kind>1</kind>
             <string>///Fall
-
+canFall = scr_can_move(x, y + blockHeight/2 + 1, false, blockWidth);
 if ((vspeed &lt; 0)) {
     vspeed += global.gravity;
-} else if (place_free(x, y + global.playerHeight/2 + 1)) {
+} else if (canFall) {
     fallSpeed = min(fallSpeed + global.gravity, global.maxFallSpeed);
     vspeed = fallSpeed;
 }
