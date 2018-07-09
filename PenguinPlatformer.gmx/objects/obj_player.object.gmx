@@ -174,7 +174,7 @@ if (!global.playerTraveling) {
         case vk_up:
         case ord("W"):
             //Check if space above player is not a solid block
-            canGoUp = scr_can_move(x, y - global.playerHeight/2 - 1);
+            canGoUp = scr_can_move(x, y - global.playerHeight/2 - 1, false, global.playerWidth - 10);
             
             if (canGoUp) {
                 ///Jump or climb ladder
