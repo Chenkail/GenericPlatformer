@@ -3,7 +3,7 @@
   <spriteName>spr_portal_blue</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>obj_portal_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -48,7 +48,7 @@ global.portalBlue2Y = y;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="4" ename="obj_movable_block">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -65,8 +65,29 @@ global.portalBlue2Y = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Allow teleporting
-global.canTeleport = true;
+            <string>///Check if block in portal frame and if so, teleport when spacebar is pressed.
+//Define coordinates to check
+checkX1 = x - global.portalCheckWidth;
+checkY1 = y - global.portalCheckHeight;
+checkX2 = x + global.portalCheckWidth;
+checkY2 = y + global.portalCheckHeight;
+blockX = other.x;
+blockY = other.y;
+
+//Check to see if player is in portal boundary
+blockInPortal = point_in_rectangle(blockX, blockY, checkX1, checkY1, checkX2, checkY2);
+
+//Teleport to blue portal 1
+if (blockInPortal) and (global.blockCanTeleport) {
+    if (keyboard_check_pressed(vk_space)) {
+        other.x = global.portalBlue1X;
+        other.y = global.portalBlue1Y;
+        //Set cooldown before block can teleport again
+        global.blockCanTeleport = false;
+        alarm_set(1, global.portalCooldown * global.stepsPerSecond);
+    }
+}
+
 </string>
           </argument>
         </arguments>

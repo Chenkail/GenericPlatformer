@@ -65,7 +65,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fallSpeed = 5;
+            <string>fallSpeed = 0;
 </string>
           </argument>
         </arguments>
