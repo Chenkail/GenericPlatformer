@@ -1,16 +1,12 @@
 ///Constants for drawing choices
 //Level numbers
-firstLevelNumber = (global.levelSelectPage - 1) * global.levelSelectRows * global.levelSelectColumns + 1;
+firstLevelNumber = (global.levelSelectPage - 1) * rows * columns + 1;
 currentLevelLabel = firstLevelNumber;
 
 //Define starting x and y
-firstBoxX = global.levelSelectBoxLeft
-            + global.levelSelectBoxBuffer
-            + global.levelSelectChoiceWidth/2;
+firstBoxX = boxLeft + buffer + choiceWidth/2;
             
-firstBoxY = global.levelSelectBoxTop
-            + global.levelSelectBoxBuffer
-            + global.levelSelectChoiceHeight/2;
+firstBoxY = boxTop + buffer + choiceHeight/2;
             
 boxX = firstBoxX;
 boxY = firstBoxY;
@@ -24,12 +20,12 @@ for (row = 0; row < global.levelSelectRows; row++) {
         scr_level_select_draw_choice_box(boxX, boxY, currentLevelLabel);
         
         //Move to next box
-        boxX = boxX + global.levelSelectChoiceWidth + global.levelSelectSpacing;
+        boxX = boxX + choiceWidth + spacing;
         currentLevelLabel++;
     }
     
     //Move to next row
-    boxY = boxY + global.levelSelectChoiceHeight + global.levelSelectSpacing;
+    boxY = boxY + choiceHeight + spacing;
     //Reset x coordinates
     boxX = firstBoxX;
 }

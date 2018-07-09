@@ -26,33 +26,39 @@
           <argument>
             <kind>1</kind>
             <string>///Set up level select menu
-//Calculations for global variables
-global.levelsPerPage = global.levelSelectColumns * global.levelSelectRows;
-global.levelSelectPageCount = int64(global.numberOfLevels / global.levelsPerPage)
+//Local variable assignments
+columns = global.levelSelectColumns;
+rows = global.levelSelectRows;
+numberOfLevels = global.numberOfLevels;
+levelsPerPage = columns * rows;
+global.levelsPerPage = columns * rows;
+numberOfPages = int64(numberOfLevels / levelsPerPage)
 if ((global.numberOfLevels mod global.levelsPerPage) != 0) {
-    global.levelSelectPageCount++;
+    numberOfPages++;
 }
+global.levelSelectPageCount = numberOfPages;
+choiceWidth = global.levelSelectChoiceWidth;
+choiceHeight = global.levelSelectChoiceHeight;
+choiceColor = global.levelSelectChoiceColor;
+choiceOutline = global.levelSelectChoiceOutline;
+spacing = global.levelSelectSpacing;
+buffer = global.levelSelectBoxBuffer;
 
 //Calculations for large box
 //Do not touch!
-global.levelSelectBoxWidth = global.levelSelectColumns * global.levelSelectChoiceWidth //Total width of option boxes
-    + (global.levelSelectColumns - 1) * global.levelSelectSpacing //Total width of spacing between boxes
-    + 2 *  global.levelSelectBoxBuffer; //Buffer spacing on both sides
-global.levelSelectBoxHeight = global.levelSelectRows * global.levelSelectChoiceHeight //Total height of option boxes
-    + (global.levelSelectRows - 1) * global.levelSelectSpacing //Total height of spacing between boxes
-    + 2 *  global.levelSelectBoxBuffer; //Buffer spacing on top/bottom
-global.levelSelectBoxCornerRadius = min(global.levelSelectBoxWidth, global.levelSelectBoxHeight) * global.levelSelectBoxCornerRadiusProportion; //Corner radius dependant on smaller dimension
-global.levelSelectChoiceCornerRadius = min(global.levelSelectChoiceWidth, global.levelSelectChoiceHeight) * global.levelSelectChoiceCornerRadiusProportion; //Set corner radius to be 1/4 of the smaller dimension of the choice boxes
-global.levelSelectBoxLeft = room_width/2 - global.levelSelectBoxWidth/2; //Left edge
-global.levelSelectBoxTop = room_height/2 - global.levelSelectBoxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
-global.levelSelectBoxRight = global.levelSelectBoxLeft + global.levelSelectBoxWidth; //Right edge
-global.levelSelectBoxBottom = global.levelSelectBoxTop + global.levelSelectBoxHeight; //Bottom edge
+boxWidth = columns * choiceWidth //Total width of option boxes
+    + (columns - 1) * spacing //Total width of spacing between boxes
+    + 2 * buffer; //Buffer spacing on both sides
+boxHeight = rows * choiceHeight //Total height of option boxes
+    + (rows - 1) * spacing //Total height of spacing between boxes
+    + 2 *  buffer; //Buffer spacing on top/bottom
+cornerRadius = min(boxWidth, boxHeight) * global.levelSelectBoxCornerRadiusProportion; //Corner radius dependant on smaller dimension
+choiceCornerRadius = min(choiceWidth, choiceHeight) * global.levelSelectChoiceCornerRadiusProportion; //Set corner radius to be 1/4 of the smaller dimension of the choice boxes
+boxLeft = room_width/2 - boxWidth/2; //Left edge
+boxTop = room_height/2 - boxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
+boxRight = boxLeft + boxWidth; //Right edge
+boxBottom = boxTop + boxHeight; //Bottom edge
 
-//Page control buttons
-global.levelSelectPageControlButtonCount = 4;
-global.pageButtonRowWidth = (global.levelSelectPageControlButtonCount - 1) * (global.levelSelectPageButtonWidth + global.levelSelectPageButtonSpacing);
-global.levelSelectPageButtonY = global.levelSelectBoxBottom + global.levelSelectPageButtonYSpacing + global.levelSelectPageButtonHeight/2;
-global.levelSelectPageButtonCornerRadius = min(global.levelSelectPageButtonWidth, global.levelSelectPageButtonHeight) * global.levelSelectPageButtonCornerRadiusProportion;
 </string>
           </argument>
         </arguments>
