@@ -131,12 +131,14 @@
         <script>scripts\scr_movable_block_player_collisions.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Movement Checking">
+      <script>scripts\scr_can_move.gml</script>
+      <script>scripts\scr_solid_objects.gml</script>
+    </scripts>
     <script>scripts\scr_draw_need_more_fish.gml</script>
     <script>scripts\scr_exit_to_level_select.gml</script>
     <script>scripts\scr_get_hint_text.gml</script>
     <script>scripts\scr_open_hint_dialogue.gml</script>
-    <script>scripts\scr_can_move.gml</script>
-    <script>scripts\scr_solid_objects.gml</script>
   </scripts>
   <fonts name="fonts">
     <fonts name="Menus">
