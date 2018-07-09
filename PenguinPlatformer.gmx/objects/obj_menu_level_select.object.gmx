@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set up level select menu
+            <string>///Set up level select menu boxes
 //Local variable assignments
 columns = global.levelSelectColumns;
 rows = global.levelSelectRows;
@@ -59,6 +59,29 @@ boxTop = room_height/2 - boxHeight/2 + global.levelSelectBoxHeightOffset; //Top 
 boxRight = boxLeft + boxWidth; //Right edge
 boxBottom = boxTop + boxHeight; //Bottom edge
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Declare check mark/lock dimensions
+checkMarkWidth = sprite_get_width(spr_check_mark);
+checkMarkHeight = sprite_get_height(spr_check_mark);
 </string>
           </argument>
         </arguments>

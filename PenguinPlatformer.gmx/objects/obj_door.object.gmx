@@ -31,8 +31,11 @@ currentlyFading = false;
 global.needMoreFishExists = false;
 
 //Door dimensions
-global.doorWidth = sprite_width; //Width of door object in pixels
-global.doorHeight = sprite_height; //Height of door object in pixels
+doorWidth = sprite_width; //Width of door object in pixels
+doorHeight = sprite_height; //Height of door object in pixels
+//Need more fish dimensions
+needMoreFishWidth = 64;
+needMoreFishHeight = 64;
 </string>
           </argument>
         </arguments>
