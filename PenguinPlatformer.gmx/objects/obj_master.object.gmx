@@ -254,6 +254,29 @@ global.gameCompleteMessageY = room_height/3;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///General gameplay config
+global.moveCheckForgiveness = 7; //Number of pixels to ignore on each side for scr_can_move
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Player config
 //Set default player speeds
 global.playerDefaultSpeed = 6; //Player default walking speed in pixels/step
