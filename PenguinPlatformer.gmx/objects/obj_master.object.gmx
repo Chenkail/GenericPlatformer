@@ -99,6 +99,7 @@ global.checkMarkHeight = 32;
 //Help bubble image speed
 global.helpBubbleImageSpeedDefault = 0.1;
 //Hint button
+global.hintButtonSize = 64; //Diameter of hint button sprite. Do not touch unless sprite is changed!
 global.hintButtonXOffset = 10;
 global.hintButtonYOffset = 10;
 

@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Declare that the hint dialogue is open
-global.hintDialogueOpen = true;
-
-//Set variables
+            <string>///Set variables
 hintBoxLeft = global.hintBoxHorizontalBuffer;
 hintBoxRight = view_wview[0] - global.hintBoxHorizontalBuffer;
 hintBoxTop = global.hintBoxVerticalBuffer;
@@ -63,8 +60,7 @@ hintBottomTextY = hintBoxBottom - global.hintBottomTextBuffer;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.hintDialogueOpen = false;
-instance_create(0, 0, obj_hint_button);
+            <string>instance_create(0, 0, obj_hint_button);
 </string>
           </argument>
         </arguments>
