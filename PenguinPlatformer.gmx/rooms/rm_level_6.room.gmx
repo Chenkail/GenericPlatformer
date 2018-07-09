@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_master" x="16" y="16" name="inst_8DE6582A" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="32" y="16" name="inst_65DCCA15" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hint_button" x="48" y="16" name="inst_885FBF50" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="192" y="224" name="inst_D8244F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_square" x="64" y="800" name="inst_C5E8AAA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_wood_square" x="64" y="736" name="inst_99C2AAD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

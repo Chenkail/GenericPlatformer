@@ -191,18 +191,18 @@
         <object>objects\obj_collectible_fish</object>
         <object>objects\obj_collectible_parent</object>
       </objects>
-      <objects name="Help Objects">
-        <objects name="Help Bubbles">
-          <object>objects\obj_help_bubble_door</object>
-          <object>objects\obj_help_bubble_parent</object>
-        </objects>
-        <object>objects\obj_hint_button</object>
-        <object>objects\obj_hint_dialogue</object>
-      </objects>
       <objects name="Tools">
         <object>objects\obj_freeze_gun</object>
         <object>objects\obj_freeze_gun_projectile</object>
       </objects>
+    </objects>
+    <objects name="Help Objects">
+      <objects name="Help Bubbles">
+        <object>objects\obj_help_bubble_door</object>
+        <object>objects\obj_help_bubble_parent</object>
+      </objects>
+      <object>objects\obj_hint_button</object>
+      <object>objects\obj_hint_dialogue</object>
     </objects>
     <objects name="Effects">
       <object>objects\obj_fade_to_room</object>
