@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Set coordinates for drawing hint button
 //Should be in top right corner of interface
+global.hintButtonSize = sprite_get_width(spr_hint_button); //Declare diameter of hint button sprite
 hintButtonX = view_wview[0] - global.hintButtonSize/2 - global.hintButtonXOffset;
 hintButtonY = global.hintButtonSize/2 + global.hintButtonYOffset;
 
