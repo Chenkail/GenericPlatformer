@@ -169,7 +169,7 @@ global.hintButtonYOffset = 10;
 //Background box
 global.hintBoxHorizontalBuffer = 20;
 global.hintBoxVerticalBuffer = 20;
-global.hintBoxCornerRadiusProportion = 0.25;
+global.hintBoxCornerRadiusProportion = 0.2;
 global.hintBoxOutlineColor = c_black;
 global.hintBoxFillColor = c_white;
 //Text
@@ -178,12 +178,41 @@ global.hintBoxTitleText = "Hint:";
 global.hintTextTitleFont = fnt_hint_title;
 global.hintTextTitleFontColor = c_black;
 global.hintTextHorizontalBuffer = 30;
-global.hintTextFont = fnt_menu_buttons;
+global.hintTextFont = fnt_hint_text;
 global.hintTextFontColor = c_black;
 global.hintTextLineSpacing = 70;
 global.hintBottomTextBuffer = 60;
 global.hintBottomTextFont = fnt_hint_bottom;
 global.hintBottomTextFontColor = c_black;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Set hint dialogue messages
+global.hintBoxBottomText = "Press H to open/close this dialogue or click anywhere to close";
+global.hintBoxText1 = "Use WASD or the arrow keys to move. Use S or the down arrow to enter doors.";
+global.hintBoxText2 = "You need to collect all the fish in each level to progress.";
+global.hintBoxText3 = "Stuck? Press R to reset the level."
+global.hintBoxText4 = "You move faster on ice than on wood. This means you can jump farther.";
+global.hintBoxText5 = "The speed bonus from ice isn't lost while midair or climbing ladders. Use this to your advantage!"
+global.hintBoxText6 = "";
 
 </string>
           </argument>
@@ -422,35 +451,6 @@ global.portalCheckHeight = 32; //Pixels up/down (total height of box is twice th
 //Fade to next room
 global.fadeTime = 2; //Length of fade in seconds
 global.fadePerTick = 0.05; //How dark should it get per tick (lower number means smoother fade)
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Set hint dialogue messages
-global.hintBoxBottomText = "Press H to open/close this dialogue or click anywhere to close";
-global.hintBoxText1 = "Use WASD or the arrow keys to move. Use S or the down arrow to enter doors.";
-global.hintBoxText2 = "You need to collect all the fish in each level to progress.";
-global.hintBoxText3 = "Stuck? Press R to reset the level."
-global.hintBoxText4 = "You move faster on ice than on wood. This means you can jump farther.";
-global.hintBoxText5 = "The speed bonus from ice isn't lost while midair or climbing ladders. Use this to your advantage!"
-global.hintBoxText6 = "";
 
 </string>
           </argument>
