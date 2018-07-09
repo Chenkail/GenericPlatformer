@@ -443,13 +443,14 @@ global.fadePerTick = 0.05; //How dark should it get per tick (lower number means
           <argument>
             <kind>1</kind>
             <string>///Set hint dialogue messages
-global.hintBoxBottomText = "Press H to open/close this dialogue or click anywhere to exit";
+global.hintBoxBottomText = "Press H to open/close this dialogue or click anywhere to close";
 global.hintBoxText1 = "Use WASD or the arrow keys to move. Use S or the down arrow to enter doors.";
 global.hintBoxText2 = "You need to collect all the fish in each level to progress.";
 global.hintBoxText3 = "Stuck? Press R to reset the level."
 global.hintBoxText4 = "You move faster on ice than on wood. This means you can jump farther.";
 global.hintBoxText5 = "The speed bonus from ice isn't lost while midair or climbing ladders. Use this to your advantage!"
 global.hintBoxText6 = "";
+
 </string>
           </argument>
         </arguments>
