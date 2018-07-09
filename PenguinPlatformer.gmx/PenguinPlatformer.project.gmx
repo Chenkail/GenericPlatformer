@@ -136,6 +136,7 @@
       </scripts>
       <scripts name="Portals">
         <script>scripts\scr_player_teleport.gml</script>
+        <script>scripts\scr_block_teleport.gml</script>
       </scripts>
     </scripts>
     <script>scripts\scr_draw_need_more_fish.gml</script>

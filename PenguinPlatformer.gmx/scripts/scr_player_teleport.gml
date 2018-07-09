@@ -1,4 +1,4 @@
-///Check if player in portal frame and if so, teleport when down arrow is pressed.
+///Check if player in portal frame and if so, teleport when downwards movement command is pressed.
 //Define coordinates to check
 checkX1 = x - global.portalCheckWidth;
 checkY1 = y - global.portalCheckHeight;
