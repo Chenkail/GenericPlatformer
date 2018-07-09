@@ -28,20 +28,16 @@
     <sprites name="Player Sprites">
       <sprite>sprites\spr_player_idle</sprite>
       <sprite>sprites\spr_player_back</sprite>
-      <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_right</sprite>
     </sprites>
     <sprites name="Blocks">
       <sprites name="Ice Blocks">
-        <sprite>sprites\spr_block_ice_small</sprite>
-        <sprite>sprites\spr_block_ice_medium</sprite>
+        <sprite>sprites\spr_block_ice_square</sprite>
       </sprites>
       <sprites name="Wood Blocks">
-        <sprite>sprites\spr_block_wood_small</sprite>
         <sprite>sprites\spr_block_wood_log_medium</sprite>
-        <sprite>sprites\spr_block_wood_log_solid_medium</sprite>
         <sprite>sprites\spr_block_wood_square_medium</sprite>
-        <sprite>sprites\spr_block_wood_square_solid_medium</sprite>
       </sprites>
     </sprites>
     <sprites name="Level Design">
