@@ -8,14 +8,25 @@ if (other.y <= y - blockHeight/2) {
     }
 } else {
     //Stop moving if running into a wall
-    
-    //Player is left of block
+    playerLeftCheck = false;
+    playerRightCheck = false;
     if ((other.x < x) && (other.x > x - blockWidth/2 - global.playerWidth/2)) {
-        other.x = x - blockWidth/2 - global.playerWidth/2;
+        playerLeftCheck = true;
+    } else if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
+        playerRightCheck = true;
     }
-    //Player is right of block
-    if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
+    
+    if (playerLeftCheck) {
+        //Player is left of block
+        other.x = x - blockWidth/2 - global.playerWidth/2;
+    } else if (playerRightCheck) {
+        //Player is right of block
         other.x = x + blockWidth/2 + global.playerWidth/2;
+    } else {
+        if ((other.y > y) && (other.y < y + blockHeight/2 + global.playerHeight/2)) {
+        //Player is below block
+        other.y = y + blockHeight/2 + global.playerHeight/2;
+        }
     }
 }
 
