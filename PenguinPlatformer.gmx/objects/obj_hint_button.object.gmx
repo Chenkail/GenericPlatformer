@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Set coordinates for drawing hint button
+            <string>///Set coordinates for drawing hint button
 //Should be in top right corner of interface
 hintButtonX = view_wview[0] - global.hintButtonSize/2 - global.hintButtonXOffset;
 hintButtonY = global.hintButtonSize/2 + global.hintButtonYOffset;
