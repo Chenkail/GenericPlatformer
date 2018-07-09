@@ -53,7 +53,7 @@ hintButtonY = global.hintButtonSize/2 + global.hintButtonYOffset;
           <argument>
             <kind>1</kind>
             <string>///Test if mouse in hint button circle and if so, open hint menu
-mouseOnButton = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), hintButtonX, hintButtonY, global.hintButtonSize/2);
+mouseOnButton = point_in_circle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), hintButtonX, hintButtonY, global.hintButtonSize/2);
 if (mouseOnButton) {
     scr_open_hint_dialogue();
 }
