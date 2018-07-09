@@ -25,10 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Control constants config
-//Define game steps per second
-//Do not touch!
-global.stepsPerSecond = 60;
+            <string>///Define steps per second to be equal to room speed
+global.stepsPerSecond = room_speed;
 
 </string>
           </argument>
@@ -262,8 +260,8 @@ global.playerDefaultSpeed = 6; //Player default walking speed in pixels/step
 global.playerDefaultClimbSpeed = 5; //Player default ladder climbing speed
 
 //Set animation speeds for various animations
-global.playerDefaultImageSpeedIdle = 0.06;
-global.playerDefaultImageSpeedWalk = 0.14;
+global.playerDefaultImageSpeedIdle = 0.06; //Default player animation speed while standing still
+global.playerDefaultImageSpeedWalk = 0.14; //Default player animation speed while walking
 
 ///Jumping and falling
 //Set jump constants
@@ -296,8 +294,8 @@ global.blockSpeedWood = 1; //Walking speed multiplier wood
 global.blockSpeedIce = 1.6; //Walking speed multiplier ice
 
 //Image speed constants for different block types
-global.blockImageSpeedWood = global.blockSpeedWood;
-global.blockImageSpeedIce = global.blockSpeedIce;
+global.blockImageSpeedWood = 1;
+global.blockImageSpeedIce = 1.6;
 
 </string>
           </argument>
