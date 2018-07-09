@@ -220,6 +220,7 @@
       <room>rooms\rm_level_5</room>
       <room>rooms\rm_level_6</room>
       <room>rooms\rm_level_7</room>
+      <room>rooms\rm_level_8</room>
       <room>rooms\rm_game_complete</room>
     </rooms>
   </rooms>
