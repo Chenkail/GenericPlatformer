@@ -11,13 +11,17 @@ if (other.y <= y - blockHeight/2) {
     
     //Player is left of block pushing to the right
     if ((other.x < x) && (other.x > x - blockWidth/2 - global.playerWidth/2)) {
-        x += global.playerSpeed; //Move block to the right
+        canGoRight = scr_can_move(x + blockWidth/2 + 1, y, true, blockHeight);
+        if (canGoRight) {
+            x += global.playerSpeed; //Move block to the right
+        }
         other.x = x - blockWidth/2 - global.playerWidth/2; //Move player back if intersecting
-    }
-     
-    //Player is right of block pushing to the left
-    if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
-        x -= global.playerSpeed; //Move block to the left
+    } else if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
+        //Player is right of block pushing to the left
+        canGoLeft = scr_can_move(x - blockWidth/2 - 1, y, true, blockHeight);
+        if (canGoLeft) {
+            x -= global.playerSpeed; //Move block to the left
+        }
         other.x = x + blockWidth/2 + global.playerWidth/2; //Move player back if intersecting
     }
 }
