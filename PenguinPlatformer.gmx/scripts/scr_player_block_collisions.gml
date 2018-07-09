@@ -23,10 +23,7 @@ if (other.y <= y - blockHeight/2) {
         //Player is right of block
         other.x = x + blockWidth/2 + global.playerWidth/2;
     } else {
-        if ((other.y > y) && (other.y < y + blockHeight/2 + global.playerHeight/2)) {
-        //Player is below block
-        other.y = y + blockHeight/2 + global.playerHeight/2;
-        }
+        
     }
 }
 

@@ -173,13 +173,21 @@ if (!global.playerTraveling) {
         //Jump/Climb ladder
         case vk_up:
         case ord("W"):
-            ///Jump or climb ladder
-            //If not on ladder, jump
-            if (!global.playerOnLadder) {
-                scr_jump();
-            } else {
-                //If on ladder, climb upwards
-                scr_climb_ladder(-1);
+            //Check if space above player is empty or a ladder
+            canGoUp = place_empty(x, y - global.playerHeight/2 - 1);
+            if (place_meeting(x, y - global.playerHeight/2 - 1, obj_ladder)) {
+                canGoUp = true;
+            }
+            
+            if (canGoUp) {
+                ///Jump or climb ladder
+                //If not on ladder, jump
+                if (!global.playerOnLadder) {
+                    scr_jump();
+                } else {
+                    //If on ladder, climb upwards
+                    scr_climb_ladder(-1);
+                }
             }
             break;
         case vk_down:
