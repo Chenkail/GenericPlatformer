@@ -137,11 +137,18 @@
       <script>scripts\scr_draw_need_more_fish.gml</script>
     </scripts>
     <script>scripts\scr_exit_to_level_select.gml</script>
+    <script>scripts\scr_get_hint_text.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\fnt_title</font>
-    <font>fonts\fnt_menu_buttons</font>
-    <font>fonts\fnt_level_select_buttons</font>
+    <fonts name="Menus">
+      <font>fonts\fnt_title</font>
+      <font>fonts\fnt_menu_buttons</font>
+      <font>fonts\fnt_level_select_buttons</font>
+    </fonts>
+    <fonts name="Hint Dialogue">
+      <font>fonts\fnt_hint_title</font>
+      <font>fonts\fnt_hint_bottom</font>
+    </fonts>
     <font>fonts\fnt_game_complete</font>
   </fonts>
   <objects name="objects">

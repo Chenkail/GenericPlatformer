@@ -95,8 +95,36 @@ global.levelChoiceMarkVerticalOffset = 5;
 global.checkMarkWidth = 32;
 global.checkMarkHeight = 32;
 
-///Help bubble constants
+///Help objects
+//Help bubble image speed
 global.helpBubbleImageSpeedDefault = 0.1;
+//Hint button
+global.hintButtonXOffset = 10;
+global.hintButtonYOffset = 10;
+
+///Hint dialogue box
+//Background box
+global.hintBoxHorizontalBuffer = 20;
+global.hintBoxVerticalBuffer = 20;
+global.hintBoxCornerRadiusProportion = 0.25;
+global.hintBoxOutlineColor = c_black;
+global.hintBoxFillColor = c_white;
+//Text
+global.hintBoxTitleTextBuffer = 100;
+global.hintBoxTitleText = "Hint:";
+global.hintTextTitleFont = fnt_hint_title;
+global.hintTextTitleFontColor = c_black;
+global.hintTextHorizontalBuffer = 30;
+global.hintTextFont = fnt_menu_buttons;
+global.hintTextFontColor = c_black;
+global.hintTextLineSpacing = 70;
+global.hintBottomTextBuffer = 60;
+global.hintBottomTextFont = fnt_hint_bottom;
+global.hintBottomTextFontColor = c_black;
+//Hint dialogue messages
+global.hintBoxBottomText = "Press [esc] or click anywhere to exit";
+global.hintBoxText1 = "Use WASD or the arrow keys to move. Use S or the down arrow to enter doors.";
+
 
 ///Game complete level
 global.gameCompleteMessage = "Thanks for playing!";

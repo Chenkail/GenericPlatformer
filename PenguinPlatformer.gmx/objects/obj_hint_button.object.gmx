@@ -25,7 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.hintDialogueOpen = false;
+            <string>//Set coordinates for drawing hint button
+//Should be in top right corner of interface
+hintButtonX = view_wview[0] - sprite_width - global.hintButtonXOffset;
+hintButtonY = global.hintButtonYOffset;
+
+//Reset hint dialogue
+global.hintDialogueOpen = false;
+
 </string>
           </argument>
         </arguments>
@@ -48,7 +55,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(obj_hint_dialogue);
+            <string>instance_create(0, 0, obj_hint_dialogue);
 </string>
           </argument>
         </arguments>
@@ -71,7 +78,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw help button
+            <string>///Draw hint button
+draw_sprite(spr_hint_button, 0, hintButtonX, hintButtonY);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Do nothing
 </string>
           </argument>
         </arguments>
@@ -94,7 +125,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(obj_hint_dialogue);
+            <string>instance_create(0, 0, obj_hint_dialogue);
 </string>
           </argument>
         </arguments>

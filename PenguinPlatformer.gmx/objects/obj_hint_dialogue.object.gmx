@@ -25,7 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.hintDialogueOpen = true;
+            <string>//Declare that the hint dialogue is open
+global.hintDialogueOpen = true;
+
+//Set variables
+hintBoxLeft = global.hintBoxHorizontalBuffer;
+hintBoxRight = view_wview[0] - global.hintBoxHorizontalBuffer;
+hintBoxTop = global.hintBoxVerticalBuffer;
+hintBoxBottom = view_hview[0] - global.hintBoxVerticalBuffer;
+hintBoxCenterX = view_wview[0]/2;
+hintBoxCenterY = view_hview[0]/2;
+hintBoxWidth = hintBoxRight - hintBoxLeft + 1;
+hintBoxHeight = hintBoxBottom - hintBoxTop + 1;
+hintBoxCornerRadius = min(hintBoxWidth, hintBoxHeight) * global.hintBoxCornerRadiusProportion;
+hintBoxTitleY = hintBoxTop + global.hintBoxTitleTextBuffer;
+hintBoxTextWidth = hintBoxWidth - 2 * global.hintTextHorizontalBuffer;
+hintBottomTextY = hintBoxBottom - global.hintBottomTextBuffer;
 </string>
           </argument>
         </arguments>
@@ -72,6 +87,53 @@
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw hint dialogue with text
+//Draw hint dialogue box
+//Draw center fill
+draw_roundrect_colour_ext(hintBoxLeft, hintBoxTop, hintBoxRight, hintBoxBottom, hintBoxCornerRadius, hintBoxCornerRadius, global.hintBoxFillColor, global.hintBoxFillColor, false);
+//Draw outline
+draw_roundrect_colour_ext(hintBoxLeft, hintBoxTop, hintBoxRight, hintBoxBottom, hintBoxCornerRadius, hintBoxCornerRadius, global.hintBoxOutlineColor, global.hintBoxOutlineColor, true);
+
+///Draw the text
+//Set text alignment to the center
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+//Draw title
+draw_set_font(global.hintTextTitleFont);
+draw_set_color(global.hintTextTitleFontColor);
+draw_text(hintBoxCenterX, hintBoxTitleY, global.hintBoxTitleText);
+//Draw hint text for current level
+hintText = scr_get_hint_text(global.currentLevel);
+draw_set_font(global.hintTextFont);
+draw_set_color(global.hintTextFontColor);
+draw_text_ext(hintBoxCenterX, hintBoxCenterY, hintText, global.hintTextLineSpacing, hintBoxTextWidth);
+//Draw bottom text
+draw_set_font(global.hintBottomTextFont);
+draw_set_color(global.hintBottomTextFontColor);
+draw_text(hintBoxCenterX, hintBottomTextY, global.hintBoxBottomText);
+
 </string>
           </argument>
         </arguments>
