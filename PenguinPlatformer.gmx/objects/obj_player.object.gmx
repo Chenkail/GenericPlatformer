@@ -164,7 +164,7 @@ if (!global.playerTraveling) {
         //Go left
         case vk_left:
         case ord("A"):
-            canGoLeft = scr_can_move(x - playerWidth/2 - 1, y, true, playerHeight - 6);
+            canGoLeft = scr_can_move(x - playerWidth/2 - 1, y, true, playerHeight);
             if (canGoLeft) {
                 sprite_index = spr_player_left;
                 scr_walk(-1)
@@ -173,7 +173,7 @@ if (!global.playerTraveling) {
         //Go right
         case vk_right:
         case ord("D"):
-            canGoRight = scr_can_move(x + playerWidth/2 + 1, y, true, playerHeight - 6);
+            canGoRight = scr_can_move(x + playerWidth/2 + 1, y, true, playerHeight);
             if (canGoRight) {
                 sprite_index = spr_player_right;
                 scr_walk(1);
@@ -183,7 +183,7 @@ if (!global.playerTraveling) {
         case vk_up:
         case ord("W"):
             //Check if space above player is not a solid block
-            canGoUp = scr_can_move(x, y - playerHeight/2 - 1, false, playerWidth - 6);
+            canGoUp = scr_can_move(x, y - playerHeight/2 - 1, false, playerWidth);
             
             if (canGoUp) {
                 ///Jump or climb ladder
