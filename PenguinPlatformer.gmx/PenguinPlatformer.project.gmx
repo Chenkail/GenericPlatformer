@@ -134,8 +134,11 @@
         <script>scripts\scr_movable_block_wall_collision.gml</script>
         <script>scripts\scr_movable_block_player_collisions.gml</script>
       </scripts>
-      <script>scripts\scr_draw_need_more_fish.gml</script>
+      <scripts name="Portals">
+        <script>scripts\scr_player_teleport.gml</script>
+      </scripts>
     </scripts>
+    <script>scripts\scr_draw_need_more_fish.gml</script>
     <script>scripts\scr_exit_to_level_select.gml</script>
     <script>scripts\scr_get_hint_text.gml</script>
   </scripts>
@@ -176,11 +179,11 @@
       </objects>
       <objects name="Miscellaneous">
         <objects name="Portals">
-          <object>objects\obj_portal_parent</object>
           <object>objects\obj_portal_blue_1</object>
           <object>objects\obj_portal_blue_2</object>
           <object>objects\obj_portal_orange_1</object>
           <object>objects\obj_portal_orange_2</object>
+          <object>objects\obj_portal_parent</object>
         </objects>
         <object>objects\obj_door</object>
         <object>objects\obj_ladder</object>
