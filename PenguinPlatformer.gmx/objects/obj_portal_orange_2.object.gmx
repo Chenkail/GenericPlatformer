@@ -89,7 +89,7 @@ global.canTeleport = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Check if player in portal frame and if so, teleport when down arrow is pressed.
+            <string>///Check if player in portal frame and if so, teleport when downwards movement command is pressed.
 //Define coordinates to check
 checkX1 = x - global.portalCheckWidth;
 checkY1 = y - global.portalCheckHeight;
@@ -104,14 +104,15 @@ playerInPortal = point_in_rectangle(playerX, playerY, checkX1, checkY1, checkX2,
 //Teleport to orange portal 1
 if ((playerInPortal) and (global.canTeleport)) {
     if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord('S'))) {
-         other.x = global.portalOrange1X;
-         other.y = global.portalOrange1Y;
-         
-         //Set alarm to prevent player from automatically teleporting back
-         global.canTeleport = false;
-         alarm_set(0, global.portalCooldown * global.stepsPerSecond);
+        other.x = global.portalOrange1X;
+        other.y = global.portalOrange1Y;
+        
+        //Set alarm to prevent player from automatically teleporting back
+        global.canTeleport = false;
+        alarm_set(0, global.portalCooldown * global.stepsPerSecond);
     }
 }
+
 </string>
           </argument>
         </arguments>

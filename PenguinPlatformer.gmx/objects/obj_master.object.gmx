@@ -123,7 +123,7 @@ global.hintBottomTextBuffer = 60;
 global.hintBottomTextFont = fnt_hint_bottom;
 global.hintBottomTextFontColor = c_black;
 //Hint dialogue messages
-global.hintBoxBottomText = "Press [esc] or click anywhere to exit";
+global.hintBoxBottomText = "Press H to open/close this dialogue or click anywhere to exit";
 global.hintBoxText1 = "Use WASD or the arrow keys to move. Use S or the down arrow to enter doors.";
 
 

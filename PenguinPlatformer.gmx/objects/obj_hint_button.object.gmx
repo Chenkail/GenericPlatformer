@@ -52,7 +52,13 @@ hintButtonY = global.hintButtonSize/2 + global.hintButtonYOffset;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>///Test if mouse in hint button circle and if so, open hint menu
+mouseOnButton = point_in_circle(mouse_x, mouse_y, hintButtonX, hintButtonY, global.hintButtonSize/2);
+if (mouseOnButton) {
+    scr_open_hint_dialogue();
+}
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -84,24 +90,41 @@ draw_sprite(spr_hint_button, 0, hintButtonX, hintButtonY);
     <event eventtype="9" enumb="72">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///Show hint dialogue and hide button
-instance_create(0, 0, obj_hint_dialogue);
-instance_destroy();
-</string>
+            <kind>9</kind>
+            <script>scr_open_hint_dialogue</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

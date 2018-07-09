@@ -42,7 +42,7 @@ global.playerJumpHeight = global.playerDefaultJumpHeight;
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="27">
+    <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
         <id>601</id>
