@@ -66,8 +66,11 @@ global.playerTraveling = false;
 global.canJump = true;
 global.canTeleport = true;
 
-global.playerWidth = sprite_width;
-global.playerHeight = sprite_height;
+playerWidth = sprite_width;
+playerHeight = sprite_height;
+global.playerWidth = playerWidth;
+global.playerHeight = playerHeight;
+
 </string>
           </argument>
         </arguments>
@@ -161,20 +164,26 @@ if (!global.playerTraveling) {
         //Go left
         case vk_left:
         case ord("A"):
-            sprite_index = spr_player_left;
-            scr_walk(-1);
+            canGoLeft = scr_can_move(x - playerWidth/2 - 1, y, true, playerHeight - 6);
+            if (canGoLeft) {
+                sprite_index = spr_player_left;
+                scr_walk(-1)
+            }
             break;
         //Go right
         case vk_right:
         case ord("D"):
-            sprite_index = spr_player_right;
-            scr_walk(1);
+            canGoRight = scr_can_move(x + playerWidth/2 + 1, y, true, playerHeight - 6);
+            if (canGoRight) {
+                sprite_index = spr_player_right;
+                scr_walk(1);
+            }
             break;
         //Jump/Climb ladder
         case vk_up:
         case ord("W"):
             //Check if space above player is not a solid block
-            canGoUp = scr_can_move(x, y - global.playerHeight/2 - 1, false, global.playerWidth - 10);
+            canGoUp = scr_can_move(x, y - playerHeight/2 - 1, false, playerWidth - 6);
             
             if (canGoUp) {
                 ///Jump or climb ladder
