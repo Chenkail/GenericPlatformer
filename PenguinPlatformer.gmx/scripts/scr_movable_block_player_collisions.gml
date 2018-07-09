@@ -14,6 +14,7 @@ if (other.y <= y - blockHeight/2) {
         x += global.playerSpeed; //Move block to the right
         other.x = x - blockWidth/2 - global.playerWidth/2; //Move player back if intersecting
     }
+     
     //Player is right of block pushing to the left
     if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
         x -= global.playerSpeed; //Move block to the left

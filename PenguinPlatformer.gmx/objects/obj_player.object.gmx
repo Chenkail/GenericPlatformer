@@ -173,11 +173,8 @@ if (!global.playerTraveling) {
         //Jump/Climb ladder
         case vk_up:
         case ord("W"):
-            //Check if space above player is empty or a ladder
-            canGoUp = place_empty(x, y - global.playerHeight/2 - 1);
-            if (place_meeting(x, y - global.playerHeight/2 - 1, obj_ladder)) {
-                canGoUp = true;
-            }
+            //Check if space above player is not a solid block
+            canGoUp = scr_can_move(x, y - global.playerHeight/2 - 1);
             
             if (canGoUp) {
                 ///Jump or climb ladder
