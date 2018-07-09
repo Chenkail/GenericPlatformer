@@ -64,6 +64,7 @@ hintBottomTextY = hintBoxBottom - global.hintBottomTextBuffer;
           <argument>
             <kind>1</kind>
             <string>global.hintDialogueOpen = false;
+instance_create(0, 0, obj_hint_button);
 </string>
           </argument>
         </arguments>
