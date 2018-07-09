@@ -6,27 +6,16 @@ if (other.y <= y - blockHeight/2) {
         other.y = y - blockHeight/2 - global.playerHeight/2;
         global.playerFallSpeed = 0;
     }
-} else if ((other.y > y) && (other.y < y + blockHeight/2 + global.playerHeight/2)) {
-        //Player is below block
-        other.y = y + blockHeight/2 + global.playerHeight/2 - 3;
 } else {
-    leftCheck = false;
-    rightCheck = false;
+    //Stop moving if running into a wall
+    
+    //Player is left of block
     if ((other.x < x) && (other.x > x - blockWidth/2 - global.playerWidth/2)) {
-        leftCheck = true;
+        other.x = x - blockWidth/2 - global.playerWidth/2;
     }
+    //Player is right of block
     if ((other.x > x) && (other.x < x + blockWidth/2 + global.playerWidth/2)) {
-        rightCheck = true;
-    }
-    if (leftCheck or rightCheck) {
-        //Stop moving if running into a wall
-        //Player is left of block
-        if (rightCheck) {
-            //Player is right of block
-            other.x = x + blockWidth/2 + global.playerWidth/2;
-        } else if (leftCheck) {
-            other.x = x - blockWidth/2 - global.playerWidth/2;
-        }
+        other.x = x + blockWidth/2 + global.playerWidth/2;
     }
 }
 
