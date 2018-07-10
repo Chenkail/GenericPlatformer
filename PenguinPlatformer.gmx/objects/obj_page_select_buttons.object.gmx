@@ -57,14 +57,15 @@ rowBottom = rowTop + buttonHeight;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mouseInRow = point_in_rectangle(mouse_x, mouse_y, rowLeft, rowTop, rowRight, rowBottom);
+            <string>///Check clicked button
+//Only check if the mouse is in the row boundaries
+mouseInRow = point_in_rectangle(mouse_x, mouse_y, rowLeft, rowTop, rowRight, rowBottom);
 
 if (mouseInRow) {
     xOffset = rowLeft;
     
     buttonIndex = int64((mouse_x - xOffset)/(buttonWidth + spacing));
     scr_level_select_page_buttons(buttonIndex);
-
 }
 
 </string>
