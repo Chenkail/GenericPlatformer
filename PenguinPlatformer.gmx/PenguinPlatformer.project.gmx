@@ -114,6 +114,8 @@
         <script>scripts\scr_level_select_level_choice.gml</script>
         <script>scripts\scr_open_level.gml</script>
         <script>scripts\scr_unlock_all_levels.gml</script>
+        <script>scripts\scr_level_select_page_buttons.gml</script>
+        <script>scripts\scr_level_select_page_button_sprite.gml</script>
       </scripts>
     </scripts>
     <scripts name="Effects">
@@ -161,8 +163,11 @@
       <object>objects\obj_reset</object>
     </objects>
     <objects name="Menus">
+      <objects name="Level Select">
+        <object>objects\obj_menu_level_select</object>
+        <object>objects\obj_page_select_buttons</object>
+      </objects>
       <object>objects\obj_menu_main</object>
-      <object>objects\obj_menu_level_select</object>
     </objects>
     <objects name="Level Design">
       <objects name="Solid Blocks">

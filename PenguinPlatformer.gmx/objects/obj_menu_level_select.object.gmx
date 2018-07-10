@@ -58,6 +58,7 @@ boxLeft = room_width/2 - boxWidth/2; //Left edge
 boxTop = room_height/2 - boxHeight/2 + global.levelSelectBoxHeightOffset; //Top edge
 boxRight = boxLeft + boxWidth; //Right edge
 boxBottom = boxTop + boxHeight; //Bottom edge
+global.levelSelectBoxBottom = boxBottom;
 
 </string>
           </argument>
