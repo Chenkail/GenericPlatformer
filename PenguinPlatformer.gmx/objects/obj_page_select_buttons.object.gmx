@@ -30,7 +30,7 @@ buttonWidth = 64;//global.pageSelectButtonWidth;
 buttonHeight = 64;//global.pageSelectButtonHeight;
 spacing = 30;
 rowY = global.levelSelectBoxBottom + 50;
-rowWidth = 3 * buttonWidth + 3 * spacing;
+rowWidth = 4 * buttonWidth + 3 * spacing;
 rowLeft = room_width/2 - rowWidth/2;
 rowRight = rowLeft + rowWidth;
 rowTop = rowY - buttonHeight/2;
@@ -40,7 +40,7 @@ rowBottom = rowTop + buttonHeight;
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -57,7 +57,17 @@ rowBottom = rowTop + buttonHeight;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>mouseInRow = point_in_rectangle(mouse_x, mouse_y, rowLeft, rowTop, rowRight, rowBottom);
+
+if (mouseInRow) {
+    xOffset = rowLeft;
+    
+    buttonIndex = int64((mouse_x - xOffset)/(buttonWidth + spacing));
+    scr_level_select_page_buttons(buttonIndex);
+
+}
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -81,7 +91,7 @@ rowBottom = rowTop + buttonHeight;
             <kind>1</kind>
             <string>///Draw buttons
 //Set variables
-buttonX = rowLeft;
+buttonX = rowLeft + buttonWidth/2;
 
 //Draw each button
 for (var index = 0; index &lt; 4; index++) {
@@ -107,7 +117,6 @@ for (var index = 0; index &lt; 4; index++) {
     buttonX = buttonX + buttonWidth + spacing;
 }
 
-draw_line(room_width/2, 0, room_width/2, room_height);
 </string>
           </argument>
         </arguments>
