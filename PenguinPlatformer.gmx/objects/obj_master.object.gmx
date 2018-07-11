@@ -311,6 +311,31 @@ global.playerDefaultJumpHeight = 70; //Player default jump height, in pixels
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Zoom config
+global.minViewWidth = 1200; //Should be multiple of 100 for simplicity
+global.maxViewWidth = 2400; //Should be multiple of 100 for simplicity
+global.zoomPerScroll = 80; //Should be multiple of 4 to maintain 4:3 ratio
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Solid block config
 //Speed constants for different block types
 global.blockSpeedWood = 1; //Walking speed multiplier wood

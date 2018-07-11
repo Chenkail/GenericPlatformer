@@ -58,7 +58,7 @@ global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Reset variables
+            <string>///Define variables
 global.playerFallSpeed = 0;
 image_speed = global.playerImageSpeedIdle;
 global.playerOnLadder = false;
@@ -70,6 +70,10 @@ playerWidth = sprite_width;
 playerHeight = sprite_height;
 global.playerWidth = playerWidth;
 global.playerHeight = playerHeight;
+
+minViewWidth = global.minViewWidth;
+maxViewWidth = min(global.maxViewWidth, room_width); //Player should not be able to zoom out more than the room is wide
+zoomPerScroll = global.zoomPerScroll;
 
 </string>
           </argument>
@@ -204,6 +208,62 @@ if (!global.playerTraveling) {
             }
             break;
     }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="61">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Zoom out
+if (view_wview[0] &lt; maxViewWidth) {
+    view_wview[0] += zoomPerScroll;
+    view_hview[0] = view_wview[0] * 3/4;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="60">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Zoom in
+if (view_wview[0] &gt; minViewWidth) {
+    view_wview[0] -= zoomPerScroll;
+    view_hview[0] = view_wview[0] * 3/4;
 }
 
 </string>
