@@ -25,8 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Define size
+            <string>///Set variables
+//Define size
 hintButtonSize = sprite_get_width(spr_hint_button);
+//Set coordinates
+//Should be in top right corner of interface
+hintButtonX = view_wport[0] - hintButtonSize/2 - global.hintButtonXOffset;
+hintButtonY = hintButtonSize/2 + global.hintButtonYOffset;
 
 </string>
           </argument>
@@ -79,11 +84,6 @@ if (mouseOnButton) {
           <argument>
             <kind>1</kind>
             <string>///Draw hint button
-//Set coordinates
-//Should be in top right corner of interface
-hintButtonX = view_wview[0] - hintButtonSize/2 - global.hintButtonXOffset;
-hintButtonY = hintButtonSize/2 + global.hintButtonYOffset;
-
 draw_sprite(spr_hint_button, 0, hintButtonX, hintButtonY);
 
 </string>
