@@ -25,11 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set coordinates for drawing hint button
-//Should be in top right corner of interface
-global.hintButtonSize = sprite_get_width(spr_hint_button); //Declare diameter of hint button sprite
-hintButtonX = view_wview[0] - global.hintButtonSize/2 - global.hintButtonXOffset;
-hintButtonY = global.hintButtonSize/2 + global.hintButtonYOffset;
+            <string>///Define size
+hintButtonSize = sprite_get_width(spr_hint_button);
 
 </string>
           </argument>
@@ -54,7 +51,7 @@ hintButtonY = global.hintButtonSize/2 + global.hintButtonYOffset;
           <argument>
             <kind>1</kind>
             <string>///Test if mouse in hint button circle and if so, open hint menu
-mouseOnButton = point_in_circle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), hintButtonX, hintButtonY, global.hintButtonSize/2);
+mouseOnButton = point_in_circle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), hintButtonX, hintButtonY, hintButtonSize/2);
 if (mouseOnButton) {
     scr_open_hint_dialogue();
 }
@@ -82,7 +79,13 @@ if (mouseOnButton) {
           <argument>
             <kind>1</kind>
             <string>///Draw hint button
+//Set coordinates
+//Should be in top right corner of interface
+hintButtonX = view_wview[0] - hintButtonSize/2 - global.hintButtonXOffset;
+hintButtonY = hintButtonSize/2 + global.hintButtonYOffset;
+
 draw_sprite(spr_hint_button, 0, hintButtonX, hintButtonY);
+
 </string>
           </argument>
         </arguments>
