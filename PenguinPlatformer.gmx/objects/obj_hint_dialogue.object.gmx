@@ -75,11 +75,11 @@
             <string>///Draw hint dialogue with text
 ///Set variables
 hintBoxLeft = global.hintBoxHorizontalBuffer;
-hintBoxRight = 1200 - global.hintBoxHorizontalBuffer;
+hintBoxRight = view_wport[0] - global.hintBoxHorizontalBuffer;
 hintBoxTop = global.hintBoxVerticalBuffer;
-hintBoxBottom = 900 - global.hintBoxVerticalBuffer;
-hintBoxCenterX = 1200/2;
-hintBoxCenterY = 900/2;
+hintBoxBottom = view_hport[0] - global.hintBoxVerticalBuffer;
+hintBoxCenterX = view_wport[0]/2;
+hintBoxCenterY = view_hport[0]/2;
 hintBoxWidth = hintBoxRight - hintBoxLeft + 1;
 hintBoxHeight = hintBoxBottom - hintBoxTop + 1;
 hintBoxCornerRadius = min(hintBoxWidth, hintBoxHeight) * global.hintBoxCornerRadiusProportion;
