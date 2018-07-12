@@ -72,7 +72,7 @@ global.playerWidth = playerWidth;
 global.playerHeight = playerHeight;
 
 minViewWidth = global.minViewWidth;
-maxViewWidth = min(global.maxViewWidth, room_width); //Player should not be able to zoom out more than the room is wide
+maxViewWidth = min(global.maxViewWidth, max(room_width, room_height * 4/3)); //Player should not be able to zoom out to see more than is in the room
 zoomPerScroll = global.zoomPerScroll;
 
 </string>
