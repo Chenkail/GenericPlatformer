@@ -290,7 +290,7 @@ global.playerDefaultImageSpeedWalk = 0.14; //Default player animation speed whil
 //Set jump constants
 global.playerJumpTime = 0.4; //Length of player jump in seconds
 global.jumpCheckConstant = 1; //Pixels below player to test for object
-global.playerDefaultJumpHeight = 90; //Player default jump height, in pixels
+global.playerDefaultJumpHeight = 75; //Player default jump height, in pixels
 </string>
           </argument>
         </arguments>
