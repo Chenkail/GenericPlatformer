@@ -207,6 +207,20 @@ global.hintBoxText3 = "Stuck? Press R to reset the level."
 global.hintBoxText4 = "You move faster on ice than on wood. This means you can jump farther.";
 global.hintBoxText5 = "The speed bonus from ice isn't lost while midair or climbing ladders. Use this to your advantage!"
 global.hintBoxText6 = "";
+global.hintBoxText7 = "";
+global.hintBoxText8 = "";
+global.hintBoxText9 = "";
+global.hintBoxText10 = "";
+global.hintBoxText11 = "";
+global.hintBoxText12 = "";
+global.hintBoxText13 = "";
+global.hintBoxText14 = "";
+global.hintBoxText15 = "";
+global.hintBoxText16 = "";
+global.hintBoxText17 = "";
+global.hintBoxText18 = "";
+global.hintBoxText19 = "";
+global.hintBoxText20 = "";
 
 </string>
           </argument>
