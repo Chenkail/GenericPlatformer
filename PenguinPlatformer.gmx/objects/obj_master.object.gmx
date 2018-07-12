@@ -290,7 +290,7 @@ global.playerDefaultImageSpeedWalk = 0.14; //Default player animation speed whil
 //Set jump constants
 global.playerJumpTime = 0.4; //Length of player jump in seconds
 global.jumpCheckConstant = 1; //Pixels below player to test for object
-global.playerDefaultJumpHeight = 70; //Player default jump height, in pixels
+global.playerDefaultJumpHeight = 90; //Player default jump height, in pixels
 </string>
           </argument>
         </arguments>
@@ -367,7 +367,7 @@ global.blockImageSpeedIce = 1.6;
             <kind>1</kind>
             <string>///Gravity and falling config
 //Set gravity and max fall speed, along with fall speed constant
-global.gravity = 1.5;
+global.gravity = 1.4;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 
 </string>
