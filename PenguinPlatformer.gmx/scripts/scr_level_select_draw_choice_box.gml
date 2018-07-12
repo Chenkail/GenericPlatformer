@@ -17,7 +17,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 //Draw choice box
-draw_roundrect_colour_ext(boxX1, boxY1, boxX2, boxY2, cornerRadius, cornerRadius,
+draw_roundrect_colour_ext(boxX1, boxY1, boxX2, boxY2, choiceCornerRadius, choiceCornerRadius,
                             choiceColor, choiceColor, choiceOutline);
 
 //Draw level label
@@ -30,3 +30,4 @@ if (currentLevelLabel <= numberOfLevels) {
     ini_close();
     scr_draw_choice_box_mark(boxX2, boxY2, currentLevelLabel);
 }
+

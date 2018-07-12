@@ -163,11 +163,11 @@
       <object>objects\obj_reset</object>
     </objects>
     <objects name="Menus">
+      <object>objects\obj_menu_main</object>
       <objects name="Level Select">
         <object>objects\obj_menu_level_select</object>
         <object>objects\obj_page_select_buttons</object>
       </objects>
-      <object>objects\obj_menu_main</object>
     </objects>
     <objects name="Level Design">
       <objects name="Solid Blocks">

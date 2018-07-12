@@ -71,6 +71,7 @@ global.mainMenuPlayButtonY = room_height/2; //Y coordinates of play button cente
 //Should be changed to be tight around the play button text
 global.mainMenuPlayButtonWidth = 200;
 global.mainMenuPlayButtonHeight = 100;
+
 </string>
           </argument>
         </arguments>
@@ -98,20 +99,20 @@ global.levelSelectColumns = 4; //Levels to display per row
 global.levelSelectRows = 2; //Number of rows
 
 //Size constants and locations
-global.levelSelectChoiceWidth = 200; //Width of level select option boxes, in pixels
-global.levelSelectChoiceHeight = 200; //Height of level select option boxes, in pixels
-global.levelSelectSpacing = 25; //Spacing between level select option boxes, in pixels
-global.levelSelectBoxBuffer = 25; //Spacing between outside level select option boxes and the borders of the box around them, in pixels
+global.levelSelectChoiceWidth = 220; //Width of level select option boxes, in pixels
+global.levelSelectChoiceHeight = 220; //Height of level select option boxes, in pixels
+global.levelSelectSpacing = 40; //Spacing between level select option boxes, in pixels
+global.levelSelectBoxBuffer = 40; //Spacing between outside level select option boxes and the borders of the box around them, in pixels
 global.levelSelectBoxCornerRadiusProportion = 0.25; //Proportion of large box's smaller side length that the corner radius should be
-global.levelSelectChoiceCornerRadiusProportion = 0.25; //Proportion of choice boxes' smaller side length that the corner radius should be
-global.levelSelectBoxHeightOffset = 40; //Number of pixels to shift the level select box
+global.levelSelectChoiceCornerRadiusProportion = 0.2; //Proportion of choice boxes' smaller side length that the corner radius should be
+global.levelSelectBoxHeightOffset = 10; //Number of pixels to shift the level select box from the center of the screen (negative is up, positive is down)
 
 //Page control buttons
 global.levelSelectPageButtonOutlineColor = c_black; //Color of page control button outlines
 global.levelSelectPageButtonWidth = 70; //Width of page control buttons, in pixels
 global.levelSelectPageButtonHeight = 70; //Height of page control buttons, in pixels
 global.levelSelectPageButtonSpacing = 30; //Spacing between page control buttons, in pixels
-global.levelSelectPageButtonYSpacing = 20; //Number of pixels between bottom of large box and top of page control buttons
+global.levelSelectPageButtonYSpacing = 30; //Number of pixels between bottom of large box and top of page control buttons
 global.levelSelectPageButtonCornerRadiusProportion = 0.25; //Proportion of page buttons' smaller side length that the corner radius should be
 
 //Title
@@ -127,7 +128,7 @@ global.levelSelectChoiceOutline = true; //Should the level select option box be 
 global.levelSelectChoiceFont = fnt_level_select_buttons; //Font for options in level select menu
 global.levelSelectChoiceFontColor = c_black; //Font color for options in level select menu
 
-//Check mark
+//Box marking
 global.levelChoiceMarkHorizontalOffset = 5;
 global.levelChoiceMarkVerticalOffset = 5;
 
@@ -291,6 +292,7 @@ global.playerDefaultImageSpeedWalk = 0.14; //Default player animation speed whil
 global.playerJumpTime = 0.4; //Length of player jump in seconds
 global.jumpCheckConstant = 1; //Pixels below player to test for object
 global.playerDefaultJumpHeight = 75; //Player default jump height, in pixels
+
 </string>
           </argument>
         </arguments>

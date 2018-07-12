@@ -83,6 +83,7 @@ global.levelSelectBoxBottom = boxBottom;
             <string>///Declare check mark/lock dimensions
 checkMarkWidth = sprite_get_width(spr_check_mark);
 checkMarkHeight = sprite_get_height(spr_check_mark);
+
 </string>
           </argument>
         </arguments>
