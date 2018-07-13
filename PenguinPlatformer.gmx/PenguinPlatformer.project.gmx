@@ -81,7 +81,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Blocks">
-      <script>scripts\scr_player_block_collisions.gml</script>
+      <script>scripts\scr_wall_player_collisions.gml</script>
+      <script>scripts\scr_wall_movable_block_collision.gml</script>
       <script>scripts\scr_size_check.gml</script>
       <script>scripts\scr_block_speed_change.gml</script>
     </scripts>
@@ -129,8 +130,8 @@
         <script>scripts\scr_reset_player_image.gml</script>
       </scripts>
       <scripts name="Movable Block">
-        <script>scripts\scr_movable_block_wall_collision.gml</script>
         <script>scripts\scr_movable_block_player_collisions.gml</script>
+        <script>scripts\scr_movable_block_self_collision.gml</script>
       </scripts>
     </scripts>
     <scripts name="Movement Checking">
@@ -231,6 +232,7 @@
       <room>rooms\rm_level_6</room>
       <room>rooms\rm_level_7</room>
       <room>rooms\rm_level_8</room>
+      <room>rooms\rm_level_10</room>
       <room>rooms\rm_game_complete</room>
     </rooms>
   </rooms>

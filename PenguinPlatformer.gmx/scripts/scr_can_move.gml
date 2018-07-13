@@ -1,7 +1,7 @@
 /* argument0: x coordinate to check
  * argument1: y coordinate to check
  * argument2: Should check be horizontal (false) or vertical (true)
- * argument3: Rectangle dimension (width for horizontal, height for vertical
+ * argument3: Rectangle dimension (width for horizontal, height for vertical)
  */
 checkForgiveness = global.moveCheckForgiveness; //Number of pixels on each side of larger dimension to remove check from
 checkCenterX = argument0;
