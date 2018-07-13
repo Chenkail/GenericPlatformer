@@ -3,7 +3,7 @@ if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
         other.y = y - blockHeight/2 - other.blockHeight/2;
         other.fallSpeed = 0;
     }
-} else if (other.y + other.blockHeight/2 < y - blockHeight/2) {
+} else {
     if (x > other.x) {
         checkX = x + blockWidth/2;
     } else {
@@ -18,10 +18,12 @@ if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
         boxBottom = boxTop + blockHeight;
         touchingPlayer = collision_rectangle(boxLeft, boxTop, boxRight, boxBottom, obj_player, false, true);
         if (!touchingPlayer) {
-            if (x > other.x) {
-                x += global.playerSpeed;
-            } else {
-                x -= global.playerSpeed;
+            if (y + blockHeight/2 <= other.y - other.blockHeight/2) {
+                if (x > other.x) {
+                    x += global.playerSpeed;
+                } else {
+                    x -= global.playerSpeed;
+                }
             }
         }
     }
