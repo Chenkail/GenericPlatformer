@@ -1,9 +1,9 @@
-if (other.y < y - blockHeight/2 - global.playerHeight/2 + 10) {
+if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
     if (other.y > y - blockHeight/2 - other.blockHeight/2) {
         other.y = y - blockHeight/2 - other.blockHeight/2;
         other.fallSpeed = 0;
     }
-} else {
+} else if (other.y + other.blockHeight/2 < y - blockHeight/2) {
     if (x > other.x) {
         checkX = x + blockWidth/2;
     } else {
