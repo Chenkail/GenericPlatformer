@@ -17,7 +17,7 @@ if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
         boxBottom = boxTop + blockHeight;
         touchingPlayer = collision_rectangle(boxLeft, boxTop, boxRight, boxBottom, obj_player, false, true);
         if (!touchingPlayer) {
-            if (y + blockHeight/2 > other.y - other.blockHeight/2 + 5) and (y - blockHeight/2 < other.y + other.blockHeight/2 - 5) {
+            if (y + blockHeight/2 > other.y - other.blockHeight/2 + selfCollisionConstant) and (y - blockHeight/2 < other.y + other.blockHeight/2 - selfCollisionConstant) {
                 if (x > other.x) {
                     x += global.playerSpeed;
                 } else {

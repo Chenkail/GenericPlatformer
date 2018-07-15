@@ -65,7 +65,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fallSpeed = 0;
+            <string>///Set variables
+fallSpeed = 0;
+selfCollisionConstant = global.movableBlockSelfCollisionConstant;
 </string>
           </argument>
         </arguments>
