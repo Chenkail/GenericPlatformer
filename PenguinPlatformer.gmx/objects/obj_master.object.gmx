@@ -463,10 +463,12 @@ global.ladderCheckHeight = 32; //Pixels up/down (total height of box is twice th
             <string>///Movable block config
 /* Number of pixels that a movable block ignores up or down when checking
  * if it should move when other movable block collides with it
- * If this is too low, a movable block on top of another movable block
- * will slide on its own
+ * - This is a measure of how much the blocks need to overlap vertically in
+ * order for the one not being directly pushed by the player to move
+ * - If this is too low (~less than 2), a movable block on top of another
+ * movable block will slide on its own
  */
-global.movableBlockSelfCollisionConstant = 5;
+global.movableBlockSelfCollisionConstant = 2;
 </string>
           </argument>
         </arguments>
