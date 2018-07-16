@@ -1,6 +1,6 @@
 if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
-    if (other.y > y - blockHeight/2 - other.blockHeight/2) {
-        other.y = y - blockHeight/2 - other.blockHeight/2;
+    if (other.y > blockTop - other.blockHeight/2) {
+        other.y = blockTop - other.blockHeight/2;
         other.fallSpeed = 0;
     }
 } else {
@@ -34,10 +34,10 @@ if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
         } else {
             if (x < other.x) {
                 //Block touching player is to the left of other block
-                otherCheckX = x + blockWidth/2 + other.blockWidth;
+                otherCheckX = blockRight + other.blockWidth;
             } else {
                 //Block touching player is to the right of other block
-                otherCheckX = x - blockWidth/2 - other.blockWidth;
+                otherCheckX = blockLeft - other.blockWidth;
             }
             otherCanMove = scr_can_move(otherCheckX, other.y, true, other.blockHeight);
             if (!otherCanMove) {

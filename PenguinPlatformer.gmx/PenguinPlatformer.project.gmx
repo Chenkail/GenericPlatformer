@@ -80,12 +80,6 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Blocks">
-      <script>scripts\scr_wall_player_collisions.gml</script>
-      <script>scripts\scr_wall_movable_block_collision.gml</script>
-      <script>scripts\scr_size_check.gml</script>
-      <script>scripts\scr_block_speed_change.gml</script>
-    </scripts>
     <scripts name="Menus">
       <scripts name="Main Menu">
         <script>scripts\scr_draw_main_menu.gml</script>
@@ -128,6 +122,13 @@
         <script>scripts\scr_jump.gml</script>
         <script>scripts\scr_climb_ladder.gml</script>
         <script>scripts\scr_reset_player_image.gml</script>
+      </scripts>
+      <scripts name="Blocks">
+        <script>scripts\scr_wall_player_collisions.gml</script>
+        <script>scripts\scr_wall_movable_block_collision.gml</script>
+        <script>scripts\scr_block_variables.gml</script>
+        <script>scripts\scr_block_speed_change.gml</script>
+        <script>scripts\scr_block_coordinates.gml</script>
       </scripts>
       <scripts name="Movable Block">
         <script>scripts\scr_movable_block_player_collisions.gml</script>
