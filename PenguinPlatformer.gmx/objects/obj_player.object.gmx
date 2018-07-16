@@ -156,19 +156,24 @@ if (!global.playerOnLadder) {
           <argument>
             <kind>1</kind>
             <string>///Movement
-
 //Set player speed
 global.playerSpeed = global.playerBaseSpeed * global.blockSpeedModifier;
 
 //Set player image speed
 global.playerImageSpeedWalk = global.playerBaseImageSpeedWalk * global.blockImageSpeedModifier;
 
+//Define player side coordinates
+playerLeft = x - playerWidth/2;
+playerRight = playerLeft + playerWidth;
+playerTop = y - playerHeight/2;
+playerBottom = playerTop + playerHeight;
+
 if (!global.playerTraveling) {
     switch (keyboard_key) {
         //Go left
         case vk_left:
         case ord("A"):
-            canGoLeft = scr_can_move(x - playerWidth/2 - 1, y, true, playerHeight);
+            canGoLeft = scr_can_move(playerLeft, y, true, playerHeight);
             if (canGoLeft) {
                 sprite_index = spr_player_left;
                 scr_walk(-1)
@@ -177,7 +182,7 @@ if (!global.playerTraveling) {
         //Go right
         case vk_right:
         case ord("D"):
-            canGoRight = scr_can_move(x + playerWidth/2 + 1, y, true, playerHeight);
+            canGoRight = scr_can_move(playerRight, y, true, playerHeight);
             if (canGoRight) {
                 sprite_index = spr_player_right;
                 scr_walk(1);
@@ -187,9 +192,9 @@ if (!global.playerTraveling) {
         case vk_up:
         case ord("W"):
             //Check if space above player is not a solid block
-            canGoUp = scr_can_move(x, y - playerHeight/2 - 1, false, playerWidth);
-            
-            if (canGoUp) {
+            canGoUp = scr_can_move(x, playerTop, false, playerWidth);
+            movableBlockAbove = collision_rectangle(playerLeft + global.moveCheckForgiveness, playerTop - 1, playerRight - global.moveCheckForgiveness, playerTop, obj_movable_block, false, true);
+            if (canGoUp) and (!movableBlockAbove) {
                 ///Jump or climb ladder
                 //If not on ladder, jump
                 if (!global.playerOnLadder) {
