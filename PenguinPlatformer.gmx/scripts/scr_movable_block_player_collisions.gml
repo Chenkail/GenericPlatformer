@@ -16,6 +16,7 @@ if (other.y < blockTop - playerHeight/2 + 10) {
         if (canGoRight) {
             x += global.playerSpeed; //Move block to the right
         } else {
+            blockLeft = x - blockWidth/2;
             other.x = blockLeft - global.playerWidth/2; //Move player back if intersecting
         }
     } else if ((other.x > x) && (other.x < blockRight + global.playerWidth/2)) {
@@ -24,7 +25,8 @@ if (other.y < blockTop - playerHeight/2 + 10) {
         if (canGoLeft) {
             x -= global.playerSpeed; //Move block to the left
         } else {
-            other.x = x + blockWidth/2 + global.playerWidth/2; //Move player back if intersecting
+            blockRight = x + blockWidth/2;
+            other.x = blockRight + global.playerWidth/2; //Move player back if intersecting
         }
     }
 }
