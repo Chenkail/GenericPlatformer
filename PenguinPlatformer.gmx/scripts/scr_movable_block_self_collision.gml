@@ -16,8 +16,15 @@ if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
         boxTop = y - blockHeight/2;
         boxBottom = boxTop + blockHeight;
         touchingPlayer = collision_rectangle(boxLeft, boxTop, boxRight, boxBottom, obj_player, false, true);
+        
+        if (y + blockHeight/2 > other.y - other.blockHeight/2 + selfCollisionConstant) and (y - blockHeight/2 < other.y + other.blockHeight/2 - selfCollisionConstant) {
+            blocksStacked = false;
+        } else {
+            blocksStacked = true;
+        }
+        
         if (!touchingPlayer) {
-            if (y + blockHeight/2 > other.y - other.blockHeight/2 + selfCollisionConstant) and (y - blockHeight/2 < other.y + other.blockHeight/2 - selfCollisionConstant) {
+            if (!blocksStacked) {
                 if (x > other.x) {
                     x += global.playerSpeed;
                 } else {
@@ -34,13 +41,15 @@ if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
             }
             otherCanMove = scr_can_move(otherCheckX, other.y, true, other.blockHeight);
             if (!otherCanMove) {
-               if (x < other.x) {
-                    //Block touching player is to the left of other block
-                    x = other.x - other.blockWidth/2 - blockWidth/2;
-                } else {
-                    //Block touching player is to the right of other block
-                    x = other.x + other.blockWidth/2 + blockWidth/2;
-                } 
+                if (!blocksStacked) {
+                   if (x < other.x) {
+                        //Block touching player is to the left of other block
+                        x = other.x - other.blockWidth/2 - blockWidth/2;
+                    } else {
+                        //Block touching player is to the right of other block
+                        x = other.x + other.blockWidth/2 + blockWidth/2;
+                    }
+                }
             }
         }
     }
