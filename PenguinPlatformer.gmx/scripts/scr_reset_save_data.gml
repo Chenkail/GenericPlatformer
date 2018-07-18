@@ -1,6 +1,6 @@
 ini_open("savedata.ini");
-var level;
-for (level = 1; level <= global.numberOfLevels; level++) {
+for (var level = 1; level <= global.numberOfLevels; level++) {
     ini_write_real("levels", level, 0);
 }
 ini_close();
+

@@ -312,7 +312,9 @@ checkMarkHeight = sprite_get_height(spr_check_mark);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>//game_restart();
+room_goto(rm_main_menu);
+
 </string>
           </argument>
         </arguments>
