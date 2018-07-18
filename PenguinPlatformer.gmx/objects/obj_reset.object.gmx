@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -28,7 +28,6 @@
             <string>///Run score reset script if first time launching
 ini_open("firstrun.ini")
 isFirstRun = ini_read_real("run", "firstrun", 1);
-//isFirstRun = 1;
 if (isFirstRun == 1) {
     ini_write_real("run", "firstrun", 0);
     ini_close();
