@@ -67,7 +67,6 @@
         <script>scripts\scr_draw_main_menu.gml</script>
         <script>scripts\scr_main_menu_check_play_button.gml</script>
         <script>scripts\scr_open_level_select.gml</script>
-        <script>scripts\scr_reset_save_data.gml</script>
       </scripts>
       <scripts name="Level Select">
         <scripts name="Drawing">
@@ -93,6 +92,7 @@
         <script>scripts\scr_unlock_all_levels.gml</script>
         <script>scripts\scr_level_select_page_buttons.gml</script>
         <script>scripts\scr_level_select_page_button_sprite.gml</script>
+        <script>scripts\scr_reset_save_data.gml</script>
       </scripts>
     </scripts>
     <scripts name="Effects">
@@ -144,7 +144,6 @@
     <objects name="Control Objects">
       <object>objects\obj_master</object>
       <object>objects\obj_score</object>
-      <object>objects\obj_reset</object>
     </objects>
     <objects name="Menus">
       <object>objects\obj_menu_main</object>
