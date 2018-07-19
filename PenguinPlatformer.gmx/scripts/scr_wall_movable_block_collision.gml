@@ -1,10 +1,11 @@
 ///Prevent movable block from colliding with blocks
 
 //Prevent falling through block if on top and set fall speed to 0
-if (other.y <= blockTop) {
+if (other.y < blockTop) {
     if (other.y > blockTop - other.blockHeight/2) and (other.x >= blockLeft) and (other.x <= blockRight) {
         other.y = blockTop - other.blockHeight/2;
         other.fallSpeed = 0;
+        other.vspeed = 0;
     }
 } else {
     //Stop moving if running into a wall
