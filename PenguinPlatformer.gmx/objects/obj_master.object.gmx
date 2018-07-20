@@ -469,6 +469,7 @@ global.ladderCheckHeight = 32; //Pixels up/down (total height of box is twice th
  * movable block will slide on its own
  */
 global.movableBlockSelfCollisionConstant = 2;
+
 </string>
           </argument>
         </arguments>

@@ -75,6 +75,8 @@ minViewWidth = global.minViewWidth;
 maxViewWidth = min(global.maxViewWidth, max(room_width, room_height * 4/3)); //Player should not be able to zoom out to see more than is in the room
 zoomPerScroll = global.zoomPerScroll;
 
+moveCheckForgiveness = global.moveCheckForgiveness;
+
 </string>
           </argument>
         </arguments>
@@ -193,7 +195,7 @@ if (!global.playerTraveling) {
         case ord("W"):
             //Check if space above player is not a solid block
             canGoUp = scr_can_move(x, playerTop, false, playerWidth);
-            movableBlockAbove = collision_rectangle(playerLeft + global.moveCheckForgiveness, playerTop - 1, playerRight - global.moveCheckForgiveness, playerTop, obj_movable_block, false, true);
+            movableBlockAbove = collision_rectangle(playerLeft + moveCheckForgiveness, playerTop - 2, playerRight - moveCheckForgiveness, playerTop - 1, obj_movable_block, false, true);
             if (canGoUp) and (!movableBlockAbove) {
                 ///Jump or climb ladder
                 //If not on ladder, jump
