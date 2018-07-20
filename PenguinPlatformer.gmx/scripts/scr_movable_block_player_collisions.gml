@@ -11,7 +11,7 @@ if (other.y < blockTop - playerHeight/2 + 10) {
     //Block should move when player pushes it from the side
     
     //Player is left of block pushing to the right
-    if ((other.x < x) && (other.x > blockLeft - global.playerWidth/2)) {
+    if ((other.x <= x) && (other.x > blockLeft - global.playerWidth/2)) {
         canGoRight = scr_can_move(blockRight + 1, y, true, blockHeight);
         if (canGoRight) {
             x += global.playerSpeed; //Move block to the right
@@ -19,12 +19,12 @@ if (other.y < blockTop - playerHeight/2 + 10) {
             //Flip block to left
             x = other.x - playerWidth/2 - blockWidth/2;
         }
-    } else if ((other.x > x) && (other.x < blockRight + global.playerWidth/2)) {
+    } else if ((other.x >= x) && (other.x < blockRight + global.playerWidth/2)) {
         //Player is right of block pushing to the left
         canGoLeft = scr_can_move(blockLeft - 1, y, true, blockHeight);
         if (canGoLeft) {
             x -= global.playerSpeed; //Move block to the left
-        }else if (other.x <= x + blockFlipConstant) {
+        } else if (other.x <= x + blockFlipConstant) {
             //Flip block to right
             x = other.x + playerWidth/2 + blockWidth/2;
         }
