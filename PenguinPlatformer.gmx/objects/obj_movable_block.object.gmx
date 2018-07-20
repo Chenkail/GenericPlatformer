@@ -69,7 +69,7 @@
 //Self
 fallSpeed = 0;
 selfCollisionConstant = global.movableBlockSelfCollisionConstant;
-blockFlipConstant = 5;
+blockFlipConstant = 2;
 
 //Player
 playerWidth = global.playerWidth;
