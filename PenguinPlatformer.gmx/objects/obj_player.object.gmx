@@ -240,7 +240,7 @@ if (!global.playerTraveling) {
           <argument>
             <kind>1</kind>
             <string>///Zoom out
-if (view_wview[0] &lt; maxViewWidth) {
+if (view_wview[0] &lt; room_width) {
     view_wview[0] += zoomPerScroll;
     view_hview[0] = view_wview[0] * 3/4;
 }
