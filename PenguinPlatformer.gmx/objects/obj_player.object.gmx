@@ -240,10 +240,8 @@ if (!global.playerTraveling) {
           <argument>
             <kind>1</kind>
             <string>///Zoom out
-if (view_wview[0] &lt; room_width) {
-    view_wview[0] += zoomPerScroll;
-    view_hview[0] = view_wview[0] * 3/4;
-}
+view_wview[0] = min(view_wview[0] + zoomPerScroll, room_width);
+view_hview[0] = view_wview[0] * 3/4;
 
 </string>
           </argument>
@@ -268,10 +266,8 @@ if (view_wview[0] &lt; room_width) {
           <argument>
             <kind>1</kind>
             <string>///Zoom in
-if (view_wview[0] &gt; minViewWidth) {
-    view_wview[0] -= zoomPerScroll;
-    view_hview[0] = view_wview[0] * 3/4;
-}
+view_wview[0] = max(view_wview[0] - zoomPerScroll, minViewWidth);
+view_hview[0] = view_wview[0] * 3/4;
 
 </string>
           </argument>
