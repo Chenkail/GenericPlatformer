@@ -383,7 +383,7 @@ global.blockImageSpeedIce = 1.6;
             <kind>1</kind>
             <string>///Gravity and falling config
 //Set gravity and max fall speed, along with fall speed constant
-global.gravity = 1.4;
+global.gravity = 1.3;
 global.maxFallSpeed = 10; //Maximum player fall speed in pixels per step
 
 </string>

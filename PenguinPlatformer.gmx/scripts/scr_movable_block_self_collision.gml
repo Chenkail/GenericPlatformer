@@ -1,5 +1,5 @@
-if (other.y < y - blockHeight/2 - other.blockHeight/2 + 10) {
-    if (other.y > blockTop - other.blockHeight/2) {
+if (other.y < y) {
+    if (other.y > blockTop - other.blockHeight/2) and (other.x - other.blockWidth/2 < x + blockWidth/2) and (other.x + other.blockWidth/2 > x - blockWidth/2) {
         other.y = blockTop - other.blockHeight/2;
         other.fallSpeed = 0;
         other.vspeed = 0;
