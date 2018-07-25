@@ -1,8 +1,15 @@
-if (other.y < y) {
-    if (other.y > blockTop - other.blockHeight/2) and (other.x - other.blockWidth/2 < x + blockWidth/2) and (other.x + other.blockWidth/2 > x - blockWidth/2) {
-        other.y = blockTop - other.blockHeight/2;
-        other.fallSpeed = 0;
-        other.vspeed = 0;
+if (other.y < blockTop) {
+    if (other.y + other.blockHeight/2 > blockTop) and (other.x - other.blockWidth/2 < x + blockWidth/2) and (other.x + other.blockWidth/2 > x - blockWidth/2) {
+        if (scr_can_move(x, blockBottom, false, blockWidth)) {
+            blockFalling = true;
+        } else {
+            blockFalling = false;
+        }
+        if (!blockFalling) {
+            other.y = blockTop - other.blockHeight/2;
+            other.fallSpeed = 0;
+            other.vspeed = 0;
+        }
     }
 } else {
     if (x > other.x) {
