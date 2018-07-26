@@ -26,11 +26,14 @@
       <sprites name="Collectibles">
         <sprite>sprites\spr_collectible_fish</sprite>
       </sprites>
+      <sprites name="Portals">
+        <sprite>sprites\spr_portal_blue</sprite>
+        <sprite>sprites\spr_portal_orange</sprite>
+      </sprites>
+      <sprites name="Buttons">
+        <sprite>sprites\spr_button_block</sprite>
+      </sprites>
       <sprites name="Miscellaneous">
-        <sprites name="Portals">
-          <sprite>sprites\spr_portal_blue</sprite>
-          <sprite>sprites\spr_portal_orange</sprite>
-        </sprites>
         <sprite>sprites\spr_door</sprite>
         <sprite>sprites\spr_ladder</sprite>
         <sprite>sprites\spr_movable_block</sprite>
@@ -116,6 +119,9 @@
         <script>scripts\scr_movable_block_player_collisions.gml</script>
         <script>scripts\scr_movable_block_self_collision.gml</script>
       </scripts>
+      <scripts name="Buttons">
+        <script>scripts\scr_button_toggle.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Movement Checking">
       <script>scripts\scr_can_move.gml</script>
@@ -194,6 +200,7 @@
       <object>objects\obj_need_more_fish</object>
       <object>objects\obj_game_complete</object>
     </objects>
+    <object>objects\obj_button_block</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
