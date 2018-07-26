@@ -27,3 +27,4 @@ for (var index = 0; index < global.solidObjectTypes; index++) {
 
 //If no solid object found, allow movement
 return true;
+
