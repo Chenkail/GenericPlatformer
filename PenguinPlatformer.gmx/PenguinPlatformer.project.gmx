@@ -31,7 +31,7 @@
         <sprite>sprites\spr_portal_orange</sprite>
       </sprites>
       <sprites name="Buttons">
-        <sprite>sprites\spr_button_block</sprite>
+        <sprite>sprites\spr_button_off</sprite>
       </sprites>
       <sprites name="Miscellaneous">
         <sprite>sprites\spr_door</sprite>
@@ -121,16 +121,19 @@
       </scripts>
       <scripts name="Buttons">
         <script>scripts\scr_button_toggle.gml</script>
+        <script>scripts\scr_is_button_pressed.gml</script>
       </scripts>
     </scripts>
     <scripts name="Movement Checking">
       <script>scripts\scr_can_move.gml</script>
       <script>scripts\scr_solid_objects.gml</script>
     </scripts>
-    <script>scripts\scr_draw_need_more_fish.gml</script>
-    <script>scripts\scr_exit_to_level_select.gml</script>
-    <script>scripts\scr_get_hint_text.gml</script>
-    <script>scripts\scr_open_hint_dialogue.gml</script>
+    <scripts name="Misc">
+      <script>scripts\scr_draw_need_more_fish.gml</script>
+      <script>scripts\scr_get_hint_text.gml</script>
+      <script>scripts\scr_exit_to_level_select.gml</script>
+      <script>scripts\scr_open_hint_dialogue.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <fonts name="Menus">

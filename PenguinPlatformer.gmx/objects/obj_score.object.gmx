@@ -35,6 +35,7 @@ global.levelCollectedFish = 0;
 
 //Reset button counts for the level
 global.buttonsInLevel = 0;
+global.buttonBlocksInLevel = 0;
 
 //Defining global variables for player image speed
 //Do not touch!
