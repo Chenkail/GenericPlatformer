@@ -200,7 +200,10 @@
       <object>objects\obj_need_more_fish</object>
       <object>objects\obj_game_complete</object>
     </objects>
-    <object>objects\obj_button_block</object>
+    <objects name="Button Blocks">
+      <object>objects\obj_button</object>
+      <object>objects\obj_button_block</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Menus">
