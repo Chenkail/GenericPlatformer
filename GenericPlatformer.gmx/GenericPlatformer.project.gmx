@@ -18,7 +18,6 @@
         <sprite>sprites\spr_block_ice_square</sprite>
       </sprites>
       <sprites name="Wood Blocks">
-        <sprite>sprites\spr_block_wood_log_medium</sprite>
         <sprite>sprites\spr_block_wood_square_medium</sprite>
       </sprites>
     </sprites>
@@ -37,9 +36,6 @@
         <sprite>sprites\spr_door</sprite>
         <sprite>sprites\spr_ladder</sprite>
         <sprite>sprites\spr_movable_block</sprite>
-      </sprites>
-      <sprites name="Tools">
-        <sprite>sprites\spr_freeze_gun_projectile</sprite>
       </sprites>
       <sprites name="Help">
         <sprites name="Help Bubbles">
@@ -201,8 +197,8 @@
       <object>objects\obj_hint_dialogue</object>
     </objects>
     <objects name="Effects">
-      <object>objects\obj_fade_to_room</object>
       <object>objects\obj_need_more_fish</object>
+      <object>objects\obj_fade_to_room</object>
       <object>objects\obj_game_complete</object>
     </objects>
     <objects name="Button Blocks">
