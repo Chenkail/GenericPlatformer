@@ -53,7 +53,7 @@ global.stepsPerSecond = room_speed;
 global.buttonPressed = false; //Do not touch!
 
 //Game name in title screen
-global.gameTitle = "Penguin Platformer"; //Title of game - to be displayed on main menu
+global.gameTitle = "Generic Platformer"; //Title of game - to be displayed on main menu
 global.gameTitleY = room_height/5; //Y coordinates of center of title label, in pixels
 global.gameTitleFont = fnt_title; //Font to be used for game title
 global.gameTitleFontColor = c_white; //Font color to be used for game title
