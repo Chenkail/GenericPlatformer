@@ -147,17 +147,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <objects name="Control Objects">
-      <object>objects\obj_master</object>
-      <object>objects\obj_score</object>
-    </objects>
-    <objects name="Menus">
-      <object>objects\obj_menu_main</object>
-      <objects name="Level Select">
-        <object>objects\obj_menu_level_select</object>
-        <object>objects\obj_page_select_buttons</object>
-      </objects>
-    </objects>
     <objects name="Level Design">
       <objects name="Solid Blocks">
         <objects name="Wood Blocks">
@@ -182,6 +171,10 @@
         <object>objects\obj_ladder</object>
         <object>objects\obj_movable_block</object>
       </objects>
+      <objects name="Button Blocks">
+        <object>objects\obj_button</object>
+        <object>objects\obj_button_block</object>
+      </objects>
       <objects name="Collectibles">
         <object>objects\obj_collectible_fish</object>
         <object>objects\obj_collectible_parent</object>
@@ -196,14 +189,21 @@
       <object>objects\obj_hint_button</object>
       <object>objects\obj_hint_dialogue</object>
     </objects>
+    <objects name="Menus">
+      <object>objects\obj_menu_main</object>
+      <objects name="Level Select">
+        <object>objects\obj_menu_level_select</object>
+        <object>objects\obj_page_select_buttons</object>
+      </objects>
+    </objects>
     <objects name="Effects">
       <object>objects\obj_need_more_fish</object>
       <object>objects\obj_fade_to_room</object>
       <object>objects\obj_game_complete</object>
     </objects>
-    <objects name="Button Blocks">
-      <object>objects\obj_button</object>
-      <object>objects\obj_button_block</object>
+    <objects name="Control Objects">
+      <object>objects\obj_master</object>
+      <object>objects\obj_score</object>
     </objects>
   </objects>
   <rooms name="rooms">
