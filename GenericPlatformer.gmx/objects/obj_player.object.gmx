@@ -194,7 +194,7 @@ if (!global.playerTraveling) {
         case vk_up:
         case ord("W"):
             //Check if space above player is not a solid block
-            canGoUp = scr_can_move(x, playerTop, false, playerWidth);
+            canGoUp = scr_can_move(x, playerTop - 3, false, playerWidth);
             movableBlockAbove = collision_rectangle(playerLeft + moveCheckForgiveness, playerTop - 2, playerRight - moveCheckForgiveness, playerTop - 1, obj_movable_block, false, true);
             if (canGoUp) and (!movableBlockAbove) {
                 ///Jump or climb ladder
