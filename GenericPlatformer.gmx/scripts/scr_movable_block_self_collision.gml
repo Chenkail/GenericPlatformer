@@ -2,16 +2,9 @@
 if (other.y < blockTop) {
     //If another block is stacked above this block, prevent it from falling through
     if (other.y + other.blockHeight/2 > blockTop) and (other.x - other.blockWidth/2 < x + blockWidth/2) and (other.x + other.blockWidth/2 > x - blockWidth/2) {
-        if (scr_can_move(x, blockBottom, false, blockWidth)) {
-            blockFalling = true;
-        } else {
-            blockFalling = false;
-        }
-        if (!blockFalling) {
-            other.y = blockTop - other.blockHeight/2;
-            other.fallSpeed = 0;
-            other.vspeed = 0;
-        }
+        other.y = blockTop - other.blockHeight/2;
+        other.fallSpeed = 0;
+        other.vspeed = 0;
     }
 } else {
     //If not stacked, prevent blocks from intersecting on the sides
